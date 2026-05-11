@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Solace / Partners — Preferred Vendor Network, Flathead Valley</title>
+  <meta name="description" content="Join the Solace preferred vendor and trade partner network in Whitefish and the Flathead Valley. Curated, reliable, and relationship-first.">
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Inter:wght@200;300;400&display=swap" rel="stylesheet">
+  <style>
+  :root {
+    --bg: #EFE5CC;
+    --text: #1A1A1A;
+    --accent: #C9A961;
+    --div: rgba(26,26,26,0.15);
+    --muted: rgba(26,26,26,0.55);
+    --card: rgba(255,255,255,0.5);
+    --card-border: rgba(201,169,97,0.3);
+    --stripe: #C9A961;
+  }
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 1.7;
+    -webkit-font-smoothing: antialiased;
+  }
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { opacity: 0.75; }
+  hr.rule { border: none; border-top: 1px solid var(--div); margin: 0; }
+
+  /* ── GOLD STRIPE ── */
+  .gold-stripe { height: 4px; background: var(--stripe); width: 100%; }
+
+  /* ── MASTHEAD ── */
+  .masthead {
+    padding: 2.5rem 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+    position: relative;
+  }
+  .masthead-monogram {
+    width: 48px;
+    height: 48px;
+    object-fit: contain;
+    margin-bottom: 0.8rem;
+  }
+  .masthead-wordmark {
+    font-family: 'Inter', sans-serif;
+    font-weight: 200;
+    font-size: 1rem;
+    letter-spacing: 0.55em;
+    text-transform: uppercase;
+    color: var(--text);
+    text-indent: 0.55em;
+  }
+  .masthead-division {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-weight: 300;
+    font-size: 0.82rem;
+    letter-spacing: 0.2em;
+    color: var(--accent);
+    margin-top: 0.2rem;
+  }
+  .masthead-nav {
+    position: absolute;
+    right: 5%;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 0.72rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--muted);
+  }
+  .masthead-nav a { color: var(--muted); margin-left: 1.5rem; }
+  .masthead-nav a:hover { color: var(--accent); opacity: 1; }
+
+  /* ── SECTIONS ── */
+  .section { padding: 5rem 5%; max-width: 1100px; margin: 0 auto; }
+  .section-sm { padding: 3.5rem 5%; max-width: 1100px; margin: 0 auto; }
+
+  /* ── HERO ── */
+  .hero { padding: 6rem 5% 4.5rem; text-align: center; max-width: 800px; margin: 0 auto; }
+  .hero-eyebrow {
+    font-size: 0.68rem;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 1.2rem;
+  }
+  .hero-headline {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-weight: 300;
+    font-size: clamp(2.4rem, 5.5vw, 3.8rem);
+    line-height: 1.15;
+    color: var(--text);
+    margin-bottom: 1.5rem;
+  }
+  .hero-sub {
+    font-weight: 300;
+    font-size: 0.93rem;
+    color: var(--muted);
+    max-width: 520px;
+    margin: 0 auto 2.2rem;
+    line-height: 1.9;
+  }
+  .btn {
+    display: inline-block;
+    padding: 0.8rem 2rem;
+    font-size: 0.7rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    border: 1px solid var(--accent);
+    color: var(--accent);
+    transition: background 0.2s, color 0.2s;
+    background: transparent;
+  }
+  .btn:hover { background: var(--accent); color: var(--bg); opacity: 1; }
+  .btn-fill { background: var(--accent); color: #1A1A1A; }
+  .btn-fill:hover { background: transparent; color: var(--accent); }
+
+  /* ── CARD GRID ── */
+  .card-grid { display: grid; gap: 1.5px; }
+  .card-grid-3 { grid-template-columns: repeat(3, 1fr); }
+  .card-grid-2 { grid-template-columns: repeat(2, 1fr); }
+  @media (max-width: 860px) {
+    .card-grid-3, .card-grid-2 { grid-template-columns: 1fr; }
+  }
+  .card {
+    background: rgba(255,255,255,0.55);
+    border: 1px solid var(--card-border);
+    padding: 2.2rem 1.8rem;
+    border-left: 3px solid var(--accent);
+  }
+  .card-eyebrow {
+    font-size: 0.62rem;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 0.8rem;
+  }
+  .card-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 300;
+    font-size: 1.3rem;
+    color: var(--text);
+    margin-bottom: 0.6rem;
+  }
+  .card-body {
+    font-size: 0.86rem;
+    color: var(--muted);
+    line-height: 1.85;
+  }
+  .card-link {
+    display: inline-block;
+    margin-top: 1.2rem;
+    font-size: 0.7rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--accent);
+    border-bottom: 1px solid rgba(201,169,97,0.4);
+    padding-bottom: 2px;
+  }
+
+  /* ── SECTION HEADER ── */
+  .section-label {
+    font-size: 0.65rem;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 0.9rem;
+  }
+  .section-headline {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-weight: 300;
+    font-size: clamp(1.7rem, 3.2vw, 2.4rem);
+    color: var(--text);
+    margin-bottom: 1rem;
+    line-height: 1.25;
+  }
+  .section-body {
+    font-weight: 300;
+    font-size: 0.9rem;
+    color: var(--muted);
+    max-width: 600px;
+    line-height: 1.9;
+  }
+
+  /* ── FORM ── */
+  .form-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+  @media (max-width: 640px) { .form-grid { grid-template-columns: 1fr; } }
+  .form-full { grid-column: 1 / -1; }
+  .form-group { display: flex; flex-direction: column; gap: 0.4rem; }
+  .form-label {
+    font-size: 0.65rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--accent);
+  }
+  .form-input, .form-select, .form-textarea {
+    background: rgba(255,255,255,0.6);
+    border: 1px solid rgba(201,169,97,0.35);
+    color: var(--text);
+    padding: 0.7rem 0.9rem;
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+    font-size: 0.86rem;
+    width: 100%;
+    outline: none;
+    transition: border-color 0.2s;
+    border-left: 3px solid var(--accent);
+  }
+  .form-input:focus, .form-select:focus, .form-textarea:focus {
+    border-color: var(--accent);
+    background: rgba(255,255,255,0.8);
+  }
+  .form-textarea { resize: vertical; min-height: 110px; }
+
+  /* ── FOOTER ── */
+  footer {
+    border-top: 1px solid var(--div);
+    padding: 2.5rem 5%;
+    text-align: center;
+    font-size: 0.73rem;
+    color: var(--muted);
+    letter-spacing: 0.1em;
+  }
+  footer .footer-wordmark {
+    font-family: 'Inter', sans-serif;
+    font-weight: 200;
+    letter-spacing: 0.45em;
+    text-transform: uppercase;
+    color: var(--text);
+    font-size: 0.68rem;
+    margin-bottom: 0.6rem;
+  }
+  footer a { color: var(--muted); }
+  footer a:hover { color: var(--accent); opacity: 1; }
+
+    .tier-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.5rem;
+      margin-top: 2rem;
+    }
+    @media (max-width: 700px) { .tier-grid { grid-template-columns: 1fr; } }
+    .tier-card {
+      background: rgba(255,255,255,0.6);
+      border: 1px solid rgba(201,169,97,0.3);
+      border-left: 4px solid var(--accent);
+      padding: 2rem 1.75rem;
+    }
+    .tier-badge {
+      display: inline-block;
+      font-size: 0.6rem;
+      letter-spacing: 0.25em;
+      text-transform: uppercase;
+      color: #1A1A1A;
+      background: var(--accent);
+      padding: 0.25rem 0.65rem;
+      margin-bottom: 1rem;
+    }
+    .tier-name {
+      font-family: 'Cormorant Garamond', serif;
+      font-weight: 300;
+      font-size: 1.4rem;
+      color: var(--text);
+      margin-bottom: 0.5rem;
+    }
+    .tier-sla {
+      font-size: 0.75rem;
+      letter-spacing: 0.12em;
+      color: var(--accent);
+      margin-bottom: 1rem;
+      text-transform: uppercase;
+    }
+    .tier-list {
+      list-style: none;
+      font-size: 0.87rem;
+      color: var(--muted);
+      line-height: 2;
+    }
+    .tier-list li::before {
+      content: "—";
+      color: var(--accent);
+      margin-right: 0.6rem;
+    }
+    .form-section {
+      background: rgba(255,255,255,0.4);
+      border: 1px solid rgba(201,169,97,0.2);
+      border-top: 4px solid var(--accent);
+      padding: 3rem;
+      margin-top: 3rem;
+    }
+    @media (max-width: 600px) { .form-section { padding: 2rem 1.5rem; } }
+    .qualities-list {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+      margin-top: 1.5rem;
+    }
+    @media (max-width: 640px) { .qualities-list { grid-template-columns: 1fr; } }
+    .quality-item {
+      display: flex;
+      gap: 0.75rem;
+      align-items: flex-start;
+      font-size: 0.87rem;
+      color: var(--muted);
+      line-height: 1.6;
+    }
+    .quality-dot {
+      width: 6px;
+      height: 6px;
+      background: var(--accent);
+      border-radius: 50%;
+      margin-top: 0.45rem;
+      flex-shrink: 0;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="gold-stripe"></div>
+
+  <header>
+    <div class="masthead">
+      <img src="data:image/png;base64,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" alt="Solace monogram" class="masthead-monogram">
+      <div class="masthead-wordmark">Solace</div>
+      <div class="masthead-division">Partners</div>
+      <nav class="masthead-nav">
+        <a href="/">Solace Home</a>
+        <a href="/home/">Home</a>
+        <a href="/care/">Care</a>
+      </nav>
+    </div>
+    <hr class="rule">
+  </header>
+
+  <!-- HERO -->
+  <div class="hero">
+    <p class="hero-eyebrow">Flathead Valley · Preferred Vendor Network</p>
+    <h1 class="hero-headline">We build with<br>people we trust.</h1>
+    <p class="hero-sub">
+      Solace Partners is a curated trade network in the Flathead Valley and Glacier region. When our clients need something done, we reach out to our Partners first — every time.
+    </p>
+    <a href="#apply" class="btn btn-fill">Apply to Join the Network</a>
+  </div>
+
+  <hr class="rule">
+
+  <!-- WHO WE WORK WITH -->
+  <div class="section">
+    <p class="section-label">Who We're Looking For</p>
+    <h2 class="section-headline">Excellence in every category.</h2>
+    <p class="section-body">
+      We work with vendors and service professionals across all disciplines relevant to private estate management and luxury living in Montana. Quality, discretion, and reliability are non-negotiable.
+    </p>
+    <div class="qualities-list">
+      <div class="quality-item"><div class="quality-dot"></div><span>Chefs &amp; Private Dining</span></div>
+      <div class="quality-item"><div class="quality-dot"></div><span>Housekeeping &amp; Estate Staff</span></div>
+      <div class="quality-item"><div class="quality-dot"></div><span>Landscaping &amp; Grounds</span></div>
+      <div class="quality-item"><div class="quality-dot"></div><span>Contractors &amp; Trades</span></div>
+      <div class="quality-item"><div class="quality-dot"></div><span>Transportation &amp; Drivers</span></div>
+      <div class="quality-item"><div class="quality-dot"></div><span>Wellness &amp; Personal Services</span></div>
+      <div class="quality-item"><div class="quality-dot"></div><span>Florists &amp; Event Vendors</span></div>
+      <div class="quality-item"><div class="quality-dot"></div><span>Outdoor Guides &amp; Experiences</span></div>
+      <div class="quality-item"><div class="quality-dot"></div><span>Catering &amp; Specialty Food</span></div>
+      <div class="quality-item"><div class="quality-dot"></div><span>Security &amp; Property Services</span></div>
+    </div>
+  </div>
+
+  <hr class="rule">
+
+  <!-- TIER STRUCTURE -->
+  <div class="section">
+    <p class="section-label">Partnership Tiers</p>
+    <h2 class="section-headline">Two tiers. One standard.</h2>
+    <p class="section-body">
+      All Solace Partners commit to professional standards and timely communication. Preferred Partners receive priority consideration for every request in their category.
+    </p>
+    <div class="tier-grid">
+      <div class="tier-card">
+        <span class="tier-badge">Tier 1</span>
+        <h3 class="tier-name">Preferred Partner</h3>
+        <p class="tier-sla">1-Hour Urgent Response SLA</p>
+        <ul class="tier-list">
+          <li>First contacted for all requests in your category</li>
+          <li>1-hour response window for urgent requests</li>
+          <li>Named &amp; referred to Solace clients directly</li>
+          <li>Included in client welcome materials</li>
+          <li>Priority scheduling for recurring work</li>
+          <li>Mutual professional relationship formalized in writing</li>
+        </ul>
+      </div>
+      <div class="tier-card" style="border-left-color: rgba(201,169,97,0.4);">
+        <span class="tier-badge" style="background: transparent; border: 1px solid var(--accent); color: var(--accent);">Tier 2</span>
+        <h3 class="tier-name">Standard Partner</h3>
+        <p class="tier-sla">24-Hour Standard Response SLA</p>
+        <ul class="tier-list">
+          <li>Contacted when Preferred Partner is unavailable</li>
+          <li>24-hour availability confirmation window</li>
+          <li>Included in Solace vendor directory</li>
+          <li>Eligible to upgrade to Preferred status</li>
+          <li>Vendor agreement on file</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <hr class="rule">
+
+  <!-- WHAT THIS RELATIONSHIP LOOKS LIKE -->
+  <div class="section">
+    <p class="section-label">The Solace Commitment</p>
+    <h2 class="section-headline">What you can expect from us.</h2>
+    <div class="card-grid card-grid-3">
+      <div class="card">
+        <p class="card-eyebrow">Clear Communication</p>
+        <p class="card-title">Every request is detailed.</p>
+        <p class="card-body">You receive precise scope, timing, and client expectations before you confirm. No ambiguity.</p>
+      </div>
+      <div class="card">
+        <p class="card-eyebrow">Fair Compensation</p>
+        <p class="card-title">Your rates, honored.</p>
+        <p class="card-body">We bill clients transparently and pay vendors promptly. No rate compression or hidden markups against your invoice.</p>
+      </div>
+      <div class="card">
+        <p class="card-eyebrow">Mutual Respect</p>
+        <p class="card-title">A professional relationship.</p>
+        <p class="card-body">We are stewards of your reputation as much as ours. You are introduced to clients by name, with trust already established.</p>
+      </div>
+    </div>
+  </div>
+
+  <hr class="rule">
+
+  <!-- APPLICATION FORM -->
+  <div class="section" id="apply">
+    <p class="section-label">Vendor Inquiry</p>
+    <h2 class="section-headline">Apply to join the network.</h2>
+    <p class="section-body" style="margin-bottom: 2rem;">
+      Tell us about your business and the services you provide. We review every inquiry personally and respond within 48 hours.
+    </p>
+    <div class="form-section">
+      <form action="https://formsubmit.co/vendors@solaceconcierge.com" method="POST">
+        <input type="hidden" name="_subject" value="Solace Partners — Vendor Network Application">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_next" value="https://solaceconcierge.com/partners/">
+        <div class="form-grid">
+          <div class="form-group">
+            <label class="form-label">Your Name</label>
+            <input class="form-input" type="text" name="name" required placeholder="Full name">
+          </div>
+          <div class="form-group">
+            <label class="form-label">Business Name</label>
+            <input class="form-input" type="text" name="business" required placeholder="Business or trade name">
+          </div>
+          <div class="form-group">
+            <label class="form-label">Service Category</label>
+            <select class="form-select form-input" name="category" required>
+              <option value="" disabled selected>Select your primary service</option>
+              <option>Chef / Private Dining</option>
+              <option>Housekeeping / Estate Staff</option>
+              <option>Landscaping / Grounds</option>
+              <option>Contractor / Trades</option>
+              <option>Transportation / Driver</option>
+              <option>Wellness / Personal Services</option>
+              <option>Florist / Event Services</option>
+              <option>Outdoor Guide / Experiences</option>
+              <option>Catering / Food</option>
+              <option>Security / Property</option>
+              <option>Other</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Partnership Tier Interest</label>
+            <select class="form-select form-input" name="tier">
+              <option value="" disabled selected>Which tier interests you?</option>
+              <option>Preferred Partner (Tier 1)</option>
+              <option>Standard Partner (Tier 2)</option>
+              <option>Not sure yet</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Email Address</label>
+            <input class="form-input" type="email" name="email" required placeholder="your@email.com">
+          </div>
+          <div class="form-group">
+            <label class="form-label">Phone Number</label>
+            <input class="form-input" type="tel" name="phone" placeholder="(406) 000-0000">
+          </div>
+          <div class="form-group form-full">
+            <label class="form-label">Tell Us About Your Business</label>
+            <textarea class="form-textarea" name="message" placeholder="Briefly describe your services, years in the Flathead Valley, and any relevant experience with high-end residential or private clients." required></textarea>
+          </div>
+        </div>
+        <div style="margin-top: 1.75rem;">
+          <button type="submit" class="btn btn-fill" style="cursor:pointer; font-family:inherit; border:none;">Submit Inquiry →</button>
+        </div>
+      </form>
+    </div>
+    <p style="margin-top: 1.5rem; font-size: 0.8rem; color: var(--muted);">
+      You may also reach us directly at <a href="mailto:vendors@solaceconcierge.com">vendors@solaceconcierge.com</a>
+    </p>
+  </div>
+
+  <footer>
+    <div class="footer-wordmark">Solace / Partners</div>
+    <p>Whitefish · Flathead Valley · Glacier, Montana</p>
+    <p style="margin-top: 0.4rem;">
+      <a href="mailto:vendors@solaceconcierge.com">vendors@solaceconcierge.com</a>
+      &nbsp;·&nbsp;
+      <a href="/">Solace Concierge</a>
+    </p>
+    <p style="margin-top: 0.9rem; font-size: 0.66rem; opacity: 0.45;">© 2026 Solace Concierge. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
