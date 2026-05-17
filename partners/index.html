@@ -112,8 +112,17 @@
   .hero__bg-wrap { position: absolute; inset: 0; overflow: hidden; will-change: transform; }
   .hero__bg {
     position: absolute; inset: 0;
-    background: url('https://pub.hyperagent.com/api/published/pbf01KRF8CVT2_C3XVS5DKPP1V70TG/img_partners_chef.jpg') center 45%/cover no-repeat;
+    background: url('https://pub.hyperagent.com/api/published/pbf01KRW1GK3M_5ZR5NQFHVED39170/video_partners_chef_poster.jpg') center 45%/cover no-repeat;
     animation: hero-breathe 22s ease-in-out infinite alternate;
+  }
+  .hero__video {
+    position: absolute; inset: 0;
+    width: 100%; height: 100%;
+    object-fit: cover; object-position: center 45%;
+    pointer-events: none;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .hero__video { display: none; }
   }
   @keyframes hero-breathe { from { transform: scale(1); } to { transform: scale(1.06); } }
   .hero__veil {
@@ -304,7 +313,15 @@
 </header>
 
 <section class="hero" id="top">
-  <div class="hero__bg-wrap" aria-hidden="true"><div class="hero__bg"></div></div>
+  <div class="hero__bg-wrap" aria-hidden="true">
+    <div class="hero__bg">
+      <video class="hero__video" autoplay muted loop playsinline preload="metadata"
+             poster="https://pub.hyperagent.com/api/published/pbf01KRW1GK3M_5ZR5NQFHVED39170/video_partners_chef_poster.jpg"
+             aria-hidden="true">
+        <source src="https://pub.hyperagent.com/api/published/pbf01KRW1GDJY_9HN0FBK2G4Z363ZX/video_partners_chef_web.mp4" type="video/mp4">
+      </video>
+    </div>
+  </div>
   <div class="hero__veil" aria-hidden="true"></div>
   <div class="hero__overlay">
     <p class="hero__eyebrow">Solace<span class="dot"></span>Partners<span class="dot"></span>Flathead Valley</p>
