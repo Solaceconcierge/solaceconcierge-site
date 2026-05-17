@@ -450,7 +450,7 @@
     <p class="footer__tag">Quietly attended to.</p>
     <div class="footer__rule"></div>
     <p class="footer__division">A division of SOLACE Concierge LLC</p>
-    <p class="footer__legal">© 2026 Solace Concierge LLC · Flathead Valley, Montana</p>
+    <p class="footer__legal">© 2026 SOLACE Concierge LLC · Flathead Valley, Montana</p>
     <p style="margin-top: 18px; font-family: 'Inter', sans-serif; font-weight: 300; font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase; color: var(--cream); opacity: 0.55;">
       <a href="mailto:contact@solaceconcierge.com" style="color: inherit; text-decoration: none; border-bottom: 1px solid rgba(239,229,204,0.3); padding-bottom: 2px;">contact@solaceconcierge.com</a>
     </p>
@@ -484,7 +484,7 @@
   }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
   document.querySelectorAll('.reveal').forEach(el => io.observe(el));
 
-  // Direct subscribe form — stay-on-page UX. Submit destination: brittany@solaceconcierge.com via Supabase (set FORM_ENDPOINT_URL in a fresh thread once edge function is built).
+  // Direct subscribe form — stay-on-page UX.
   const FORM_ENDPOINT_URL = 'https://npoypeybdzcdakbmrhsk.supabase.co/functions/v1/subscribe';
   const form = document.getElementById('direct-subscribe-form');
   const msg = document.getElementById('direct-subscribe-msg');
@@ -513,7 +513,7 @@
             headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
             body: JSON.stringify({
               tier: 'direct',
-              route_to: 'brittany@solaceconcierge.com',
+              route_to: 'admin@solaceconcierge.com',
               name, email, phone, location, family,
               introduced_by: introBy,
               source_page: 'direct-to-solace',
