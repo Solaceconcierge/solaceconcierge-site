@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Direct to Solace — The Whole Season, Quietly Attended To</title>
+<meta name="description" content="By introduction only. A single relationship for every detail of the year." />
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&family=Cormorant+Garamond:ital,wght@1,400;1,500&family=Inter:wght@200;300;400;500&display=swap" rel="stylesheet">
+
+<style>
+  :root {
+    --ivory:        #FAF8F4;
+    --ink:          #1A1A1A;
+    --ink-soft:     #3A3633;
+    --muted:        #6E6863;
+    --hairline:     #DDD6CB;
+    --cream:        #EFE5CC;
+    --black:        #0A0A0A;
+    --gold:         #C9A961;
+
+    /* Direct tier — fully dark, cream-only monochrome */
+    --direct-bg:      #0A0A0A;    /* pure black */
+    --direct-bg-alt:  #141414;    /* slightly lighter for section separation */
+    --direct-accent:  #EFE5CC;    /* cream — the accent IS cream */
+    --direct-text:    #EFE5CC;    /* cream — same as accent */
+    --direct-muted:   rgba(239, 229, 204, 0.55);
+    --direct-hair:    rgba(239, 229, 204, 0.12);
+    --direct-rule:    rgba(239, 229, 204, 0.35);
+
+    /* Other tiers — nav references */
+    --luxury-accent:#C9A961;
+    --care-accent:  #6B7F5C;
+    --home-accent:  #B8654A;
+    --partners-accent:#C9A961;
+
+    --serif:  'Playfair Display', Georgia, serif;
+    --italic: 'Cormorant Garamond', Georgia, serif;
+    --sans:   'Inter', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+  }
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+  body {
+    font-family: var(--sans); font-weight: 300;
+    color: var(--direct-text); background: var(--direct-bg);
+    line-height: 1.7; overflow-x: hidden;
+  }
+  img { display: block; max-width: 100%; height: auto; }
+  a { color: inherit; text-decoration: none; }
+  ::selection { background: var(--direct-accent); color: var(--direct-bg); }
+
+  .container { max-width: 1320px; margin: 0 auto; padding: 0 8vw; }
+  @media (max-width: 768px) { .container { padding: 0 7vw; } }
+
+  /* SCROLL PROGRESS */
+  .scroll-progress { position: fixed; top: 0; left: 0; right: 0; height: 1px; z-index: 200; pointer-events: none; background: transparent; }
+  .scroll-progress__fill { height: 100%; width: 0; background: var(--direct-accent); opacity: 0.7; transition: width 0.08s linear; }
+
+  /* NAV */
+  .nav {
+    position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+    padding: 22px 6vw;
+    display: grid; grid-template-columns: 1fr auto 1fr; align-items: center;
+    background: rgba(10, 10, 10, 0);
+    border-bottom: 1px solid transparent;
+    transition: background 0.55s ease, border-color 0.55s ease, padding 0.4s ease;
+    color: var(--direct-text);
+  }
+  .nav.scrolled {
+    background: rgba(10, 10, 10, 0.95);
+    backdrop-filter: blur(22px); -webkit-backdrop-filter: blur(22px);
+    padding: 16px 6vw; border-bottom-color: var(--direct-hair);
+  }
+  .nav__left  { display: flex; align-items: center; gap: 24px; justify-self: start; }
+  .nav__right { display: flex; align-items: center; gap: 24px; justify-self: end; }
+  .nav__link {
+    font-family: var(--sans); font-weight: 300; font-size: 11.5px;
+    letter-spacing: 0.34em; text-transform: uppercase;
+    color: inherit; opacity: 0.7;
+    transition: opacity 0.3s ease, color 0.3s ease; cursor: pointer;
+  }
+  .nav__link:hover { opacity: 1; }
+  .nav__link--active { color: var(--direct-accent); opacity: 1; letter-spacing: 0.40em; }
+  .nav__center { justify-self: center; display: flex; align-items: center; gap: 14px; }
+  .nav__monogram {
+    width: 28px; height: 28px;
+    background: url('https://pub.hyperagent.com/api/published/pbf01KRF80DHD_SW3YQKG3ARP5CT1N/solace_monogram_cream.jpg') center/contain no-repeat;
+    background-color: var(--black);
+  }
+  .nav__wordmark {
+    font-family: var(--sans); font-weight: 200; font-size: 18px;
+    letter-spacing: 0.42em; text-transform: uppercase;
+    color: inherit; line-height: 1; padding-left: 0.42em;
+  }
+  @media (max-width: 720px) {
+    .nav { padding: 18px 6vw; }
+    .nav__left { gap: 14px; } .nav__right { gap: 14px; }
+    .nav__link { font-size: 10px; letter-spacing: 0.26em; }
+    .nav__monogram { width: 24px; height: 24px; }
+    .nav__wordmark { font-size: 14px; letter-spacing: 0.32em; padding-left: 0.32em; }
+    .nav__link--hide-mobile { display: none; }
+  }
+
+  /* HERO — most restrained of all */
+  .hero {
+    position: relative; height: 100vh; min-height: 660px;
+    overflow: hidden; background: var(--black);
+  }
+  .hero__bg-wrap { position: absolute; inset: 0; overflow: hidden; will-change: transform; }
+  .hero__bg {
+    position: absolute; inset: 0;
+    background: url('https://pub.hyperagent.com/api/published/pbf01KRJABKQE_YHWWS31PZFERYYPT/about-solace.png') center 40%/cover no-repeat;
+    animation: hero-breathe 26s ease-in-out infinite alternate;
+  }
+  @keyframes hero-breathe { from { transform: scale(1); } to { transform: scale(1.05); } }
+  .hero__veil {
+    position: absolute; inset: 0;
+    background: linear-gradient(180deg, rgba(10,10,10,0.65) 0%, rgba(10,10,10,0.35) 28%, rgba(10,10,10,0.25) 55%, rgba(10,10,10,0.55) 88%, rgba(10,10,10,1) 100%);
+  }
+  .hero__overlay {
+    position: relative; z-index: 2; height: 100%;
+    display: flex; flex-direction: column; align-items: center; justify-content: center;
+    padding: 0 8vw; text-align: center; color: var(--direct-text);
+    transform: translateY(2vh);
+  }
+  .hero__eyebrow {
+    font-family: var(--sans); font-weight: 200; font-size: 11.5px;
+    letter-spacing: 0.50em; text-transform: uppercase;
+    color: var(--direct-text); opacity: 0.85; margin-bottom: 44px;
+  }
+  .hero__eyebrow .dot {
+    display: inline-block; width: 3px; height: 3px; border-radius: 50%;
+    background: var(--direct-accent); vertical-align: middle;
+    margin: 0 18px; transform: translateY(-2px); opacity: 0.85;
+  }
+  .hero__headline {
+    font-family: var(--italic); font-style: italic; font-weight: 400;
+    font-size: clamp(52px, 7vw, 116px);
+    line-height: 1.03; letter-spacing: -0.014em;
+    color: var(--direct-text); margin-bottom: 36px; max-width: 14ch;
+  }
+  .hero__caption {
+    font-family: var(--sans); font-weight: 300; font-size: 15.5px;
+    letter-spacing: 0.04em; color: var(--direct-text); opacity: 0.78;
+    margin-bottom: 56px; max-width: 44ch;
+  }
+  .hero__discover {
+    font-family: var(--sans); font-weight: 300; font-size: 11px;
+    letter-spacing: 0.46em; text-transform: uppercase;
+    color: var(--direct-accent); display: inline-flex; align-items: center; gap: 14px;
+    opacity: 0.92; transition: opacity 0.3s ease, gap 0.3s ease;
+  }
+  .hero__discover:hover { opacity: 1; gap: 20px; }
+  .hero__discover-line { width: 36px; height: 1px; background: var(--direct-accent); opacity: 0.6; }
+  @media (max-width: 720px) {
+    .hero { min-height: 580px; }
+    .hero__eyebrow { letter-spacing: 0.36em; font-size: 10.5px; margin-bottom: 32px; }
+    .hero__eyebrow .dot { margin: 0 10px; }
+    .hero__headline { font-size: clamp(42px, 11vw, 64px); margin-bottom: 26px; }
+    .hero__caption { font-size: 14px; margin-bottom: 40px; }
+  }
+
+  /* INTRO */
+  .intro { padding: 20vh 0 18vh; background: var(--direct-bg); text-align: center; }
+  .intro__eyebrow { font-family: var(--sans); font-weight: 200; font-size: 11px; letter-spacing: 0.50em; text-transform: uppercase; color: var(--direct-accent); opacity: 0.85; margin-bottom: 38px; }
+  .intro__rule { width: 36px; height: 1px; background: var(--direct-accent); margin: 0 auto 38px; opacity: 0.6; }
+  .intro__quote { font-family: var(--italic); font-style: italic; font-weight: 400; font-size: clamp(30px, 4vw, 56px); line-height: 1.22; letter-spacing: -0.008em; color: var(--direct-text); max-width: 24ch; margin: 0 auto 40px; }
+  .intro__body { font-family: var(--sans); font-weight: 300; font-size: 16.5px; line-height: 1.9; color: var(--direct-text); opacity: 0.82; max-width: 58ch; margin: 0 auto; }
+  .intro__body + .intro__body { margin-top: 1.3em; }
+
+  /* WHAT'S INCLUDED */
+  .included { padding: 16vh 0; background: var(--direct-bg-alt); }
+  .included__intro { text-align: center; margin: 0 auto 90px; max-width: 760px; }
+  .included__eyebrow { font-family: var(--sans); font-weight: 200; font-size: 11px; letter-spacing: 0.50em; text-transform: uppercase; color: var(--direct-accent); opacity: 0.85; margin-bottom: 38px; }
+  .included__rule { width: 36px; height: 1px; background: var(--direct-accent); margin: 0 auto 38px; opacity: 0.6; }
+  .included__title { font-family: var(--italic); font-style: italic; font-weight: 400; font-size: clamp(32px, 4vw, 52px); line-height: 1.2; color: var(--direct-text); max-width: 24ch; margin: 0 auto; }
+  .included__grid { display: grid; grid-template-columns: 1fr 1fr; gap: 0 6vw; max-width: 1100px; margin: 0 auto; }
+  .included__list { list-style: none; padding: 0; margin: 0; }
+  .included__list li {
+    font-family: var(--italic); font-style: italic; font-weight: 400;
+    font-size: 17px; line-height: 1.55; color: var(--direct-text);
+    padding: 16px 0; border-bottom: 1px solid var(--direct-hair);
+    transition: padding 0.3s ease, opacity 0.3s ease;
+    cursor: default;
+  }
+  .included__list li:hover { padding-left: 8px; opacity: 0.7; }
+  @media (max-width: 720px) { .included__grid { grid-template-columns: 1fr; gap: 0; } }
+
+  /* PRICING — by introduction (no number) */
+  .pricing { padding: 22vh 0; background: var(--direct-bg); text-align: center; }
+  .pricing__eyebrow { font-family: var(--sans); font-weight: 200; font-size: 11px; letter-spacing: 0.50em; text-transform: uppercase; color: var(--direct-accent); opacity: 0.85; margin-bottom: 40px; }
+  .pricing__rule { width: 36px; height: 1px; background: var(--direct-accent); margin: 0 auto 40px; opacity: 0.6; }
+  .pricing__title { font-family: var(--italic); font-style: italic; font-weight: 400; font-size: clamp(40px, 5.4vw, 80px); line-height: 1.08; letter-spacing: -0.012em; color: var(--direct-text); margin-bottom: 36px; max-width: 18ch; margin-left: auto; margin-right: auto; }
+  .pricing__body { font-family: var(--sans); font-weight: 300; font-size: 16.5px; line-height: 1.9; color: var(--direct-text); opacity: 0.82; max-width: 52ch; margin: 0 auto; }
+  .pricing__note { margin-top: 48px; font-family: var(--italic); font-style: italic; font-size: 15px; color: var(--direct-muted); letter-spacing: 0.02em; max-width: 44ch; margin-left: auto; margin-right: auto; }
+
+  /* HOW IT WORKS */
+  .how { padding: 18vh 0; background: var(--direct-bg-alt); }
+  .how__grid { display: grid; grid-template-columns: 5fr 7fr; gap: 8vw; align-items: start; }
+  .how__label { font-family: var(--sans); font-weight: 200; font-size: 11px; letter-spacing: 0.50em; text-transform: uppercase; color: var(--direct-accent); opacity: 0.85; margin-bottom: 28px; }
+  .how__rule { width: 36px; height: 1px; background: var(--direct-accent); margin-bottom: 38px; opacity: 0.6; }
+  .how__title { font-family: var(--italic); font-style: italic; font-weight: 400; font-size: clamp(32px, 3.6vw, 48px); line-height: 1.16; color: var(--direct-text); max-width: 20ch; }
+  .how__list { list-style: none; padding: 0; margin: 0; }
+  .how__item { padding: 26px 0; border-bottom: 1px solid var(--direct-hair); }
+  .how__item:first-child { padding-top: 0; }
+  .how__item:last-child  { border-bottom: 0; padding-bottom: 0; }
+  .how__item-h { font-family: var(--sans); font-weight: 400; font-size: 13px; letter-spacing: 0.20em; text-transform: uppercase; color: var(--direct-text); margin-bottom: 12px; }
+  .how__item-b { font-family: var(--sans); font-weight: 300; font-size: 15.5px; line-height: 1.85; color: var(--direct-text); opacity: 0.78; max-width: 58ch; }
+  @media (max-width: 900px) { .how__grid { grid-template-columns: 1fr; gap: 50px; } }
+
+  /* NOTES */
+  .notes { padding: 16vh 0; background: var(--direct-bg); }
+  .notes__wrap { max-width: 760px; margin: 0 auto; padding-left: 24px; border-left: 1px solid var(--direct-accent); border-left-color: rgba(239, 229, 204, 0.4); }
+  .notes__label { font-family: var(--sans); font-weight: 200; font-size: 11px; letter-spacing: 0.50em; text-transform: uppercase; color: var(--direct-accent); opacity: 0.85; margin-bottom: 28px; }
+  .notes__title { font-family: var(--italic); font-style: italic; font-weight: 400; font-size: clamp(26px, 2.8vw, 36px); line-height: 1.24; color: var(--direct-text); margin-bottom: 32px; max-width: 32ch; }
+  .notes__body { font-family: var(--sans); font-weight: 300; font-size: 15.5px; line-height: 1.9; color: var(--direct-text); opacity: 0.78; max-width: 64ch; }
+  .notes__body + .notes__body { margin-top: 1.1em; }
+
+  /* SUBSCRIBE — first conversation form (cream-on-black) */
+  .subscribe { padding: 24vh 0 22vh; background: var(--direct-bg-alt); }
+  .subscribe__intro { text-align: center; max-width: 740px; margin: 0 auto 80px; }
+  .subscribe__eyebrow { font-family: var(--sans); font-weight: 200; font-size: 11px; letter-spacing: 0.50em; text-transform: uppercase; color: var(--direct-accent); opacity: 0.85; margin-bottom: 40px; }
+  .subscribe__rule { width: 36px; height: 1px; background: var(--direct-accent); margin: 0 auto 40px; opacity: 0.6; }
+  .subscribe__title { font-family: var(--italic); font-style: italic; font-weight: 400; font-size: clamp(36px, 4.6vw, 60px); line-height: 1.12; color: var(--direct-text); margin-bottom: 26px; max-width: 24ch; margin-left: auto; margin-right: auto; }
+  .subscribe__sub { font-family: var(--sans); font-weight: 300; font-size: 15.5px; line-height: 1.85; color: var(--direct-text); opacity: 0.78; max-width: 54ch; margin: 0 auto; }
+  .subscribe__form { max-width: 620px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; gap: 0 5vw; }
+  .subscribe__field { position: relative; padding: 24px 0; border-bottom: 1px solid var(--direct-hair); transition: border-color 0.3s ease; }
+  .subscribe__field--full { grid-column: 1 / -1; }
+  .subscribe__field:focus-within { border-bottom-color: var(--direct-accent); }
+  .subscribe__label { display: block; font-family: var(--sans); font-weight: 300; font-size: 10.5px; letter-spacing: 0.38em; text-transform: uppercase; color: var(--direct-muted); margin-bottom: 12px; }
+  .subscribe__field:focus-within .subscribe__label { color: var(--direct-accent); opacity: 1; }
+  .subscribe__input, .subscribe__textarea { width: 100%; border: 0; background: transparent; outline: none; font-family: var(--sans); font-weight: 300; font-size: 16px; letter-spacing: 0.02em; color: var(--direct-text); padding: 0; line-height: 1.65; }
+  .subscribe__textarea { resize: vertical; min-height: 96px; }
+  .subscribe__input::placeholder, .subscribe__textarea::placeholder { color: rgba(239, 229, 204, 0.32); font-style: italic; font-family: var(--italic); }
+  .subscribe__input:-webkit-autofill, .subscribe__input:-webkit-autofill:hover, .subscribe__input:-webkit-autofill:focus { -webkit-text-fill-color: var(--direct-text); -webkit-box-shadow: 0 0 0 1000px var(--direct-bg-alt) inset; transition: background-color 5000s ease-in-out 0s; }
+  .subscribe__submit-row { grid-column: 1 / -1; margin-top: 48px; text-align: center; }
+  .subscribe__submit { border: 1px solid var(--direct-accent); background: transparent; color: var(--direct-accent); font-family: var(--sans); font-weight: 300; font-size: 11px; letter-spacing: 0.46em; text-transform: uppercase; padding: 20px 48px; cursor: pointer; transition: background 0.4s ease, color 0.4s ease, letter-spacing 0.4s ease; }
+  .subscribe__submit:hover { background: var(--direct-accent); color: var(--direct-bg); letter-spacing: 0.56em; }
+  .subscribe__note { margin-top: 56px; font-family: var(--italic); font-style: italic; font-size: 15px; color: var(--direct-muted); letter-spacing: 0.02em; max-width: 50ch; margin-left: auto; margin-right: auto; text-align: center; }
+  .subscribe__msg { margin-top: 28px; font-family: var(--italic); font-style: italic; font-size: 15px; color: var(--direct-accent); opacity: 0; transition: opacity 0.55s ease, transform 0.55s ease; transform: translateY(6px); min-height: 22px; text-align: center; letter-spacing: 0.02em; }
+  .subscribe__msg.show { opacity: 0.9; transform: translateY(0); }
+  @media (max-width: 720px) {
+    .subscribe__form { grid-template-columns: 1fr; gap: 0; }
+    .subscribe__submit { padding: 18px 32px; letter-spacing: 0.36em; }
+  }
+
+  /* FOOTER */
+  .footer { background: var(--black); color: var(--cream); padding: 64px 0 44px; text-align: center; border-top: 1px solid var(--direct-hair); }
+  .footer__monogram { width: 44px; height: 44px; margin: 0 auto 22px; background: var(--black) url('https://pub.hyperagent.com/api/published/pbf01KRF80DHD_SW3YQKG3ARP5CT1N/solace_monogram_cream.jpg') center/contain no-repeat; border-radius: 4px; }
+  .footer__wordmark { font-family: var(--sans); font-weight: 200; font-size: 15px; letter-spacing: 0.42em; text-transform: uppercase; color: var(--cream); margin-bottom: 10px; }
+  .footer__tag { font-family: var(--italic); font-style: italic; font-size: 13px; letter-spacing: 0.12em; color: var(--cream); opacity: 0.65; margin-bottom: 36px; }
+  .footer__rule { width: 32px; height: 1px; background: var(--cream); margin: 0 auto 24px; opacity: 0.4; }
+  .footer__division { font-family: var(--italic); font-style: italic; font-size: 12px; color: var(--cream); opacity: 0.4; margin-bottom: 10px; letter-spacing: 0.1em; }
+  .footer__legal { font-family: var(--sans); font-weight: 300; font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--cream); opacity: 0.45; }
+
+  /* REVEAL */
+  .reveal { opacity: 0; transform: translateY(28px); transition: opacity 1s ease, transform 1.1s cubic-bezier(0.16, 1, 0.3, 1); }
+  .reveal.in { opacity: 1; transform: translateY(0); }
+  @media (prefers-reduced-motion: reduce) {
+    .hero__bg-wrap { transform: none !important; }
+    .reveal { opacity: 1; transform: none; transition: none; }
+    .hero__bg { animation: none; }
+  }
+</style>
+</head>
+<body>
+
+<div class="scroll-progress" aria-hidden="true"><div class="scroll-progress__fill" id="scroll-fill"></div></div>
+
+<header class="nav" id="nav">
+  <div class="nav__left">
+    <a href="/luxury"   class="nav__link">Luxury</a>
+    <a href="/care"     class="nav__link nav__link--hide-mobile">Care</a>
+    <a href="/home"     class="nav__link nav__link--hide-mobile">Home</a>
+    <a href="/partners" class="nav__link nav__link--hide-mobile">Partners</a>
+    <a href="/direct"   class="nav__link nav__link--active">Direct</a>
+  </div>
+  <a href="/" class="nav__center" aria-label="SOLACE — home">
+    <span class="nav__monogram" aria-hidden="true"></span>
+    <span class="nav__wordmark">Solace</span>
+  </a>
+  <div class="nav__right">
+    <a href="#subscribe" class="nav__link">Inquire</a>
+  </div>
+</header>
+
+<section class="hero" id="top">
+  <div class="hero__bg-wrap" aria-hidden="true"><div class="hero__bg"></div></div>
+  <div class="hero__veil" aria-hidden="true"></div>
+  <div class="hero__overlay">
+    <p class="hero__eyebrow">Solace<span class="dot"></span>Direct<span class="dot"></span>Flathead Valley</p>
+    <h1 class="hero__headline">Quietly attended to.</h1>
+    <p class="hero__caption">By introduction only. A single relationship for every detail of the year.</p>
+    <a class="hero__discover" href="#intro"><span>Discover</span><span class="hero__discover-line" aria-hidden="true"></span></a>
+  </div>
+</section>
+
+<section class="intro" id="intro">
+  <div class="container">
+    <div class="reveal">
+      <p class="intro__eyebrow">What Direct to Solace Is</p>
+      <div class="intro__rule"></div>
+      <p class="intro__quote">The whole house. The whole season. Already in hand.</p>
+      <p class="intro__body">Direct to Solace is the most complete tier we offer — the household, the trades, the arrivals, the dinners, the small kindnesses, the quiet errands, the things that never make a list. Held under a single relationship, with a single line.</p>
+      <p class="intro__body">It is the rarest engagement we take, taken slowly and only by introduction.</p>
+    </div>
+  </div>
+</section>
+
+<section class="included" id="included">
+  <div class="container">
+    <div class="included__intro reveal">
+      <p class="included__eyebrow">What Is Included</p>
+      <div class="included__rule"></div>
+      <h2 class="included__title">Everything across SOLACE — and all the season asks of you.</h2>
+    </div>
+    <div class="included__grid reveal">
+      <ul class="included__list">
+        <li>The full Luxury Concierge menu, on call</li>
+        <li>The full Solace/Home recurring household</li>
+        <li>The full Solace/Care lifestyle attention</li>
+        <li>Pre-arrival, mid-stay, departure preparation</li>
+        <li>Standing vendor network, single point of contact</li>
+        <li>Family liaison &amp; quiet coordination</li>
+        <li>Travel &amp; itinerary curation, year-round</li>
+        <li>Errands, property monitoring, organizing</li>
+      </ul>
+      <ul class="included__list">
+        <li>Special-occasion &amp; event production</li>
+        <li>Post-event &amp; post-stay refresh</li>
+        <li>A quiet running list of what your home needs</li>
+        <li>Wellness, spa, &amp; personal coordination</li>
+        <li>Photography, gift curation, surprise touches</li>
+        <li>Confidential third-party introductions</li>
+        <li>The quiet things that never make a list</li>
+        <li>A 24-hour direct line to SOLACE</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="pricing" id="pricing">
+  <div class="container">
+    <div class="reveal">
+      <p class="pricing__eyebrow">Engagement</p>
+      <div class="pricing__rule"></div>
+      <h2 class="pricing__title">By introduction.</h2>
+      <p class="pricing__body">Engagements begin at a five-figure annual commitment. The retainer covers the household, year-round, with no per-request accounting. SOLACE is currently taking one new Direct household per year while the standard is being held.</p>
+      <p class="pricing__note">A first conversation is the only way in.</p>
+    </div>
+  </div>
+</section>
+
+<section class="how" id="how-it-works">
+  <div class="container">
+    <div class="how__grid">
+      <div class="reveal">
+        <p class="how__label">How It Works</p>
+        <div class="how__rule"></div>
+        <h2 class="how__title">A single relationship, year over year.</h2>
+      </div>
+      <ul class="how__list reveal">
+        <li class="how__item">
+          <p class="how__item-h">The Introduction</p>
+          <p class="how__item-b">Direct to Solace is by introduction only — through an existing relationship, an existing client, or a quiet inquiry that becomes a first conversation. We do not run an open intake. We meet, we listen, we either fit or we don't.</p>
+        </li>
+        <li class="how__item">
+          <p class="how__item-h">The Retainer</p>
+          <p class="how__item-b">A single monthly retainer covers the household across the year. No per-request accounting, no hourly billing, no escalating tiers. Vendor costs, materials, and gratuities pass through transparently — never marked up.</p>
+        </li>
+        <li class="how__item">
+          <p class="how__item-h">Family Inclusion</p>
+          <p class="how__item-b">Children under eighteen living in the household are included by default. Adult family at the same address, or independently, are coordinated as a quiet add-on. Out-of-region travel during the engagement year is handled on a best-effort basis, with policy formalized after the first twelve months.</p>
+        </li>
+        <li class="how__item">
+          <p class="how__item-h">The Term</p>
+          <p class="how__item-b">Twelve-month initial term. Sixty-day termination notice after the initial term. Within the initial term, early termination carries a fifty-percent remainder commitment. After Year One the relationship auto-renews unless either party closes it.</p>
+        </li>
+        <li class="how__item">
+          <p class="how__item-h">The Line</p>
+          <p class="how__item-b">A 24-hour direct line to SOLACE. Not a switchboard. Not an inbox. A relationship — answered.</p>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="notes" id="notes">
+  <div class="container">
+    <div class="notes__wrap reveal">
+      <p class="notes__label">A Few Important Notes</p>
+      <h2 class="notes__title">The plain things, said plainly.</h2>
+      <p class="notes__body">Direct to Solace is a coordination relationship. SOLACE sources, schedules, vets, and follows through. The hands-on work — trades, deliveries, services — is performed by licensed and insured Flathead Valley specialists on the household's behalf.</p>
+      <p class="notes__body">The retainer covers SOLACE's coordination, year-round. Vendor costs, materials, gratuities, travel, and any third-party fees pass through to the household, quoted in advance and billed transparently. Never marked up.</p>
+      <p class="notes__body">Confidentiality is the standard. No client is discussed outside the engagement. No third-party referrals are made without explicit consent. Records are kept privately and destroyed at the end of the relationship if asked.</p>
+      <p class="notes__body">Geographic coverage: based in the Flathead Valley. Travel and away-from-home coordination is offered on a best-effort basis in Year One, formalized in policy thereafter.</p>
+    </div>
+  </div>
+</section>
+
+<section class="subscribe" id="subscribe">
+  <div class="container">
+    <div class="subscribe__intro reveal">
+      <p class="subscribe__eyebrow">A First Conversation</p>
+      <div class="subscribe__rule"></div>
+      <h2 class="subscribe__title">A note will reach us, and we will reach you.</h2>
+      <p class="subscribe__sub">Tell us a little about the household — who is at home, who travels, what the year already asks of you. We will respond personally, and only when there is room.</p>
+    </div>
+    <form class="subscribe__form reveal" id="direct-subscribe-form" novalidate>
+      <div class="subscribe__field">
+        <label class="subscribe__label" for="ds-name">Your Name</label>
+        <input class="subscribe__input" type="text" id="ds-name" name="name" required autocomplete="name" placeholder="Full name">
+      </div>
+      <div class="subscribe__field">
+        <label class="subscribe__label" for="ds-email">Email</label>
+        <input class="subscribe__input" type="email" id="ds-email" name="email" required autocomplete="email" placeholder="you@example.com">
+      </div>
+      <div class="subscribe__field">
+        <label class="subscribe__label" for="ds-phone">Phone (optional)</label>
+        <input class="subscribe__input" type="tel" id="ds-phone" name="phone" autocomplete="tel" placeholder="406-555-0100">
+      </div>
+      <div class="subscribe__field">
+        <label class="subscribe__label" for="ds-location">Household Location</label>
+        <input class="subscribe__input" type="text" id="ds-location" name="location" placeholder="City &amp; neighborhood, or town">
+      </div>
+      <div class="subscribe__field subscribe__field--full">
+        <label class="subscribe__label" for="ds-family">About Your Family</label>
+        <textarea class="subscribe__textarea" id="ds-family" name="family" rows="4" placeholder="Who is at home, who travels, what the year usually asks of you. As much or as little as feels right."></textarea>
+      </div>
+      <div class="subscribe__field subscribe__field--full">
+        <label class="subscribe__label" for="ds-intro">Introduced By (optional)</label>
+        <input class="subscribe__input" type="text" id="ds-intro" name="introduced_by" placeholder="If someone suggested you reach out.">
+      </div>
+      <div class="subscribe__submit-row">
+        <button class="subscribe__submit" type="submit">Send a Note</button>
+        <p class="subscribe__msg" id="direct-subscribe-msg" role="status">Received. We will reach out personally, and only when there is room.</p>
+      </div>
+    </form>
+    <p class="subscribe__note">By introduction only. SOLACE is taking one new Direct household per year while the standard is being held.</p>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer__monogram" aria-hidden="true"></div>
+    <p class="footer__wordmark">Direct to Solace</p>
+    <p class="footer__tag">Quietly attended to.</p>
+    <div class="footer__rule"></div>
+    <p class="footer__division">A division of SOLACE Concierge LLC</p>
+    <p class="footer__legal">© 2026 Solace Concierge LLC · Flathead Valley, Montana</p>
+    <p style="margin-top: 18px; font-family: 'Inter', sans-serif; font-weight: 300; font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase; color: var(--cream); opacity: 0.55;">
+      <a href="mailto:contact@solaceconcierge.com" style="color: inherit; text-decoration: none; border-bottom: 1px solid rgba(239,229,204,0.3); padding-bottom: 2px;">contact@solaceconcierge.com</a>
+    </p>
+  </div>
+</footer>
+
+<script>
+(() => {
+  const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const nav = document.getElementById('nav');
+  const heroWrap = document.querySelector('.hero__bg-wrap');
+  const fill = document.getElementById('scroll-fill');
+  let ticking = false;
+  const onScroll = () => {
+    const y = window.scrollY;
+    const docH = document.documentElement.scrollHeight - window.innerHeight;
+    const vh = window.innerHeight;
+    if (y > 60) nav.classList.add('scrolled'); else nav.classList.remove('scrolled');
+    if (fill && docH > 0) fill.style.width = Math.min(100, (y / docH) * 100) + '%';
+    if (!reduce && heroWrap && y < vh * 1.2) heroWrap.style.transform = `translate3d(0, ${y * 0.32}px, 0)`;
+    ticking = false;
+  };
+  const tick = () => { if (!ticking) { window.requestAnimationFrame(onScroll); ticking = true; } };
+  window.addEventListener('scroll', tick, { passive: true });
+  onScroll();
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+  }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+  document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+
+  // Direct subscribe form — stay-on-page UX. Submit destination: brittany@solaceconcierge.com via Supabase (set FORM_ENDPOINT_URL in a fresh thread once edge function is built).
+  const FORM_ENDPOINT_URL = 'https://npoypeybdzcdakbmrhsk.supabase.co/functions/v1/subscribe';
+  const form = document.getElementById('direct-subscribe-form');
+  const msg = document.getElementById('direct-subscribe-msg');
+  if (form && msg) {
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const data = new FormData(form);
+      const name      = (data.get('name')          || '').toString().trim();
+      const email     = (data.get('email')         || '').toString().trim();
+      const phone     = (data.get('phone')         || '').toString().trim();
+      const location  = (data.get('location')      || '').toString().trim();
+      const family    = (data.get('family')        || '').toString().trim();
+      const introBy   = (data.get('introduced_by') || '').toString().trim();
+      if (!name || !email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+        msg.textContent = 'Please share your name and a working email.';
+        msg.style.color = 'var(--direct-muted)';
+        msg.classList.add('show');
+        return;
+      }
+      const submitBtn = form.querySelector('.subscribe__submit');
+      if (submitBtn) submitBtn.disabled = true;
+      try {
+        if (FORM_ENDPOINT_URL) {
+          const resp = await fetch(FORM_ENDPOINT_URL, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+            body: JSON.stringify({
+              tier: 'direct',
+              route_to: 'brittany@solaceconcierge.com',
+              name, email, phone, location, family,
+              introduced_by: introBy,
+              source_page: 'direct-to-solace',
+              submitted_at: new Date().toISOString(),
+            }),
+          });
+          if (!resp.ok) throw new Error('submit_failed');
+        }
+        form.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+        form.style.opacity = '0';
+        form.style.transform = 'translateY(-6px)';
+        setTimeout(() => { form.style.display = 'none'; }, 520);
+        msg.textContent = 'Received. We will reach out personally, and only when there is room.';
+        msg.style.color = 'var(--direct-accent)';
+        msg.classList.add('show');
+      } catch (err) {
+        msg.textContent = 'Something quiet went wrong. Please try again, or write to contact@solaceconcierge.com.';
+        msg.style.color = 'var(--direct-muted)';
+        msg.classList.add('show');
+        if (submitBtn) submitBtn.disabled = false;
+      }
+    });
+  }
+})();
+</script>
+
+</body>
+</html>
