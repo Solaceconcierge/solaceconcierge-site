@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Privacy — SOLACE Concierge</title>
+<meta name="description" content="How SOLACE Concierge handles the information you share. Plainly stated." />
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&family=Cormorant+Garamond:ital,wght@1,400;1,500&family=Inter:wght@200;300;400;500&display=swap" rel="stylesheet">
+
+<style>
+  :root {
+    --ivory:        #FAF8F4;
+    --ivory-soft:   #F2EEE6;
+    --ink:          #1A1A1A;
+    --ink-soft:     #3A3633;
+    --muted:        #6E6863;
+    --hairline:     #DDD6CB;
+    --cream:        #EFE5CC;
+    --black:        #0A0A0A;
+    --gold:         #C9A961;
+    --gold-deep:    #B0934B;
+
+    --serif:  'Playfair Display', Georgia, serif;
+    --italic: 'Cormorant Garamond', Georgia, serif;
+    --sans:   'Inter', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+  }
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+  body {
+    font-family: var(--sans); font-weight: 300;
+    color: var(--ink); background: var(--ivory);
+    line-height: 1.7;
+    overflow-x: hidden;
+  }
+  a { color: inherit; text-decoration: none; }
+  ::selection { background: var(--ink); color: var(--cream); }
+
+  .container { max-width: 760px; margin: 0 auto; padding: 0 8vw; }
+  @media (max-width: 768px) { .container { padding: 0 7vw; } }
+
+  /* NAV */
+  .nav {
+    position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+    padding: 22px 6vw;
+    display: grid; grid-template-columns: 1fr auto 1fr; align-items: center;
+    background: rgba(250, 248, 244, 0.96);
+    backdrop-filter: blur(22px); -webkit-backdrop-filter: blur(22px);
+    border-bottom: 1px solid var(--hairline);
+    color: var(--ink);
+  }
+  .nav__left { display: flex; align-items: center; gap: 28px; justify-self: start; }
+  .nav__right { justify-self: end; }
+  .nav__link {
+    font-family: var(--sans); font-weight: 300; font-size: 11.5px;
+    letter-spacing: 0.34em; text-transform: uppercase;
+    color: inherit; opacity: 0.85;
+    transition: opacity 0.3s ease;
+  }
+  .nav__link:hover { opacity: 1; }
+  .nav__center {
+    justify-self: center;
+    display: flex; align-items: center; gap: 14px;
+  }
+  .nav__monogram {
+    width: 28px; height: 28px;
+    background: url('https://pub.hyperagent.com/api/published/pbf01KRF80D6Y_VM4M2W92PGNSPG1R/solace_monogram_dark.png') center/contain no-repeat;
+  }
+  .nav__wordmark {
+    font-family: var(--sans); font-weight: 200; font-size: 18px;
+    letter-spacing: 0.42em; text-transform: uppercase;
+    color: inherit; line-height: 1; padding-left: 0.42em;
+  }
+  @media (max-width: 720px) {
+    .nav { padding: 16px 6vw; }
+    .nav__link { font-size: 10px; letter-spacing: 0.26em; }
+    .nav__monogram { width: 24px; height: 24px; }
+    .nav__wordmark { font-size: 14px; letter-spacing: 0.32em; padding-left: 0.32em; }
+  }
+
+  /* HEAD */
+  .head {
+    padding: 22vh 0 12vh;
+    text-align: center;
+  }
+  .head__eyebrow {
+    font-family: var(--sans); font-weight: 200; font-size: 11px;
+    letter-spacing: 0.46em; text-transform: uppercase;
+    color: var(--gold); margin-bottom: 30px;
+  }
+  .head__rule { width: 36px; height: 1px; background: var(--gold); margin: 0 auto 30px; }
+  .head__title {
+    font-family: var(--italic); font-style: italic; font-weight: 400;
+    font-size: clamp(40px, 5.6vw, 72px);
+    line-height: 1.1; letter-spacing: -0.008em;
+    color: var(--ink); margin-bottom: 28px;
+  }
+  .head__sub {
+    font-family: var(--sans); font-weight: 300; font-size: 15.5px;
+    line-height: 1.85; color: var(--ink-soft);
+    max-width: 52ch; margin: 0 auto;
+  }
+  .head__effective {
+    margin-top: 36px;
+    font-family: var(--italic); font-style: italic; font-size: 14px;
+    color: var(--muted); letter-spacing: 0.02em;
+  }
+
+  /* BODY */
+  .body {
+    padding: 4vh 0 18vh;
+  }
+  .body__section {
+    margin-bottom: 56px;
+  }
+  .body__section:last-child { margin-bottom: 0; }
+  .body__h2 {
+    font-family: var(--serif); font-weight: 500;
+    font-size: 24px; line-height: 1.25;
+    color: var(--ink); margin-bottom: 18px;
+    letter-spacing: -0.005em;
+  }
+  .body__p {
+    font-family: var(--sans); font-weight: 300; font-size: 16px;
+    line-height: 1.8; color: var(--ink-soft);
+    margin-bottom: 16px;
+  }
+  .body__p:last-child { margin-bottom: 0; }
+  .body__ul {
+    list-style: none; padding: 0; margin: 0 0 16px;
+  }
+  .body__ul li {
+    font-family: var(--sans); font-weight: 300; font-size: 16px;
+    line-height: 1.8; color: var(--ink-soft);
+    padding: 6px 0 6px 22px;
+    position: relative;
+  }
+  .body__ul li::before {
+    content: ''; position: absolute;
+    left: 0; top: 17px;
+    width: 6px; height: 1px;
+    background: var(--gold); opacity: 0.7;
+  }
+  .body__a {
+    color: var(--gold-deep);
+    border-bottom: 1px solid var(--hairline);
+    padding-bottom: 1px;
+    transition: border-color 0.3s ease, opacity 0.3s ease;
+  }
+  .body__a:hover { border-bottom-color: var(--gold-deep); opacity: 0.8; }
+
+  /* FOOTER */
+  .footer {
+    background: var(--black);
+    color: var(--cream);
+    padding: 60px 0 40px;
+    text-align: center;
+  }
+  .footer__monogram {
+    width: 44px; height: 44px;
+    background: url('https://pub.hyperagent.com/api/published/pbf01KRF80DHD_SW3YQKG3ARP5CT1N/solace_monogram_cream.jpg') center/contain no-repeat;
+    background-color: var(--black);
+    margin: 0 auto 20px;
+    border-radius: 4px;
+  }
+  .footer__wordmark {
+    font-family: var(--sans); font-weight: 200; font-size: 16px;
+    letter-spacing: 0.42em; text-transform: uppercase;
+    color: var(--cream); margin-bottom: 10px;
+  }
+  .footer__tag {
+    font-family: var(--italic); font-style: italic;
+    font-size: 14px; color: var(--cream); opacity: 0.7;
+    margin-bottom: 24px;
+  }
+  .footer__rule { width: 32px; height: 1px; background: var(--gold); margin: 0 auto 24px; opacity: 0.7; }
+  .footer__legal {
+    font-family: var(--sans); font-weight: 300; font-size: 11px;
+    letter-spacing: 0.14em; text-transform: uppercase;
+    color: var(--cream); opacity: 0.55;
+  }
+  .footer__links {
+    margin-top: 22px;
+    display: flex; justify-content: center; gap: 26px;
+    font-family: 'Inter', sans-serif; font-weight: 300; font-size: 11px;
+    letter-spacing: 0.18em; text-transform: uppercase;
+    color: var(--cream); opacity: 0.55;
+  }
+  .footer__links a {
+    color: inherit;
+    border-bottom: 1px solid rgba(239,229,204,0.3);
+    padding-bottom: 2px;
+  }
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<header class="nav">
+  <div class="nav__left">
+    <a href="/" class="nav__link">← Back to SOLACE</a>
+  </div>
+  <a href="/" class="nav__center" aria-label="SOLACE — home">
+    <span class="nav__monogram" aria-hidden="true"></span>
+    <span class="nav__wordmark">Solace</span>
+  </a>
+  <div class="nav__right"></div>
+</header>
+
+<!-- HEAD -->
+<section class="head">
+  <div class="container">
+    <p class="head__eyebrow">SOLACE Concierge</p>
+    <div class="head__rule"></div>
+    <h1 class="head__title">A note on privacy.</h1>
+    <p class="head__sub">SOLACE is built on relationships, and relationships are built on trust. Here is how we handle the information you share with us — plainly stated, in the same voice in which the rest of our work is done.</p>
+    <p class="head__effective">Effective May 17, 2026</p>
+  </div>
+</section>
+
+<!-- BODY -->
+<section class="body">
+  <div class="container">
+
+    <div class="body__section">
+      <h2 class="body__h2">What we collect</h2>
+      <p class="body__p">When you reach out through one of our forms, email, or a phone call, we receive only what you choose to share. That generally includes:</p>
+      <ul class="body__ul">
+        <li>Your name and how to reach you (email, phone)</li>
+        <li>Where you are — the property, the facility, the home, the valley</li>
+        <li>Context for the request — a family member's name, a relationship, a note about what matters</li>
+        <li>For property managers and vendors: the trade you keep, your service area, your insurance carrier</li>
+      </ul>
+      <p class="body__p">We do not use cookies for tracking or advertising. The site does not currently use analytics. If that ever changes, this page changes first.</p>
+    </div>
+
+    <div class="body__section">
+      <h2 class="body__h2">How we use it</h2>
+      <p class="body__p">We use what you share to do the work you've asked us to do — respond to your inquiry, plan thoughtfully, coordinate with the right vendors, and follow through. That is the whole of it.</p>
+      <p class="body__p">We do not sell, rent, or share your information with marketing partners. We do not build profiles. We do not enrich the data with third-party sources.</p>
+    </div>
+
+    <div class="body__section">
+      <h2 class="body__h2">Where it lives</h2>
+      <p class="body__p">Form submissions are stored in two services that we use to run SOLACE day to day:</p>
+      <ul class="body__ul">
+        <li><strong style="color: var(--ink); font-weight: 500;">Supabase</strong> — a secure database for receiving and holding inquiries</li>
+        <li><strong style="color: var(--ink); font-weight: 500;">Airtable</strong> — where we work with the information to coordinate and follow through</li>
+      </ul>
+      <p class="body__p">Both are reputable vendors with their own privacy protections. The website itself is served by GitHub Pages, which sees standard web request data (IP address, browser) only to deliver the page.</p>
+    </div>
+
+    <div class="body__section">
+      <h2 class="body__h2">Vendors and partners</h2>
+      <p class="body__p">When a request requires a third party — a florist, a chef, a steward, a driver, a tradesperson — we share only what that vendor needs to complete the work on your behalf. Names, dates, locations, the specifics of the task. Never more than that.</p>
+    </div>
+
+    <div class="body__section">
+      <h2 class="body__h2">Your rights</h2>
+      <p class="body__p">You can ask us at any time to:</p>
+      <ul class="body__ul">
+        <li>Tell you what we have on file for you</li>
+        <li>Correct anything that is wrong</li>
+        <li>Delete your information from our records</li>
+      </ul>
+      <p class="body__p">Write to <a class="body__a" href="mailto:contact@solaceconcierge.com">contact@solaceconcierge.com</a> or call <a class="body__a" href="tel:+14062136887">(406) 213-6887</a>. We will respond personally and quickly.</p>
+    </div>
+
+    <div class="body__section">
+      <h2 class="body__h2">Children</h2>
+      <p class="body__p">SOLACE services are arranged on behalf of adults. We do not knowingly collect information from children under 13. If you believe a child has shared information with us by mistake, please let us know and we will remove it.</p>
+    </div>
+
+    <div class="body__section">
+      <h2 class="body__h2">Updates</h2>
+      <p class="body__p">If anything in how we handle information changes, we will update this page and revise the effective date above. Material changes — anything that meaningfully alters what we do with your information — will be communicated to active clients directly.</p>
+    </div>
+
+    <div class="body__section">
+      <h2 class="body__h2">Contact</h2>
+      <p class="body__p">For any question about privacy, or about anything at all:</p>
+      <p class="body__p">
+        <a class="body__a" href="mailto:contact@solaceconcierge.com">contact@solaceconcierge.com</a><br>
+        <a class="body__a" href="tel:+14062136887">(406) 213-6887</a> &nbsp;·&nbsp; Voice only
+      </p>
+    </div>
+
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer__monogram" aria-hidden="true"></div>
+    <p class="footer__wordmark">Solace Concierge</p>
+    <p class="footer__tag">Quiet Luxury, Seamlessly Delivered</p>
+    <div class="footer__rule"></div>
+    <p class="footer__legal">© 2026 SOLACE Concierge LLC · Flathead Valley, Montana</p>
+    <div class="footer__links">
+      <a href="/">Home</a>
+      <a href="mailto:contact@solaceconcierge.com">Contact</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
