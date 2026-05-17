@@ -735,6 +735,47 @@
     .contact { padding: 16vh 0 14vh; }
   }
 
+  /* ─────────  HOME APP CTA  ───────── */
+  .homeapp {
+    padding: 20vh 0 18vh;
+    background: var(--ivory-soft);
+    text-align: center;
+  }
+  .homeapp__eyebrow {
+    font-family: var(--sans); font-weight: 200; font-size: 11px;
+    letter-spacing: 0.46em; text-transform: uppercase;
+    color: var(--gold); margin-bottom: 36px;
+  }
+  .homeapp__rule { width: 36px; height: 1px; background: var(--gold); margin: 0 auto 36px; }
+  .homeapp__title {
+    font-family: var(--italic); font-style: italic; font-weight: 400;
+    font-size: clamp(32px, 4vw, 52px); line-height: 1.15;
+    color: var(--ink); margin-bottom: 20px;
+    max-width: 22ch; margin-left: auto; margin-right: auto;
+  }
+  .homeapp__sub {
+    font-family: var(--sans); font-weight: 300; font-size: 15.5px;
+    line-height: 1.85; color: var(--ink-soft);
+    max-width: 46ch; margin: 0 auto 52px;
+  }
+  .homeapp__cta {
+    display: inline-flex; align-items: center; gap: 14px;
+    background: var(--ink); color: var(--ivory);
+    font-family: var(--sans); font-weight: 300; font-size: 11.5px;
+    letter-spacing: 0.42em; text-transform: uppercase;
+    padding: 22px 52px; border: 1px solid var(--ink); text-decoration: none;
+    transition: background 0.4s ease, color 0.4s ease, letter-spacing 0.4s ease, border-color 0.4s ease;
+  }
+  .homeapp__cta:hover {
+    background: var(--gold); border-color: var(--gold);
+    letter-spacing: 0.5em;
+  }
+  .homeapp__cta-arrow { font-size: 14px; line-height: 1; transform: translateY(-1px); }
+  @media (max-width: 720px) {
+    .homeapp { padding: 14vh 0 12vh; }
+    .homeapp__cta { padding: 18px 36px; letter-spacing: 0.32em; font-size: 11px; }
+  }
+
   /* ─────────  FOOTER  ───────── */
   .footer {
     background: var(--black);
@@ -1384,6 +1425,22 @@
           <span class="founder__sign-name">— Brittany Alcott</span>
         </p>
       </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════ APP CTA ═══════════════ -->
+<section class="homeapp" id="app">
+  <div class="container">
+    <div class="reveal">
+      <p class="homeapp__eyebrow">Now Available</p>
+      <div class="homeapp__rule"></div>
+      <h2 class="homeapp__title">Everything, quietly in hand.</h2>
+      <p class="homeapp__sub">Submit requests, track confirmations, and stay ahead of everything the valley asks of your day — from your phone, on your schedule.</p>
+      <a class="homeapp__cta" href="https://solacemt.com" target="_blank" rel="noopener noreferrer">
+        <span>Open the SOLACE App</span>
+        <span class="homeapp__cta-arrow" aria-hidden="true">→</span>
+      </a>
     </div>
   </div>
 </section>
