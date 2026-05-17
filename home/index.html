@@ -272,6 +272,14 @@
   .how__item:last-child  { border-bottom: 0; padding-bottom: 0; }
   .how__item-h { font-family: var(--sans); font-weight: 400; font-size: 13px; letter-spacing: 0.18em; text-transform: uppercase; color: var(--ink); margin-bottom: 10px; }
   .how__item-b { font-family: var(--sans); font-weight: 300; font-size: 15.5px; line-height: 1.75; color: var(--ink-soft); max-width: 56ch; }
+  .how__item-link {
+    display: inline-block; margin-top: 16px;
+    font-family: var(--sans); font-weight: 300; font-size: 11px;
+    letter-spacing: 0.38em; text-transform: uppercase;
+    color: var(--gold); border-bottom: 1px solid transparent;
+    transition: border-color 0.3s ease, opacity 0.3s ease;
+  }
+  .how__item-link:hover { border-bottom-color: var(--gold); opacity: 0.75; }
   @media (max-width: 900px) { .how__grid { grid-template-columns: 1fr; gap: 50px; } }
 
   /* NOTES */
@@ -491,6 +499,7 @@
         <li class="how__item">
           <p class="how__item-h">The SOLACE App</p>
           <p class="how__item-b">A private SOLACE app for ongoing requests, vendor confirmations, and a clean view of your standing schedule — everything in one place, always within reach.</p>
+          <a class="how__item-link" href="https://solacemt.com" target="_blank" rel="noopener noreferrer">Open the App →</a>
         </li>
       </ul>
     </div>
