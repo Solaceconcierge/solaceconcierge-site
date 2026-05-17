@@ -761,6 +761,51 @@
     .contact { padding: 16vh 0 14vh; }
   }
 
+  /* ─────────  FAQ  ───────── */
+  .faq {
+    padding: 20vh 0 16vh;
+    background: var(--ivory);
+  }
+  .faq__head {
+    text-align: center;
+    margin-bottom: 80px;
+  }
+  .faq__eyebrow {
+    font-family: var(--sans); font-weight: 200; font-size: 11px;
+    letter-spacing: 0.46em; text-transform: uppercase;
+    color: var(--gold); margin-bottom: 30px;
+  }
+  .faq__rule { width: 36px; height: 1px; background: var(--gold); margin: 0 auto 30px; }
+  .faq__title {
+    font-family: var(--italic); font-style: italic; font-weight: 400;
+    font-size: clamp(34px, 4.4vw, 56px); line-height: 1.15;
+    color: var(--ink); max-width: 22ch; margin: 0 auto;
+  }
+  .faq__list {
+    max-width: 720px;
+    margin: 0 auto;
+  }
+  .faq__item {
+    padding: 36px 0;
+    border-bottom: 1px solid var(--hairline);
+  }
+  .faq__item:last-child { border-bottom: 0; }
+  .faq__q {
+    font-family: var(--sans); font-weight: 400;
+    font-size: 13px; letter-spacing: 0.22em; text-transform: uppercase;
+    color: var(--ink); margin-bottom: 18px;
+  }
+  .faq__a {
+    font-family: var(--sans); font-weight: 300; font-size: 16px;
+    line-height: 1.8; color: var(--ink-soft);
+    max-width: 62ch;
+  }
+  @media (max-width: 720px) {
+    .faq { padding: 14vh 0 12vh; }
+    .faq__head { margin-bottom: 56px; }
+    .faq__item { padding: 28px 0; }
+  }
+
   /* ─────────  HOME APP CTA  ───────── */
   .homeapp {
     padding: 20vh 0 18vh;
@@ -1251,7 +1296,7 @@
   "@id": "https://solacemontana.com/#business",
   "name": "SOLACE Concierge",
   "alternateName": "SOLACE Concierge LLC",
-  "description": "Private concierge for the Flathead Valley. Three quiet service lines — Luxury (vacation guest), Care (care-facility residents), and Home (homeowner subscription) — plus a direct-to-client tier for whole-season coordination.",
+  "description": "Private concierge for the Flathead Valley, Montana. SOLACE coordinates the details of a beautifully kept life — dinners, vendor management, household maintenance, and lifestyle care — on behalf of vacation guests, second-home owners, families with loved ones in care, and ongoing direct clients.",
   "url": "https://solacemontana.com",
   "telephone": "+1-406-213-6887",
   "email": "contact@solaceconcierge.com",
@@ -1274,7 +1319,9 @@
   "priceRange": "$$$$",
   "founder": {
     "@type": "Person",
-    "name": "Brittany Alcott"
+    "name": "Brittany Alcott",
+    "jobTitle": "Founder",
+    "worksFor": {"@id": "https://solacemontana.com/#business"}
   },
   "foundingDate": "2026-01",
   "knowsAbout": [
@@ -1285,6 +1332,115 @@
     "Flathead Valley",
     "Yellowstone Club",
     "Glacier National Park"
+  ],
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "SOLACE Concierge Service Tiers",
+    "itemListElement": [
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Solace/Luxury",
+          "description": "Vacation guest concierge for the Flathead Valley's most discerning rentals — distributed through property managers, priced by complexity, never by the service itself. 48-hour standard lead time.",
+          "url": "https://solacemontana.com/luxury/",
+          "provider": {"@id": "https://solacemontana.com/#business"},
+          "areaServed": "Flathead Valley, Montana"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Solace/Care",
+          "description": "Non-medical lifestyle concierge for families with a loved one in a Flathead Valley care facility. Per-request and subscription pricing.",
+          "url": "https://solacemontana.com/care/",
+          "provider": {"@id": "https://solacemontana.com/#business"},
+          "areaServed": "Flathead Valley, Montana"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Solace/Home",
+          "description": "Monthly subscription concierge for Flathead Valley homeowners. Recurring household management, trusted hands on the maintenance calendar, and preparations that make a house feel inhabited even before arrival.",
+          "url": "https://solacemontana.com/home/",
+          "provider": {"@id": "https://solacemontana.com/#business"},
+          "areaServed": "Flathead Valley, Montana"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Direct to Solace",
+          "description": "The whole-season relationship for full-time and primary residents. By introduction only. A single relationship for every detail of the year — trades, deliveries, household, social calendar.",
+          "url": "https://solacemontana.com/direct/",
+          "provider": {"@id": "https://solacemontana.com/#business"},
+          "areaServed": "Flathead Valley, Montana"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Solace/Partners",
+          "description": "A curated network of Flathead Valley's most discerning vendors and trades — florists, private chefs, stewards, drivers, craftsmen. Membership by invitation.",
+          "url": "https://solacemontana.com/partners/",
+          "provider": {"@id": "https://solacemontana.com/#business"},
+          "areaServed": "Flathead Valley, Montana"
+        }
+      }
+    ]
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What does SOLACE actually do?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "SOLACE is a private concierge for the Flathead Valley. We source, schedule, vet, and follow through on requests — from dinner reservations to vendor coordination to ongoing household management. We don't perform the work ourselves; we coordinate it with the right independent vendors on your behalf."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Who is SOLACE for?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Four kinds of relationships. Solace/Luxury: guests of high-end vacation rentals, coordinated through their property managers. Solace/Care: families with a loved one in a Flathead Valley care facility. Solace/Home: homeowners with a second home in the valley. Direct to Solace: the whole-season relationship, by introduction only."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Where do you serve?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The Flathead Valley — Whitefish, Kalispell, Columbia Falls, Lakeside, Bigfork, and the Glacier National Park corridor."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How does pricing work?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "One flat coordination fee per request, priced by complexity — never by the underlying service. All vendor costs, deliveries, and gratuities are pass-through: pre-funded by secure invoice before the work begins, and fully itemized after the request is complete. We do not accept commissions or referral fees from vendors."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I get started with SOLACE?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "For guests of a Flathead vacation rental, requests move through your property manager and the SOLACE app. For ongoing relationships, write to contact@solaceconcierge.com or call (406) 213-6887. We respond personally."
+      }
+    }
   ]
 }
 </script>
@@ -1513,6 +1669,39 @@
         <p class="founder__sign">"If my name is on it, I care about how it feels — from the first conversation to the final detail."
           <span class="founder__sign-name">— Brittany Alcott</span>
         </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════ FAQ ═══════════════ -->
+<section class="faq" id="faq">
+  <div class="container">
+    <div class="faq__head reveal">
+      <p class="faq__eyebrow">Common Questions</p>
+      <div class="faq__rule"></div>
+      <h2 class="faq__title">Plainly answered.</h2>
+    </div>
+    <div class="faq__list">
+      <div class="faq__item reveal">
+        <p class="faq__q">What does SOLACE actually do?</p>
+        <p class="faq__a">SOLACE is a private concierge for the Flathead Valley. We source, schedule, vet, and follow through on requests — from dinner reservations to vendor coordination to ongoing household management. We don't perform the work ourselves; we coordinate it with the right independent vendors on your behalf.</p>
+      </div>
+      <div class="faq__item reveal">
+        <p class="faq__q">Who is SOLACE for?</p>
+        <p class="faq__a">Four kinds of relationships. Solace/Luxury: guests of high-end vacation rentals, coordinated through their property managers. Solace/Care: families with a loved one in a Flathead Valley care facility. Solace/Home: homeowners with a second home in the valley. Direct to Solace: the whole-season relationship, by introduction only.</p>
+      </div>
+      <div class="faq__item reveal">
+        <p class="faq__q">Where do you serve?</p>
+        <p class="faq__a">The Flathead Valley — Whitefish, Kalispell, Columbia Falls, Lakeside, Bigfork, and the Glacier National Park corridor.</p>
+      </div>
+      <div class="faq__item reveal">
+        <p class="faq__q">How does pricing work?</p>
+        <p class="faq__a">One flat coordination fee per request, priced by complexity — never by the underlying service. All vendor costs, deliveries, and gratuities are pass-through: pre-funded by secure invoice before the work begins, and fully itemized after the request is complete. We do not accept commissions or referral fees from vendors.</p>
+      </div>
+      <div class="faq__item reveal">
+        <p class="faq__q">How do I get started?</p>
+        <p class="faq__a">For guests of a Flathead vacation rental, requests move through your property manager and the SOLACE app. For ongoing relationships, write to contact@solaceconcierge.com or call (406) 213-6887. We respond personally.</p>
       </div>
     </div>
   </div>
