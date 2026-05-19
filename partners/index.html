@@ -229,9 +229,33 @@
   .terms__sub { font-family: var(--sans); font-weight: 300; font-size: 15.5px; line-height: 1.75; color: var(--partners-tint); opacity: 0.78; max-width: 56ch; margin: 0 auto; }
 
   .terms__grid {
-    display: grid; grid-template-columns: 1fr 1fr;
-    gap: 60px 6vw;
-    max-width: 1100px; margin: 0 auto;
+    display: grid; grid-template-columns: 1fr 1fr 1fr;
+    gap: 60px 4vw;
+    max-width: 1100px; margin: 0 auto 80px;
+  }
+  .terms__common {
+    max-width: 980px; margin: 0 auto;
+    padding-top: 60px;
+    border-top: 1px solid var(--partners-hair);
+  }
+  .terms__common-label {
+    font-family: var(--sans); font-weight: 200; font-size: 11px;
+    letter-spacing: 0.46em; text-transform: uppercase;
+    color: var(--partners-accent);
+    text-align: center; margin-bottom: 50px;
+  }
+  .terms__common-grid {
+    display: grid; grid-template-columns: 1fr 1fr 1fr;
+    gap: 40px 4vw;
+  }
+  .terms__common-h {
+    font-family: var(--sans); font-weight: 400; font-size: 12.5px;
+    letter-spacing: 0.22em; text-transform: uppercase;
+    color: var(--partners-tint); margin-bottom: 12px;
+  }
+  .terms__common-b {
+    font-family: var(--sans); font-weight: 300; font-size: 14.5px;
+    line-height: 1.7; color: var(--partners-tint); opacity: 0.78;
   }
   .terms__tier {
     padding-bottom: 28px;
@@ -257,6 +281,7 @@
   }
   @media (max-width: 720px) {
     .terms__grid { grid-template-columns: 1fr; gap: 50px; }
+    .terms__common-grid { grid-template-columns: 1fr; gap: 32px; }
   }
 
   /* HOW IT WORKS */
@@ -400,38 +425,49 @@
     <div class="terms__intro reveal">
       <p class="terms__eyebrow">Program Terms</p>
       <div class="terms__rule"></div>
-      <h2 class="terms__title">Clear, prompt, returnable.</h2>
-      <p class="terms__sub">A transparent partnership model. The standards exist so the work moving through SOLACE is consistent — and so the partners who hold those standards see the difference.</p>
+      <h2 class="terms__title">Three tiers. One standard.</h2>
+      <p class="terms__sub">Partners earn standing through clean performance. Commission and response standard step with the tier — the relationship deepens over time.</p>
     </div>
 
     <div class="terms__grid">
       <div class="terms__tier reveal">
         <div class="terms__tier-head">
-          <p class="terms__tier-name">Commission</p>
+          <p class="terms__tier-name">Provisional Partner</p>
           <p class="terms__tier-amount">12%</p>
         </div>
-        <p class="terms__tier-body">Twelve percent of the vendor invoice, on labor only. Pass-through materials, parts, and direct costs flow at 100% to the vendor — never a markup.</p>
+        <p class="terms__tier-body">48-hour response standard. The first ninety days. Two to three active requests during the observation window. The relationship is established here.</p>
       </div>
       <div class="terms__tier reveal">
         <div class="terms__tier-head">
-          <p class="terms__tier-name">Response Standard</p>
-          <p class="terms__tier-amount">24 hours</p>
+          <p class="terms__tier-name">Partner</p>
+          <p class="terms__tier-amount">12%</p>
         </div>
-        <p class="terms__tier-body">Twenty-four hours to confirm or decline any SOLACE-routed request. The response standard is what holds preferred status — three missed confirmations within ninety days triggers a quiet pause.</p>
+        <p class="terms__tier-body">48-hour response standard. Earned at ninety days with clean performance. Routing widens to ongoing category work.</p>
       </div>
       <div class="terms__tier reveal">
         <div class="terms__tier-head">
-          <p class="terms__tier-name">Remittance</p>
-          <p class="terms__tier-amount">14 days</p>
+          <p class="terms__tier-name">Preferred Partner</p>
+          <p class="terms__tier-amount">10%</p>
         </div>
-        <p class="terms__tier-body">SOLACE bills the client directly and remits 88% to the partner within fourteen days of client payment. No chasing invoices. No long floats.</p>
+        <p class="terms__tier-body">24-hour response standard. Earned after six months as Partner and three or more completed requests. First-call routing in the partner's category.</p>
       </div>
-      <div class="terms__tier reveal">
-        <div class="terms__tier-head">
-          <p class="terms__tier-name">Term</p>
-          <p class="terms__tier-amount">12 months</p>
+    </div>
+
+    <div class="terms__common reveal">
+      <p class="terms__common-label">Common to All Tiers</p>
+      <div class="terms__common-grid">
+        <div class="terms__common-item">
+          <p class="terms__common-h">Pass-Through</p>
+          <p class="terms__common-b">Materials, parts, and direct costs flow at 100% to the partner — never a markup.</p>
         </div>
-        <p class="terms__tier-body">Twelve-month auto-renewing agreement. Either side may terminate with thirty days' notice. A twelve-month non-solicit on referred clients applies after a partner leaves the network.</p>
+        <div class="terms__common-item">
+          <p class="terms__common-h">14-Day Remittance</p>
+          <p class="terms__common-b">SOLACE bills the client direct and remits the partner's tier net within fourteen days of client payment.</p>
+        </div>
+        <div class="terms__common-item">
+          <p class="terms__common-h">12-Month Term</p>
+          <p class="terms__common-b">Auto-renewing. Either side may terminate with thirty days' notice. A twelve-month non-solicit applies post-termination.</p>
+        </div>
       </div>
     </div>
   </div>
@@ -456,7 +492,7 @@
         </li>
         <li class="how__item">
           <p class="how__item-h">The Agreement</p>
-          <p class="how__item-b">A clean, twelve-month preferred-partner agreement: 12% commission on labor, 24-hour response standard, 14-day remittance. No surprises in the paperwork.</p>
+          <p class="how__item-b">A clean, twelve-month agreement covering all three tiers — Provisional, Partner, Preferred — with the commission and response standard appropriate to each. Partners acknowledge all three at signing; promotions are administrative.</p>
         </li>
         <li class="how__item">
           <p class="how__item-h">The Routing</p>
@@ -464,7 +500,7 @@
         </li>
         <li class="how__item">
           <p class="how__item-h">The Standing</p>
-          <p class="how__item-b">Preferred status is held through the response standard. Missed responses are tracked quietly; consequences scale from heads-up, to warning, to a 90-day quiet pause. Reinstatement is conversation-based.</p>
+          <p class="how__item-b">Tier is held through the response standard — 48-hour at Provisional and Partner, 24-hour at Preferred. Missed responses are tracked quietly; consequences scale from heads-up, to warning, to tier demotion with a 90-day reset. Reinstatement is conversation-based.</p>
         </li>
       </ul>
     </div>
