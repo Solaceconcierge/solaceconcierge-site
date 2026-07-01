@@ -1,0 +1,14 @@
+{
+  "date": "Awaiting first morning brief",
+  "generated_at": null,
+  "priorities": [],
+  "awaiting": [],
+  "initiatives": [
+    {"name": "Vendor Network Build", "division": "partners", "progress": 35, "nextStep": "Complete Group 1 revive calls"},
+    {"name": "Solace/Home Launch", "division": "home", "progress": 60, "nextStep": "Finalize onboarding SOP"},
+    {"name": "Solace/Care Launch", "division": "care", "progress": 45, "nextStep": "Complete Care intake forms"},
+    {"name": "Luxury Concierge Launch", "division": "concierge", "progress": 75, "nextStep": "Complete vendor network minimum"}
+  ],
+  "news": [],
+  "general_news": []
+}
