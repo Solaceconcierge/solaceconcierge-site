@@ -4,142 +4,336 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>SOLACE — Operations Dashboard</title>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;1,400;1,500&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500&family=Cormorant+Garamond:ital,wght@0,400;1,400;1,500&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
 <style>
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
   :root {
-    --ink:     #0A0A0A;
-    --cream:   #EFE5CC;
-    --gold:    #C9A961;
-    --hair:    #2A2420;
-    --muted:   #8A7E6E;
-    --soft:    #C4B89A;
-    --terra:   #B8654A;
-    --sage:    #6B7F5C;
+    --ivory:    #FAF8F4;
+    --soft:     #F2EEE6;
+    --ink:      #1A1A1A;
+    --softink:  #3A3633;
+    --muted:    #6E6863;
+    --hair:     #DDD6CB;
+    --cream:    #EFE5CC;
+    --gold:     #C9A961;
+    --dark:     #0A0A0A;
+    --terra:    #B8654A;
+    --sage:     #6B7F5C;
   }
-  body { background: var(--ink); color: var(--cream); font-family: 'Inter', sans-serif; font-weight: 300; min-height: 100vh; padding-bottom: 60px; }
+  body {
+    background: var(--ivory);
+    color: var(--ink);
+    font-family: 'Inter', -apple-system, sans-serif;
+    font-weight: 300;
+    min-height: 100vh;
+    padding-bottom: 60px;
+  }
 
-  /* Header */
-  .header { padding: 24px 18px 14px; border-bottom: 1px solid var(--hair); }
-  .wordmark { font-size: 12px; letter-spacing: 0.5em; text-transform: uppercase; color: var(--cream); font-weight: 300; }
-  .dash-title { font-family: 'Cormorant Garamond', serif; font-style: italic; font-size: 20px; color: var(--gold); margin-top: 3px; }
+  /* ---- Header ---- */
+  .header {
+    background: var(--dark);
+    padding: 22px 20px 18px;
+    border-bottom: 2px solid var(--gold);
+  }
+  .wordmark {
+    font-family: 'Cinzel', Georgia, serif;
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: 0.42em;
+    text-transform: uppercase;
+    color: var(--cream);
+  }
+  .dash-title {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-style: italic;
+    font-size: 18px;
+    color: var(--gold);
+    margin-top: 3px;
+    font-weight: 400;
+  }
 
-  /* Meta row */
-  .meta-row { display: flex; justify-content: space-between; align-items: center; padding: 9px 18px; border-bottom: 1px solid var(--hair); }
-  .ts { font-size: 11px; color: var(--muted); }
-  .refresh-btn { background: none; border: 1px solid var(--hair); color: var(--soft); font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase; padding: 5px 12px; border-radius: 2px; cursor: pointer; font-family: 'Inter', sans-serif; }
+  /* ---- Meta row ---- */
+  .meta-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    border-bottom: 1px solid var(--hair);
+    background: var(--soft);
+  }
+  .ts { font-size: 11px; color: var(--muted); letter-spacing: 0.04em; }
+  .refresh-btn {
+    background: none;
+    border: 1px solid var(--hair);
+    color: var(--muted);
+    font-family: 'Inter', sans-serif;
+    font-size: 11px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    padding: 5px 12px;
+    border-radius: 2px;
+    cursor: pointer;
+  }
+  .refresh-btn:active { background: var(--hair); }
 
-  /* Tab nav */
-  .tabs { display: flex; border-bottom: 1px solid var(--hair); overflow-x: auto; }
-  .tab { flex-shrink: 0; padding: 12px 16px; font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted); cursor: pointer; border-bottom: 2px solid transparent; }
-  .tab.active { color: var(--gold); border-bottom-color: var(--gold); }
+  /* ---- Tabs ---- */
+  .tabs {
+    display: flex;
+    border-bottom: 1px solid var(--hair);
+    background: var(--ivory);
+    overflow-x: auto;
+  }
+  .tab {
+    flex-shrink: 0;
+    padding: 12px 18px;
+    font-size: 11px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--muted);
+    cursor: pointer;
+    border-bottom: 2px solid transparent;
+    font-weight: 400;
+  }
+  .tab.active { color: var(--ink); border-bottom-color: var(--gold); }
 
-  /* Panels */
+  /* ---- Panels ---- */
   .panel { display: none; }
   .panel.active { display: block; }
 
-  /* Summary bar */
-  .summary-bar { display: grid; grid-template-columns: repeat(3, 1fr); border-bottom: 1px solid var(--hair); }
-  .stat { padding: 14px 10px; text-align: center; border-right: 1px solid var(--hair); }
+  /* ---- Summary bar ---- */
+  .summary-bar {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background: var(--soft);
+    border-bottom: 1px solid var(--hair);
+  }
+  .stat {
+    padding: 14px 10px;
+    text-align: center;
+    border-right: 1px solid var(--hair);
+  }
   .stat:last-child { border-right: none; }
-  .stat-n { font-size: 22px; font-weight: 300; color: var(--cream); line-height: 1; }
-  .stat-n.ok { color: var(--sage); } .stat-n.alert { color: var(--terra); }
+  .stat-n { font-size: 22px; font-weight: 300; color: var(--ink); line-height: 1; }
+  .stat-n.ok    { color: var(--sage); }
+  .stat-n.alert { color: var(--terra); }
   .stat-l { font-size: 10px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted); margin-top: 4px; }
 
-  /* Sections */
-  .section { padding: 16px 18px; border-bottom: 1px solid var(--hair); }
-  .eyebrow { font-size: 10px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gold); margin-bottom: 12px; }
-  .empty { font-size: 13px; color: var(--muted); font-style: italic; }
+  /* ---- Section ---- */
+  .section { padding: 18px 20px; border-bottom: 1px solid var(--hair); }
+  .eyebrow {
+    font-size: 10px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-bottom: 14px;
+    font-weight: 400;
+  }
+  .eyebrow.gold { color: var(--gold); }
+  .empty { font-size: 13px; color: var(--muted); font-style: italic; padding: 4px 0; }
 
-  /* Ops item row */
-  .item { display: flex; justify-content: space-between; align-items: flex-start; gap: 10px; padding: 10px 0; border-bottom: 1px solid var(--hair); }
+  /* ---- Ops item ---- */
+  .item {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 12px;
+    padding: 10px 0;
+    border-bottom: 1px solid var(--hair);
+  }
   .item:last-child { border-bottom: none; }
-  .item-name { font-size: 14px; font-weight: 400; color: var(--cream); }
-  .item-sub  { font-size: 12px; color: var(--muted); margin-top: 2px; }
-  .item-btns { display: flex; gap: 6px; flex-shrink: 0; }
-  .overdue { display: inline-block; background: var(--terra); color: #fff; font-size: 10px; letter-spacing: 0.06em; text-transform: uppercase; padding: 2px 6px; border-radius: 2px; margin-left: 6px; vertical-align: middle; }
+  .item-name { font-size: 14px; font-weight: 400; color: var(--ink); line-height: 1.3; }
+  .item-sub  { font-size: 12px; color: var(--muted); margin-top: 3px; line-height: 1.4; }
+  .item-btns { display: flex; gap: 6px; flex-shrink: 0; align-items: flex-start; }
+  .overdue {
+    display: inline-block;
+    background: var(--terra);
+    color: #fff;
+    font-size: 10px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    padding: 2px 6px;
+    border-radius: 2px;
+    margin-left: 6px;
+    vertical-align: middle;
+  }
 
-  /* Call cards */
-  .call-master { background: #141210; border: 1px solid var(--hair); border-left: 3px solid var(--gold); border-radius: 3px; padding: 12px 14px; margin-bottom: 14px; }
-  .call-master-label { font-size: 10px; letter-spacing: 0.15em; text-transform: uppercase; color: var(--gold); margin-bottom: 6px; }
-  .call-master-text { font-size: 13px; color: var(--soft); line-height: 1.7; }
+  /* ---- Call card ---- */
+  .call-master {
+    background: var(--soft);
+    border: 1px solid var(--hair);
+    border-left: 3px solid var(--gold);
+    border-radius: 2px;
+    padding: 14px 16px;
+    margin-bottom: 16px;
+  }
+  .call-master-label {
+    font-size: 10px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 8px;
+  }
+  .call-master-text {
+    font-size: 13px;
+    color: var(--softink);
+    line-height: 1.8;
+  }
 
-  .call-card { background: #141210; border: 1px solid var(--hair); border-radius: 3px; margin-bottom: 10px; overflow: hidden; }
-  .call-card-head { display: flex; justify-content: space-between; align-items: flex-start; padding: 12px 14px 8px; gap: 8px; }
-  .call-card-name { font-size: 14px; font-weight: 400; color: var(--cream); line-height: 1.3; }
+  .call-card {
+    background: #fff;
+    border: 1px solid var(--hair);
+    border-radius: 2px;
+    margin-bottom: 10px;
+    overflow: hidden;
+    box-shadow: 0 1px 3px rgba(26,26,26,0.04);
+  }
+  .call-card-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 14px 16px 8px;
+    gap: 10px;
+  }
+  .call-card-name { font-size: 14px; font-weight: 400; color: var(--ink); line-height: 1.3; }
   .call-card-cat  { font-size: 11px; color: var(--muted); margin-top: 2px; }
-  .badge { font-size: 10px; letter-spacing: 0.07em; text-transform: uppercase; padding: 3px 8px; border-radius: 2px; flex-shrink: 0; margin-top: 2px; }
+  .badge {
+    font-size: 10px;
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
+    padding: 3px 8px;
+    border-radius: 2px;
+    flex-shrink: 0;
+    margin-top: 2px;
+    font-weight: 400;
+  }
   .badge-terra { background: var(--terra); color: #fff; }
-  .badge-gold  { background: var(--gold);  color: var(--ink); }
+  .badge-gold  { background: var(--gold);  color: var(--dark); }
   .badge-sage  { background: var(--sage);  color: #fff; }
-  .call-opening { font-size: 13px; font-style: italic; color: var(--soft); padding: 0 14px 8px; line-height: 1.5; border-left: 2px solid var(--gold); margin: 0 14px 8px; }
-  .call-reminder { font-size: 12px; color: var(--muted); padding: 0 14px 10px; }
-  .call-btns { display: flex; gap: 0; border-top: 1px solid var(--hair); }
-  .call-btn { flex: 1; display: block; text-align: center; text-decoration: none; font-family: 'Inter', sans-serif; font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase; padding: 12px 8px; color: var(--soft); background: none; border-right: 1px solid var(--hair); }
+  .call-opening {
+    font-size: 13px;
+    font-style: italic;
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    color: var(--softink);
+    padding: 0 16px 8px;
+    line-height: 1.6;
+    font-size: 15px;
+    border-left: 2px solid var(--gold);
+    margin: 0 16px 8px;
+  }
+  .call-reminder {
+    font-size: 12px;
+    color: var(--muted);
+    padding: 0 16px 12px;
+    line-height: 1.5;
+  }
+  .call-btns {
+    display: flex;
+    border-top: 1px solid var(--hair);
+    background: var(--soft);
+  }
+  .call-btn {
+    flex: 1;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    font-family: 'Inter', sans-serif;
+    font-size: 12px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    padding: 12px 6px;
+    color: var(--muted);
+    background: none;
+    border-right: 1px solid var(--hair);
+    font-weight: 400;
+  }
   .call-btn:last-child { border-right: none; }
-  .call-btn.primary { color: var(--cream); font-weight: 400; }
+  .call-btn.primary { color: var(--ink); font-weight: 500; }
 
-  /* Buttons */
-  .btn { display: inline-block; font-family: 'Inter', sans-serif; font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase; text-decoration: none; padding: 8px 12px; border-radius: 2px; white-space: nowrap; text-align: center; cursor: pointer; border: none; }
-  .btn-gold  { background: var(--gold);  color: var(--ink); }
-  .btn-ghost { background: none; border: 1px solid var(--hair); color: var(--soft); }
+  /* ---- Buttons ---- */
+  .btn {
+    display: inline-block;
+    font-family: 'Inter', sans-serif;
+    font-size: 11px;
+    font-weight: 400;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 8px 14px;
+    border-radius: 2px;
+    border: none;
+    cursor: pointer;
+    white-space: nowrap;
+    text-align: center;
+  }
+  .btn-gold  { background: var(--gold);  color: var(--dark); }
+  .btn-dark  { background: var(--dark);  color: var(--cream); }
+  .btn-ghost { background: none; border: 1px solid var(--hair); color: var(--muted); }
   .btn-terra { background: var(--terra); color: #fff; }
   .btn-sage  { background: var(--sage);  color: #fff; }
 
-  /* Quick actions */
-  .quick { padding: 18px; }
-  .quick .eyebrow { margin-bottom: 14px; }
+  /* ---- Quick actions ---- */
+  .quick { padding: 20px; }
   .btn-row { display: flex; gap: 8px; margin-bottom: 8px; flex-wrap: wrap; }
-  .btn-row .btn { flex: 1; min-width: 120px; }
+  .btn-row .btn { flex: 1; min-width: 130px; }
+  .quick .eyebrow { margin-bottom: 14px; }
+  .quick-divider { height: 1px; background: var(--hair); margin: 18px 0 16px; }
 
-  /* Loading / error */
-  .loading { text-align: center; padding: 32px 18px; color: var(--muted); font-size: 13px; }
-  .err { margin: 14px 18px; padding: 12px 14px; border: 1px solid var(--terra); border-radius: 3px; font-size: 13px; color: var(--terra); }
+  /* ---- Loading / error ---- */
+  .loading { text-align: center; padding: 32px 20px; color: var(--muted); font-size: 13px; }
+  .err-box { margin: 16px 20px; padding: 14px 16px; border: 1px solid var(--terra); border-radius: 2px; font-size: 13px; color: var(--terra); }
 
-  .footer { padding: 20px 18px 8px; font-size: 11px; color: var(--muted); letter-spacing: 0.05em; line-height: 1.8; }
+  /* ---- Footer ---- */
+  .footer {
+    padding: 20px 20px 10px;
+    font-size: 11px;
+    color: var(--muted);
+    letter-spacing: 0.06em;
+    line-height: 1.8;
+    border-top: 1px solid var(--hair);
+    margin-top: 8px;
+  }
 </style>
 </head>
 <body>
 
+<!-- Header -->
 <div class="header">
   <div class="wordmark">S O L A C E</div>
   <div class="dash-title">Operations Dashboard</div>
 </div>
 
+<!-- Meta -->
 <div class="meta-row">
   <div class="ts" id="ts">Loading…</div>
   <button class="refresh-btn" onclick="loadOps()">↻ Refresh</button>
 </div>
 
-<!-- Tab navigation -->
+<!-- Tabs -->
 <div class="tabs">
   <div class="tab active" onclick="showTab('calls',this)">Today's Calls</div>
   <div class="tab" onclick="showTab('ops',this)">Operations</div>
   <div class="tab" onclick="showTab('actions',this)">Quick Actions</div>
 </div>
 
+
 <!-- ===== CALLS PANEL ===== -->
 <div id="tab-calls" class="panel active">
   <div class="section">
 
-    <!-- Master script -->
     <div class="call-master">
       <div class="call-master-label">Master Open — Every Call</div>
       <div class="call-master-text">
         Hi — this is Brittany Alcott.<br>
-        Solace/Partners, Whitefish. Luxury concierge. Two minutes?<br>
-        <br>
+        Solace/Partners, Whitefish. Luxury concierge. Two minutes?<br><br>
         We send you the client. You do the work.<br>
-        You invoice us. You keep 100%. No commission. No catch.<br>
-        <br>
-        Three-minute intake form → tally.so/r/PdbV6e
+        You invoice us. You keep 100%. No commission. No catch.<br><br>
+        Three-minute form → tally.so/r/PdbV6e &nbsp;·&nbsp; (406) 213-6887
       </div>
     </div>
 
-    <!-- CALL FIRST -->
-    <div class="eyebrow" style="margin-top:4px;">Call First — Priority</div>
+    <div class="eyebrow gold" style="margin-top:4px;">Call First — Priority</div>
 
-    <!-- Jason / Wild Horse -->
+    <!-- Jason -->
     <div class="call-card">
       <div class="call-card-head">
         <div>
@@ -148,12 +342,12 @@
         </div>
         <span class="badge badge-terra">Call First</span>
       </div>
-      <div class="call-opening">"Jason — Brittany, Solace/Partners. I owe you an apology. You called. Wrong voicemail box. Dialpad issue. Fixed now."</div>
+      <div class="call-opening">"Jason — Brittany, Solace/Partners. I owe you an apology. You called. Wrong voicemail box. Fixed now."</div>
       <div class="call-reminder">⚑ Goal: get the agreement signed. Year 1 = 100% of every invoice. Agreement resent June 24 — nudge by July 2.</div>
       <div class="call-btns">
         <a class="call-btn primary" href="tel:+14067562290">📞 Call</a>
         <a class="call-btn" href="sms:+14067562290">💬 Text</a>
-        <a class="call-btn" href="mailto:vendors@solaceconcierge.com?subject=Wild%20Horse%20Limousine%20%E2%80%94%20Agreement%20Follow-Up&body=Hi%20Jason%2C%0A%0AFollowing%20up%20on%20your%20Solace%2FPartners%20agreement%20sent%20June%2024.%20Happy%20to%20walk%20through%20the%20payment%20terms%20%E2%80%94%20Year%201%20you%20keep%20100%25%20of%20every%20invoice.%0A%0ABest%2C%0ABrittany%0ASolace%20Concierge%0A(406)%20213-6887">✉ Email</a>
+        <a class="call-btn" href="mailto:vendors@solaceconcierge.com?subject=Wild%20Horse%20%E2%80%94%20Agreement%20Follow-Up&body=Hi%20Jason%2C%0A%0AFollowing%20up%20on%20your%20Solace%2FPartners%20agreement%20sent%20June%2024.%20Year%201%20you%20keep%20100%25%20of%20every%20invoice.%0A%0ABest%2C%0ABrittany%0ASolace%20Concierge%0A(406)%20213-6887">✉ Email</a>
       </div>
     </div>
 
@@ -166,16 +360,16 @@
         </div>
         <span class="badge badge-terra">Call First</span>
       </div>
-      <div class="call-opening">"Hi — Brittany Alcott calling back. Solace/Partners. You reached out. Yes — I'm a real person. Sorry about the voicemail."</div>
+      <div class="call-opening">"Hi — Brittany Alcott calling back. Solace/Partners. Yes — I'm a real person. Sorry about the voicemail."</div>
       <div class="call-reminder">⚑ They're interested — just need to know Solace is real. Get them to the Tally form.</div>
       <div class="call-btns">
         <a class="call-btn primary" href="tel:+14068902220">📞 Call</a>
         <a class="call-btn" href="sms:+14068902220">💬 Text</a>
-        <a class="call-btn" href="mailto:vendors@solaceconcierge.com?subject=Dog%20Club%20Kalispell%20%E2%80%94%20Follow-Up&body=Hi%20there%2C%0A%0AThis%20is%20Brittany%20Alcott%20with%20Solace%2FPartners.%20You%20reached%20out%20to%20us%20about%20joining%20our%20vendor%20network.%20We%20send%20you%20pet%20care%20clients%20%E2%80%94%20you%20keep%20100%25%2C%20no%20fees.%0A%0AThree-minute%20form%3A%20tally.so%2Fr%2FPdbV6e%0A%0ABest%2C%0ABrittany%0A(406)%20213-6887">✉ Email</a>
+        <a class="call-btn" href="mailto:vendors@solaceconcierge.com?subject=Dog%20Club%20%E2%80%94%20Follow-Up&body=Hi%20there%2C%0A%0ABrittany%20Alcott%20with%20Solace%2FPartners.%20You%20reached%20out%20about%20joining%20our%20vendor%20network.%20You%20keep%20100%25%2C%20no%20fees.%0A%0AForm%3A%20tally.so%2Fr%2FPdbV6e%0A%0ABrittany%0A(406)%20213-6887">✉ Email</a>
       </div>
     </div>
 
-    <!-- Gary / Glacier Aviation -->
+    <!-- Gary -->
     <div class="call-card">
       <div class="call-card-head">
         <div>
@@ -184,60 +378,58 @@
         </div>
         <span class="badge badge-terra">Call First</span>
       </div>
-      <div class="call-opening">"Gary — Brittany, Solace/Partners. Sent your agreement June 18. Wanted to check — any questions?"</div>
-      <div class="call-reminder">⚑ Emmy-nominated pilot, quietest helicopter in region. Don't push hard — interested, just slow. Check spam if not seen.</div>
+      <div class="call-opening">"Gary — Brittany, Solace/Partners. Sent your agreement June 18. Any questions?"</div>
+      <div class="call-reminder">⚑ Don't push — interested, just slow. Check spam if not seen. Emmy-nominated pilot, quietest helicopter in region.</div>
       <div class="call-btns">
         <a class="call-btn primary" href="tel:+14064713087">📞 Direct</a>
         <a class="call-btn" href="tel:+18778111142">📞 Toll-Free</a>
-        <a class="call-btn" href="mailto:vendors@solaceconcierge.com?subject=Glacier%20Aviation%20%E2%80%94%20Agreement%20Check-In&body=Hi%20Gary%2C%0A%0AFollowing%20up%20on%20the%20Solace%2FPartners%20agreement%20I%20sent%20June%2018.%20Wanted%20to%20make%20sure%20it%20arrived%20(check%20spam%20if%20not)%20and%20see%20if%20you%20have%20any%20questions.%0A%0ABest%2C%0ABrittany%0ASolace%20Concierge%0A(406)%20213-6887">✉ Email</a>
+        <a class="call-btn" href="mailto:vendors@solaceconcierge.com?subject=Glacier%20Aviation%20%E2%80%94%20Agreement%20Check-In&body=Hi%20Gary%2C%0A%0AFollowing%20up%20on%20the%20Solace%2FPartners%20agreement%20I%20sent%20June%2018.%20Any%20questions%3F%20Check%20spam%20if%20not%20in%20inbox.%0A%0ABrittany%0A(406)%20213-6887">✉ Email</a>
       </div>
     </div>
 
-    <!-- Group 1 -->
-    <div class="eyebrow" style="margin-top: 20px;">Group 1 — Revive / Unblock</div>
+    <div class="eyebrow gold" style="margin-top:20px;">Group 1 — Revive / Unblock</div>
 
     <div class="call-card">
       <div class="call-card-head"><div><div class="call-card-name">Mum's Flowers</div><div class="call-card-cat">Floral · Whitefish · 2 emails, no reply</div></div><span class="badge badge-gold">P1</span></div>
-      <div class="call-opening">"Hi — Brittany Alcott, Solace/Partners. Tried emailing a couple times. Wanted to connect directly about our vendor network."</div>
+      <div class="call-opening">"Hi — Brittany Alcott, Solace/Partners. Tried emailing a couple times. Connecting directly about our vendor network."</div>
       <div class="call-btns"><a class="call-btn primary" href="tel:+14068622757">📞 Call</a><a class="call-btn" href="sms:+14068622757">💬 Text</a></div>
     </div>
 
     <div class="call-card">
       <div class="call-card-head"><div><div class="call-card-name">Diana · Woodland Floral</div><div class="call-card-cat">Floral · Kalispell · Applied, never signed</div></div><span class="badge badge-gold">P2</span></div>
-      <div class="call-opening">"Diana — Brittany, Solace/Partners. You applied a while back. Wanted to check if you're still interested — happy to resend the agreement."</div>
-      <div class="call-reminder">⚑ Original Documenso voided. Needs a fresh one sent.</div>
+      <div class="call-opening">"Diana — Brittany, Solace/Partners. You applied a while back. Still interested? Happy to resend the agreement."</div>
+      <div class="call-reminder">⚑ Original Documenso voided. Needs a fresh agreement sent.</div>
       <div class="call-btns"><a class="call-btn primary" href="tel:+14067555959">📞 Call</a><a class="call-btn" href="sms:+14067555959">💬 Text</a></div>
     </div>
 
     <div class="call-card">
       <div class="call-card-head"><div><div class="call-card-name">Alisia · Montana Picnic Co</div><div class="call-card-cat">Outdoor Celebrations · Whitefish · Acceptance sent, went silent</div></div><span class="badge badge-gold">P3</span></div>
-      <div class="call-opening">"Alisia — Brittany, Solace/Partners. Sent you an acceptance a while back. Wanted to follow up — still interested in the partnership?"</div>
-      <div class="call-reminder">⚑ Only outdoor picnic/celebration vendor in network. Valuable category.</div>
+      <div class="call-opening">"Alisia — Brittany, Solace/Partners. Sent you an acceptance a while back. Still interested in the partnership?"</div>
+      <div class="call-reminder">⚑ Only outdoor picnic/celebration vendor in network — valuable category.</div>
       <div class="call-btns"><a class="call-btn primary" href="tel:+14066099050">📞 Call</a><a class="call-btn" href="sms:+14066099050">💬 Text</a></div>
     </div>
 
     <div class="call-card">
       <div class="call-card-head"><div><div class="call-card-name">Sima · Tesoro Mio Spa</div><div class="call-card-cat">Spa / Wellness · Whitefish · Auto-reply only</div></div><span class="badge badge-gold">P4</span></div>
-      <div class="call-opening">"Hi — asking for Sima. Brittany Alcott, Solace/Partners. Quick question about in-property or mobile services."</div>
+      <div class="call-opening">"Hi — asking for Sima. Brittany Alcott, Solace/Partners. Quick question about mobile or in-property services."</div>
       <div class="call-btns"><a class="call-btn primary" href="tel:+14068851321">📞 Call</a></div>
     </div>
 
     <div class="call-card">
       <div class="call-card-head"><div><div class="call-card-name">Jill · The Bungalow</div><div class="call-card-cat">Floral · Whitefish · Verify still open first</div></div><span class="badge badge-gold">P5</span></div>
-      <div class="call-opening">"Hi — asking for Jill. Brittany Alcott. Quick question — are you all still open? Website domain seems to have lapsed."</div>
-      <div class="call-reminder">⚑ Domain expired May 2026. If operating: arrival florals, 48-hr notice, premium fit. Send Tally form.</div>
+      <div class="call-opening">"Hi — asking for Jill. Brittany Alcott. Quick question — are you still open? Website domain seems to have lapsed."</div>
+      <div class="call-reminder">⚑ Domain expired May 2026. If operating: arrival florals, 48-hr notice, premium fit.</div>
       <div class="call-btns"><a class="call-btn primary" href="tel:+14068639101">📞 Call</a></div>
     </div>
 
     <div class="call-card">
       <div class="call-card-head"><div><div class="call-card-name">Montana Luxe Events</div><div class="call-card-cat">Unique Experiences · All 3 emails failed</div></div><span class="badge badge-gold">P6</span></div>
-      <div class="call-opening">"Hi — Brittany Alcott, Solace/Partners. Tried reaching by email a few times. Calling to connect directly and get a working email address."</div>
-      <div class="call-reminder">⚑ Beverage burros + Friesian horses — only animal experience vendor available. Get working email.</div>
+      <div class="call-opening">"Hi — Brittany Alcott, Solace/Partners. Tried emailing a few times. Calling to get a working email address."</div>
+      <div class="call-reminder">⚑ Beverage burros + Friesian horses — only animal experience vendor. Get working email.</div>
       <div class="call-btns"><a class="call-btn primary" href="tel:+14064657337">📞 Call</a><a class="call-btn" href="sms:+14064657337">💬 Text</a></div>
     </div>
 
-    <!-- Group 2 -->
-    <div class="eyebrow" style="margin-top: 20px;">Group 2 — Fresh Intros</div>
+    <div class="eyebrow gold" style="margin-top:20px;">Group 2 — Fresh Intros</div>
 
     <div class="call-card">
       <div class="call-card-head"><div><div class="call-card-name">Chef Nate Snyder ⭐</div><div class="call-card-cat">Private Chef / Nutritionist · Flathead County</div></div><span class="badge badge-sage">Group 2</span></div>
@@ -254,19 +446,20 @@
 
     <div class="call-card">
       <div class="call-card-head"><div><div class="call-card-name">Barry · Flathead eFoiling</div><div class="call-card-cat">Lake / Water · Polson</div></div><span class="badge badge-sage">Group 2</span></div>
-      <div class="call-opening">"Hi — asking for Barry. Brittany Alcott, Solace Concierge. We have clients with lake access — can your team bring the lesson to their dock?"</div>
+      <div class="call-opening">"Hi — asking for Barry. Brittany Alcott, Solace Concierge. We have clients with lake access — can your team bring lessons to their dock?"</div>
       <div class="call-btns"><a class="call-btn primary" href="tel:+14064995660">📞 Call</a><a class="call-btn" href="sms:+14064995660">💬 Text</a></div>
     </div>
 
     <div class="call-card">
-      <div class="call-card-head"><div><div class="call-card-name">Kevin Flanagan · 2 Fly Us Balloon</div><div class="call-card-cat">Hot Air Balloon · Flathead Valley · Currently in season</div></div><span class="badge badge-sage">Group 2</span></div>
+      <div class="call-card-head"><div><div class="call-card-name">Kevin Flanagan · 2 Fly Us Balloon</div><div class="call-card-cat">Hot Air Balloon · Flathead Valley · In season now</div></div><span class="badge badge-sage">Group 2</span></div>
       <div class="call-opening">"Hi Kevin — Brittany Alcott, Solace Concierge. Interested in offering your private balloon flight for proposals and anniversaries."</div>
-      <div class="call-reminder">⚑ Lead with private flight ($1,750 — proposals, anniversaries). Get email. Best time to call.</div>
+      <div class="call-reminder">⚑ Lead with private flight ($1,750). Get email. Best time to call — in season.</div>
       <div class="call-btns"><a class="call-btn primary" href="tel:+16025254282">📞 Call</a><a class="call-btn" href="sms:+16025254282">💬 Text</a></div>
     </div>
 
   </div>
-</div>
+</div><!-- end calls panel -->
+
 
 <!-- ===== OPS PANEL ===== -->
 <div id="tab-ops" class="panel">
@@ -278,40 +471,51 @@
   <div id="ops-content"><div class="loading">Loading operational data…</div></div>
 </div>
 
+
 <!-- ===== QUICK ACTIONS PANEL ===== -->
 <div id="tab-actions" class="panel">
   <div class="quick">
-    <div class="eyebrow">Quick Actions</div>
+    <div class="eyebrow">Dashboards</div>
     <div class="btn-row">
-      <a class="btn btn-gold" href="https://solacemt.com/admin" target="_blank">Admin Dashboard</a>
-      <a class="btn btn-ghost" href="https://tally.so/r/PdbV6e" target="_blank">Vendor Form</a>
+      <a class="btn btn-dark" href="https://solacemt.com/admin" target="_blank">Admin Dashboard</a>
+      <a class="btn btn-ghost" href="https://solacemt.com" target="_blank">Client App</a>
+    </div>
+
+    <div class="quick-divider"></div>
+    <div class="eyebrow">Phone</div>
+    <div class="btn-row">
+      <a class="btn btn-gold" href="tel:+14062136887">📞 Main Line · (406) 213-6887</a>
+    </div>
+
+    <div class="quick-divider"></div>
+    <div class="eyebrow">Inboxes</div>
+    <div class="btn-row">
+      <a class="btn btn-ghost" href="mailto:vendors@solaceconcierge.com">Vendor Inbox</a>
+      <a class="btn btn-ghost" href="mailto:contact@solaceconcierge.com">Client Inbox</a>
     </div>
     <div class="btn-row">
-      <a class="btn btn-ghost" href="tel:+14062136887">📞 Main Line (406) 213-6887</a>
+      <a class="btn btn-ghost" href="mailto:brittany@solaceconcierge.com">Brittany Inbox</a>
     </div>
-    <div class="btn-row">
-      <a class="btn btn-ghost" href="mailto:vendors@solaceconcierge.com">Email Vendor Inbox</a>
-      <a class="btn btn-ghost" href="mailto:contact@solaceconcierge.com">Email Client Inbox</a>
-    </div>
-    <div class="btn-row">
-      <a class="btn btn-ghost" href="mailto:brittany@solaceconcierge.com">Email Brittany Inbox</a>
-    </div>
-    <div class="eyebrow" style="margin-top:24px;">Vendor Forms</div>
+
+    <div class="quick-divider"></div>
+    <div class="eyebrow">Vendor Forms</div>
     <div class="btn-row">
       <a class="btn btn-ghost" href="https://tally.so/r/PdbV6e" target="_blank">Partner Application</a>
       <a class="btn btn-ghost" href="https://tally.so/r/A7j5QD" target="_blank">Payment Details</a>
     </div>
-    <div class="eyebrow" style="margin-top:24px;">Client Intake</div>
+
+    <div class="quick-divider"></div>
+    <div class="eyebrow">Collection &amp; Intake</div>
     <div class="btn-row">
       <a class="btn btn-ghost" href="https://solacemontana.com/collection" target="_blank">Collection Page</a>
-      <a class="btn btn-ghost" href="https://solacemt.com" target="_blank">App</a>
     </div>
   </div>
 </div>
 
+
 <div class="footer">
   SOLACE CONCIERGE LLC &nbsp;·&nbsp; Flathead Valley, Montana<br>
-  Live data · Auto-refreshes · Updated by morning brief
+  Operations data refreshes live · Updated by morning brief
 </div>
 
 <script>
@@ -323,18 +527,20 @@ function showTab(name, el) {
   document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
   $('tab-' + name).classList.add('active');
   el.classList.add('active');
-  if (name === 'ops' && $('ops-content').innerHTML.includes('Loading')) loadOps();
+  if (name === 'ops') loadOps();
 }
 
-function fmtMoney(c) { return c ? '$' + (c/100).toLocaleString('en-US',{minimumFractionDigits:0}) : '$0'; }
-function fmt(n) { return (n||0).toString(); }
+function fmtMoney(c) {
+  if (!c) return '$0';
+  return '$' + (c/100).toLocaleString('en-US', {minimumFractionDigits:0, maximumFractionDigits:0});
+}
 
 function mailto(to, sub, body) {
   return `mailto:${to}?subject=${encodeURIComponent(sub)}&body=${encodeURIComponent(body)}`;
 }
 
 function buildOpsHtml(data) {
-  const m = data.money || {}, c = data.clients || {}, v = data.vendors || {}, u = data.upcoming || {};
+  const m = data.money||{}, c = data.clients||{}, v = data.vendors||{}, u = data.upcoming||{};
   let html = '';
 
   // Money
@@ -344,41 +550,58 @@ function buildOpsHtml(data) {
   } else {
     (m.unpaid_sample||[]).forEach(inv => {
       const od = inv.status === 'overdue';
-      const ml = mailto('brittany@solaceconcierge.com', `Invoice Follow-Up — ${inv.client_name||'Client'}`, `Hi ${inv.client_name||'there'},\n\nFollowing up on your outstanding invoice of ${fmtMoney(inv.amount_due)} due ${inv.due_date||'soon'}.\n\nBest,\nBrittany\nSolace Concierge\n(406) 213-6887`);
+      const ml = mailto('brittany@solaceconcierge.com',
+        `Invoice Follow-Up — ${inv.client_name||'Client'}`,
+        `Hi ${inv.client_name||'there'},\n\nFollowing up on your outstanding invoice of ${fmtMoney(inv.amount_due)} due ${inv.due_date||'soon'}.\n\nBest,\nBrittany\nSolace Concierge\n(406) 213-6887`);
       html += `<div class="item"><div><div class="item-name">${inv.client_name||'Client'}${od?'<span class="overdue">Overdue</span>':''}</div><div class="item-sub">${fmtMoney(inv.amount_due)} · Due ${inv.due_date||'?'}</div></div><div class="item-btns"><a class="btn btn-terra" href="${ml}">Follow Up</a></div></div>`;
     });
-    if (!m.unpaid_sample?.length) html += `<div class="item"><div><div class="item-name">${m.unpaid_invoices_count} unpaid invoice${m.unpaid_invoices_count!==1?'s':''}</div><div class="item-sub">${fmtMoney(m.unpaid_invoices_total)}</div></div></div>`;
+    if (!(m.unpaid_sample||[]).length) html += `<div class="item"><div><div class="item-name">${m.unpaid_invoices_count||0} unpaid invoice${m.unpaid_invoices_count!==1?'s':''}</div><div class="item-sub">${fmtMoney(m.unpaid_invoices_total)}${m.overdue_count?` · ${m.overdue_count} overdue`:''}</div></div></div>`;
   }
   html += '</div>';
 
   // Clients
   html += '<div class="section"><div class="eyebrow">Clients</div>';
-  const hasClients = c.active_client_requests > 0 || Object.values(c.by_branch||{}).some(b=>b.new_this_week||b.active);
-  if (!hasClients) { html += '<div class="empty">No active client work.</div>'; }
+  const hasC = c.active_client_requests > 0 || Object.values(c.by_branch||{}).some(b=>b.new_this_week||b.active);
+  if (!hasC) { html += '<div class="empty">No active client work.</div>'; }
   else {
     (c.active_client_requests_sample||[]).slice(0,5).forEach(req => {
       const ml = mailto('brittany@solaceconcierge.com', `Update — ${req.client_name||'Client'}`, `Hi ${req.client_name||'there'},\n\nFollowing up on your ${req.category||'service'} request.\n\nBest,\nBrittany`);
       html += `<div class="item"><div><div class="item-name">${req.client_name||'Client'}${req.is_urgent?' 🔴':''}</div><div class="item-sub">${req.category||''} · ${req.status||''}</div></div><div class="item-btns"><a class="btn btn-gold" href="${ml}">Update</a></div></div>`;
     });
-    Object.entries(c.by_branch||{}).forEach(([branch,bd])=>{ if(bd.new_this_week){const l=branch.replace(/_/g,' ').replace('requests','').replace('inquiries','').trim(); html+=`<div class="item"><div><div class="item-name">${bd.new_this_week} new ${l} inquiry</div><div class="item-sub">${bd.active||0} active</div></div></div>`; } });
+    Object.entries(c.by_branch||{}).forEach(([branch,bd])=>{
+      if(bd.new_this_week){
+        const l=branch.replace(/_/g,' ').replace('requests','').replace('inquiries','').trim();
+        html+=`<div class="item"><div><div class="item-name">${bd.new_this_week} new ${l} inquiry</div><div class="item-sub">${bd.active||0} active</div></div></div>`;
+      }
+    });
   }
   html += '</div>';
 
   // Vendors
   html += '<div class="section"><div class="eyebrow">Vendors</div>';
-  if (!v.active && !v.in_pipeline) { html += '<div class="empty">No vendors in system yet.</div>'; }
-  else {
-    html += `<div class="item"><div><div class="item-name">${v.active} active partner${v.active!==1?'s':''}</div><div class="item-sub">${v.in_pipeline||0} in pipeline</div></div></div>`;
-    (v.recent_or_pending||[]).forEach(p=>{ const n=p.name||p.business_name||'Vendor'; const ml=mailto('vendors@solaceconcierge.com',`Follow-Up — ${n}`,`Hi ${n},\n\nFollowing up on your Solace/Partners application.\n\nBest,\nBrittany\n(406) 213-6887`); html+=`<div class="item"><div><div class="item-name">${n}</div><div class="item-sub">${p.status||'Pipeline'}</div></div><div class="item-btns">${p.phone?`<a class="btn btn-sage" href="tel:${p.phone.replace(/\D/g,'')}">Call</a>`:''}<a class="btn btn-ghost" href="${ml}">Email</a></div></div>`; });
+  if (!v.active && !v.in_pipeline) {
+    html += '<div class="empty">No vendors in system yet.</div>';
+  } else {
+    html += `<div class="item"><div><div class="item-name">${v.active||0} active partner${v.active!==1?'s':''}</div><div class="item-sub">${v.in_pipeline||0} in pipeline</div></div></div>`;
+    (v.recent_or_pending||[]).forEach(p=>{
+      const n=p.name||p.business_name||'Vendor';
+      const ml=mailto('vendors@solaceconcierge.com',`Follow-Up — ${n}`,`Hi ${n},\n\nFollowing up on your Solace/Partners application.\n\nBrittany\n(406) 213-6887`);
+      html+=`<div class="item"><div><div class="item-name">${n}</div><div class="item-sub">${p.status||'Pipeline'}</div></div><div class="item-btns">${p.phone?`<a class="btn btn-sage" href="tel:${p.phone.replace(/\D/g,'')}">Call</a>`:''}<a class="btn btn-ghost" href="${ml}">Email</a></div></div>`;
+    });
   }
   html += '</div>';
 
   // Upcoming
   html += '<div class="section"><div class="eyebrow">Upcoming</div>';
-  if (!u.services?.length && !u.home_setup_active_count) { html += '<div class="empty">Nothing scheduled.</div>'; }
-  else { (u.services||[]).slice(0,5).forEach(s=>{ html+=`<div class="item"><div><div class="item-name">${s.service_type||'Service'}</div><div class="item-sub">${s.scheduled_date||'?'} · ${s.client_name||''} · ${s.vendor_confirmed?'✓':'?'} ${s.vendor_name||'unassigned'}</div></div></div>`; }); }
+  if (!u.services?.length && !u.home_setup_active_count) {
+    html += '<div class="empty">Nothing scheduled.</div>';
+  } else {
+    (u.services||[]).slice(0,5).forEach(s=>{
+      html+=`<div class="item"><div><div class="item-name">${s.service_type||'Service'}</div><div class="item-sub">${s.scheduled_date||'?'} · ${s.client_name||''} · ${s.vendor_confirmed?'✓':'?'} ${s.vendor_name||'unassigned'}</div></div></div>`;
+    });
+    if(u.home_setup_active_count) html+=`<div class="item"><div><div class="item-name">${u.home_setup_active_count} Home Setup in progress</div></div></div>`;
+  }
   html += '</div>';
-
   return html;
 }
 
@@ -388,27 +611,27 @@ async function loadOps() {
     const res = await fetch(ENDPOINT);
     if (!res.ok) throw new Error('HTTP ' + res.status);
     const data = await res.json();
-    const s = data.summary || {};
-    $('s-req').textContent = fmt(s.total_active_requests);
+    const s = data.summary||{};
+    $('s-req').textContent = s.total_active_requests||0;
     $('s-req').className = 'stat-n' + (s.total_active_requests > 0 ? ' alert' : ' ok');
     $('s-inv').textContent = fmtMoney(s.total_unpaid_amount);
     $('s-inv').className = 'stat-n' + (s.total_unpaid_amount > 0 ? ' alert' : ' ok');
-    $('s-ven').textContent = fmt(s.vendors_active);
+    $('s-ven').textContent = s.vendors_active||0;
     $('s-ven').className = 'stat-n' + (s.vendors_active > 0 ? ' ok' : '');
     $('ops-content').innerHTML = buildOpsHtml(data);
     const now = new Date().toLocaleString('en-US',{timeZone:'America/Denver',month:'short',day:'numeric',hour:'numeric',minute:'2-digit',hour12:true});
     $('ts').textContent = 'Updated ' + now + ' MT';
   } catch(err) {
     $('ts').textContent = 'Error loading';
-    $('ops-content').innerHTML = `<div class="err">Could not load data — ${err.message}. <br><br><button class="btn btn-ghost" onclick="loadOps()" style="margin-top:8px;font-family:Inter,sans-serif">Try again</button></div>`;
+    $('ops-content').innerHTML = `<div class="err-box">Could not load data — ${err.message}.<br><br><button class="btn btn-ghost" onclick="loadOps()" style="margin-top:8px;font-family:Inter,sans-serif;cursor:pointer;">Try again</button></div>`;
   }
 }
 
-// Set timestamp on load
-const now0 = new Date().toLocaleString('en-US',{timeZone:'America/Denver',month:'short',day:'numeric',hour:'numeric',minute:'2-digit',hour12:true});
-$('ts').textContent = 'Loaded ' + now0 + ' MT';
+// Set initial timestamp
+const t0 = new Date().toLocaleString('en-US',{timeZone:'America/Denver',month:'short',day:'numeric',hour:'numeric',minute:'2-digit',hour12:true});
+$('ts').textContent = 'Loaded ' + t0 + ' MT';
 
-// Auto-refresh ops data every 5 min if on ops tab
+// Auto-refresh ops every 5 min when on ops tab
 setInterval(()=>{ if($('tab-ops').classList.contains('active')) loadOps(); }, 5*60*1000);
 </script>
 </body>
