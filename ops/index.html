@@ -138,6 +138,16 @@
   .item-btns { display: flex; gap: 6px; flex-shrink: 0; align-items: flex-start; }
   .overdue { display: inline-block; background: var(--terra); color: #fff; font-size: 10px; letter-spacing: 0.06em; text-transform: uppercase; padding: 2px 6px; border-radius: 2px; margin-left: 6px; vertical-align: middle; }
 
+  /* ---- Email card ---- */
+  .email-card { background: #fff; border: 1px solid var(--hair); border-radius: 2px; padding: 14px 16px; margin-bottom: 10px; box-shadow: 0 1px 3px rgba(26,26,26,0.04); }
+  .email-meta { display: flex; justify-content: space-between; align-items: baseline; gap: 8px; margin-bottom: 4px; }
+  .email-from { font-size: 13px; font-weight: 500; color: var(--ink); }
+  .email-time { font-size: 11px; color: var(--muted); flex-shrink: 0; }
+  .email-subject { font-size: 14px; color: var(--softink); margin-bottom: 6px; }
+  .email-preview { font-size: 13px; color: var(--muted); line-height: 1.5; margin-bottom: 8px; font-style: italic; }
+  .email-draft { font-size: 13px; color: var(--softink); line-height: 1.6; background: var(--soft); border-left: 2px solid var(--gold); padding: 8px 12px; margin-bottom: 10px; border-radius: 0 2px 2px 0; }
+  .email-reply { display: inline-block; font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--gold); text-decoration: none; font-weight: 500; }
+
   /* ---- Call card ---- */
   .call-master { background: var(--soft); border: 1px solid var(--hair); border-left: 3px solid var(--gold); border-radius: 2px; padding: 14px 16px; margin-bottom: 16px; }
   .call-master-label { font-size: 10px; letter-spacing: 0.18em; text-transform: uppercase; color: var(--gold); margin-bottom: 8px; }
@@ -239,6 +249,11 @@
     <div class="section">
       <div class="eyebrow">Today's Priorities</div>
       <div id="priorities-content"><div class="loading">Loading…</div></div>
+    </div>
+
+    <div class="section">
+      <div class="eyebrow">Emails Needing Response</div>
+      <div id="emails-content"><div class="loading">Loading…</div></div>
     </div>
 
     <div class="section">
@@ -487,6 +502,24 @@ function renderBriefData(d) {
         <div class="progress-bar"><div class="progress-fill" style="width:${pct}%"></div></div>
         ${ini.nextStep ? `<div class="initiative-next">Next: ${ini.nextStep}</div>` : ''}
       </div>`;
+    }).join('');
+  }
+
+  // Priority emails
+  const emails = d.priority_emails || [];
+  if (!emails.length) {
+    $('emails-content').innerHTML = '<div class="empty">No priority emails today — morning brief updates this at 8 AM MT.</div>';
+  } else {
+    $('emails-content').innerHTML = emails.map(function(e) {
+      var gmailUrl = e.gmail_url || 'https://mail.google.com/mail/u/0/#inbox';
+      var html = '<div class="email-card">';
+      html += '<div class="email-meta"><div class="email-from">' + (e.from||'') + '</div><div class="email-time">' + (e.received||'') + '</div></div>';
+      html += '<div class="email-subject">' + (e.subject||'') + '</div>';
+      if (e.preview) html += '<div class="email-preview">' + e.preview + '</div>';
+      if (e.draft) html += '<div class="email-draft">' + e.draft + '</div>';
+      html += '<a class="email-reply" href="' + gmailUrl + '" target="_blank" rel="noopener noreferrer">Reply in Gmail →</a>';
+      html += '</div>';
+      return html;
     }).join('');
   }
 

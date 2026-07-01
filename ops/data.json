@@ -2,6 +2,7 @@
   "date": "Awaiting first morning brief",
   "generated_at": null,
   "priorities": [],
+  "priority_emails": [],
   "awaiting": [],
   "initiatives": [
     {"name": "Vendor Network Build", "division": "partners", "progress": 35, "nextStep": "Complete Group 1 revive calls"},
