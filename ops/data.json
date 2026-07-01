@@ -1,41 +1,61 @@
 {
-  "date": "Awaiting first morning brief",
-  "generated_at": null,
-  "priorities": [],
+  "date": "Wednesday, July 1",
+  "generated_at": "8:02 AM MT",
+  "priorities": [
+    "Call Jason at Wild Horse Limousine — agreement nudge due today (July 2 deadline from cue card)",
+    "Verify the Jordan Avery / Still Water inquiry: check contact@ for original guest email, update draft, approve if real",
+    "Route two vendor XLSX files from Slack to Partners Vendor Liaison for database enrichment",
+    "Note GPIA airport closure starting this month — add alternate arrival logistics language to intake"
+  ],
   "priority_emails": [],
   "awaiting": [],
-  "initiatives": [
+  "initiatives": [],
+  "news": [
     {
-      "name": "Legal & Insurance — Launch Gate",
-      "division": "concierge",
-      "progress": 10,
-      "nextStep": "Call 2-3 insurance brokers (Hiscox, Next, Thimble) + find Montana attorney for legal doc review"
+      "title": "GPIA Airport Runway Closure Starts This Month — 20% July Visitor Drop Feared",
+      "source": "Flathead Beacon",
+      "url": "https://flatheadbeacon.com/2026/06/10/strong-spring-tourism-reported-in-the-flathead-valley/",
+      "apply": "Partners · Concierge: Airport closes intermittently for 4 weeks. Guests arriving by car — prep alternate-arrival language in intake. Gary at Glacier Aviation can fill some of this gap."
     },
     {
-      "name": "Vendor Network — Solace/Partners",
-      "division": "partners",
-      "progress": 35,
-      "nextStep": "URGENT: Personal reply to Gary Kauffman/Glacier Aviation + follow up on 6 pending Documenso agreements"
+      "title": "Whitefish Summer: Hotel Occupancy Down 8%, Visitor Spending Holds Strong",
+      "source": "Whitefish Pilot",
+      "url": "https://whitefishpilot.com/news/2026/jun/17/tourism-update-summer-headwinds/",
+      "apply": "Home: Softer hotel occupancy = more STR/private home stays = stronger demand for Solace/Home arrival prep."
     },
     {
-      "name": "Luxury Concierge — Launch Readiness",
-      "division": "concierge",
-      "progress": 78,
-      "nextStep": "All infrastructure complete — blocked on insurance binding + attorney review of Client Agreement"
+      "title": "The Art of the Arrival: Luxury Transfer & Concierge 2026",
+      "source": "Resident Media",
+      "url": "https://resident.com/luxury-travel/2026/06/23/the-art-of-the-arrival-global-transfer-and-concierge-services-that-set-the-tone-for-every-journey",
+      "apply": "Concierge: Arrival coordination is a global luxury category. Name it as a standalone service pillar."
     },
     {
-      "name": "Solace/Home — Subscription Launch",
-      "division": "home",
-      "progress": 72,
-      "nextStep": "All infrastructure complete — blocked on insurance + vendor network reaching minimum (10 signed vendors)"
-    },
-    {
-      "name": "Solace/Care — Family Coordination Launch",
-      "division": "care",
-      "progress": 55,
-      "nextStep": "Contact 3-5 Flathead Valley care facilities + bind insurance + verify onboarding fee shows in Lovable app"
+      "title": "2026 Virtuoso Luxe Report: Family Travel #1 Trend; Ultraluxe Up 45%",
+      "source": "Virtuoso",
+      "url": "https://static.virtuoso.com/division-marketing/PR/2025%20Press%20Releases/2026%20Luxe%20Report_Global_FINAL.pdf",
+      "apply": "Collection: The Little Explorers + The Gathering map perfectly to the top 2026 luxury travel trends."
     }
   ],
-  "news": [],
-  "general_news": []
+  "general_news": [
+    {
+      "title": "ADP June Jobs: 98K Added — Below Expected 117K",
+      "source": "Seeking Alpha",
+      "url": "https://seekingalpha.com/news/4608906-us-private-sector-adds-98k-jobs-in-june-softer-than-consensus-adp-jobs-report"
+    },
+    {
+      "title": "US Consumer Confidence Edges Up to 91.2 in June",
+      "source": "Arkansas Democrat-Gazette",
+      "url": "https://www.arkansasonline.com/news/2026/jul/01/us-consumer-attitudes-up-slightly/"
+    },
+    {
+      "title": "US Manufacturing PMI Hits 55.7 — A Four-Year High",
+      "source": "Karsane",
+      "url": "https://karsane.com/article/us-manufacturing-pmi-june-2026-four-year-high"
+    },
+    {
+      "title": "US-Iran Deal Could Revive Trump's Trade War",
+      "source": "The National",
+      "url": "https://www.thenationalnews.com/business/economy/2026/07/01/us-iran-deal-could-revive-trumps-trade-war/"
+    }
+  ]
 }
