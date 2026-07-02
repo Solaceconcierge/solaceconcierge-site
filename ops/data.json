@@ -1,61 +1,62 @@
 {
-  "date": "Wednesday, July 1",
+  "date": "Thursday, July 2",
   "generated_at": "8:02 AM MT",
   "priorities": [
-    "Call Jason at Wild Horse Limousine — agreement nudge due today (July 2 deadline from cue card)",
-    "Verify the Jordan Avery / Still Water inquiry: check contact@ for original guest email, update draft, approve if real",
-    "Route two vendor XLSX files from Slack to Partners Vendor Liaison for database enrichment",
-    "Note GPIA airport closure starting this month — add alternate arrival logistics language to intake"
+    "Confirm with Partners Vendor Liaison whether the Documenso agreement addressed to you personally is real or a test-vendor repeat — before signing anything",
+    "Call Jason at Wild Horse Limousine — today is the cue card's deadline to nudge the payment-terms question and get the agreement signed",
+    "Call Gary at Glacier Aviation with the updated payment-timing answer (check vendors@ for the drafted reply first) — not the old \"just checking in\" line",
+    "Decide on the week-old Jordan Avery / Still Water Collection draft — verify against contact@, then send or discard",
+    "Heads-up: the Ops Cockpit reads zero vendors/clients while real vendor-recruiting activity is clearly happening — that's a data-sync gap, not an empty pipeline"
   ],
-  "priority_emails": [],
   "awaiting": [],
   "initiatives": [],
   "news": [
     {
-      "title": "GPIA Airport Runway Closure Starts This Month — 20% July Visitor Drop Feared",
-      "source": "Flathead Beacon",
-      "url": "https://flatheadbeacon.com/2026/06/10/strong-spring-tourism-reported-in-the-flathead-valley/",
-      "apply": "Partners · Concierge: Airport closes intermittently for 4 weeks. Guests arriving by car — prep alternate-arrival language in intake. Gary at Glacier Aviation can fill some of this gap."
+      "title": "Global luxury spending nears $1.7 trillion as shoppers shift from status labels to experience",
+      "source": "Gulf News / Bain & Company",
+      "url": "https://gulfnews.com/business/retail/luxury-spending-hits-169-trillion-but-shoppers-want-more-than-labels-1.500591580",
+      "apply": "Concierge · Collection: Experience-spending is growing 1.5x faster than goods, immersive bookings up 30% YoY. Lead Collection marketing with family/group experiences like The Gathering and The Little Explorers."
     },
     {
-      "title": "Whitefish Summer: Hotel Occupancy Down 8%, Visitor Spending Holds Strong",
-      "source": "Whitefish Pilot",
-      "url": "https://whitefishpilot.com/news/2026/jun/17/tourism-update-summer-headwinds/",
-      "apply": "Home: Softer hotel occupancy = more STR/private home stays = stronger demand for Solace/Home arrival prep."
+      "title": "How AI concierge services are reinventing luxury",
+      "source": "Business Standard",
+      "url": "https://www.business-standard.com/video-gallery/general/how-ai-concierge-services-are-reinventing-luxury-179000.htm",
+      "apply": "Concierge (all branches): Global hospitality brands are normalizing AI-assisted concierge. Keep the \"AI handles the coordinating, Brittany makes the calls\" framing sharp."
     },
     {
-      "title": "The Art of the Arrival: Luxury Transfer & Concierge 2026",
-      "source": "Resident Media",
-      "url": "https://resident.com/luxury-travel/2026/06/23/the-art-of-the-arrival-global-transfer-and-concierge-services-that-set-the-tone-for-every-journey",
-      "apply": "Concierge: Arrival coordination is a global luxury category. Name it as a standalone service pillar."
+      "title": "Maestro PMS: operators want unified, AI-connected guest data at HITEC 2026",
+      "source": "eHotelier",
+      "url": "https://insights.ehotelier.com/insights/2026/06/26/maestro-pms-reports-strong-engagement-and-valuable-industry-insights-from-hitec-2026/",
+      "apply": "Home · Partners: Property managers are actively shopping for unified, connected tech — good hook for B2B outreach."
     },
     {
-      "title": "2026 Virtuoso Luxe Report: Family Travel #1 Trend; Ultraluxe Up 45%",
-      "source": "Virtuoso",
-      "url": "https://static.virtuoso.com/division-marketing/PR/2025%20Press%20Releases/2026%20Luxe%20Report_Global_FINAL.pdf",
-      "apply": "Collection: The Little Explorers + The Gathering map perfectly to the top 2026 luxury travel trends."
+      "title": "Runway repair work limits flights at Glacier Park International Airport starting next week",
+      "source": "Daily Inter Lake",
+      "url": "https://dailyinterlake.com/news/2026/jun/30/glacier-park-international-airport-to-limit-flights-in-july-for-runway-overhaul/",
+      "apply": "Partners · Concierge: GPIA closes Mondays 6pm–Fridays 10am, July 6–31 (~40% fewer flights). Build alternate-arrival language into intake and get Gary at Glacier Aviation signed before the gap opens."
+    },
+    {
+      "title": "Some hotels and trails reopen in Glacier National Park after Many Glacier flooding",
+      "source": "MontanaRightNow / Flathead Beacon",
+      "url": "https://www.montanarightnow.com/great-falls/glacier-valley-flooding-causes-closures-crowds-shift-to-other-areas/article_c7d31e81-09e8-463d-b9f1-0c9d235db390.html",
+      "apply": "Concierge · Partners: Many Glacier boat tours and horseback rides are still suspended pending safety checks — confirm before booking any dispatch into that area this week."
     }
   ],
   "general_news": [
     {
-      "title": "ADP June Jobs: 98K Added — Below Expected 117K",
-      "source": "Seeking Alpha",
-      "url": "https://seekingalpha.com/news/4608906-us-private-sector-adds-98k-jobs-in-june-softer-than-consensus-adp-jobs-report"
+      "title": "Record July 4th travel and extreme heat grip much of the US",
+      "source": "NBC News",
+      "url": "https://www.youtube.com/watch?v=AzPsm_TWWvA"
     },
     {
-      "title": "US Consumer Confidence Edges Up to 91.2 in June",
-      "source": "Arkansas Democrat-Gazette",
-      "url": "https://www.arkansasonline.com/news/2026/jul/01/us-consumer-attitudes-up-slightly/"
+      "title": "Trump's $2.2B 2025 financial disclosure draws sharp ethics criticism in Washington",
+      "source": "Fortune",
+      "url": "https://fortune.com/2026/07/02/trump-2-2-billion-income-disclosure-reactions-eisen-gephardt/"
     },
     {
-      "title": "US Manufacturing PMI Hits 55.7 — A Four-Year High",
-      "source": "Karsane",
-      "url": "https://karsane.com/article/us-manufacturing-pmi-june-2026-four-year-high"
-    },
-    {
-      "title": "US-Iran Deal Could Revive Trump's Trade War",
-      "source": "The National",
-      "url": "https://www.thenationalnews.com/business/economy/2026/07/01/us-iran-deal-could-revive-trumps-trade-war/"
+      "title": "Supreme Court rejects Trump's bid to limit birthright citizenship",
+      "source": "NBC News",
+      "url": "https://www.youtube.com/watch?v=XGBVyoRLeyw"
     }
   ]
 }
