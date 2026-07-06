@@ -1,56 +1,50 @@
 {
-  "date": "Friday, July 3",
+  "date": "Monday, July 6",
   "generated_at": "8:02 AM MT",
   "priorities": [
-    "Three vendor documents were signed yesterday in Documenso — the generic Preferred Partner Agreement + Confidentiality Addendum (timing matches Wild Horse Limousine's July 2 deadline), Glacier Aviation Services' ACH Payment Authorization (matches Gary's resolved payment-terms objection), and a new Handy-Remodeler LLC ACH Payment Authorization. Confirm signer identities in vendors@ and advance each to the next onboarding step.",
-    "No calendar events and no new Collection inquiries today. Call list: Dog Club Kalispell (legitimacy follow-up) plus four fresh Group 1/2 vendor targets — Mum's Flowers, Montana Picnic Co (Alisia), Chef Nate Snyder, and Whitefish Vacation Massage (Myki).",
-    "Kalispell Montana Hidden Gems (Emilie) replied warmly after Tuesday's call — she's reviewing your info and putting collaboration thoughts together. No action needed; a short stay-in-touch note is optional.",
-    "Dashboard live-read (HyperApp) still isn't wired into the briefing session — awaiting/initiatives below are not verified live today. Worth a fix so this page reflects real counts again.",
-    "Glacier National Park reopened Going-to-the-Sun Road and started a new reservation-only shuttle system for the July 4th weekend; Many Glacier campground and boating remain closed. Useful local hook this week."
+    "Two vendor follow-up drafts are sitting in Gmail from Saturday's check — Glacier K9 Resort & Spa and MyRide — just waiting on approval to send.",
+    "Five vendor agreements were reconciled to \"Accepted\" status on July 5 (Wild Horse Limousine, Blume Photography, Riverstone Outfitters, Montana Boarders, Marianne Wiest Photography) — next step is payment details + welcome packet to move them to fully active.",
+    "No calendar events and no new Collection inquiries today. Call list: Dog Club Kalispell and Gary/Glacier Aviation (Call First, still unresolved) plus Mum's Flowers and Montana Picnic Co (email exhausted, ready for a revival call).",
+    "Dashboard live-read (HyperApp) still isn't wired into the briefing session — this is the fourth day running with awaiting/initiatives unverified. Worth a fix.",
+    "Glacier National Park's Going-to-the-Sun Road and Many Glacier trails reopened after flooding, plus a new reservation-only shuttle system — good moment to call the aviation/outfitter vendors catching up on demand."
   ],
   "awaiting": [],
   "initiatives": [],
   "news": [
     {
-      "title": "How AI concierge services are reinventing luxury",
-      "source": "Business Standard",
-      "url": "https://www.business-standard.com/video-gallery/general/how-ai-concierge-services-are-reinventing-luxury-179000.htm",
-      "apply": "Concierge (all branches): Global hospitality brands are normalizing AI-assisted concierge — keep the \"AI handles the coordinating, Brittany makes the calls\" framing sharp in any public-facing language."
-    },
-    {
       "title": "Skip Summer, Chase the Cold: How the Wealthy Are Rewriting Luxury Travel in 2026",
-      "source": "PR Newswire / Global Travel Collection",
+      "source": "Global Travel Collection / PR Newswire",
       "url": "https://www.prnewswire.com/news-releases/skip-summer-chase-the-cold-how-the-wealthy-are-rewriting-luxury-travel-in-2026-302816050.html",
-      "apply": "Home: Domestic luxury and high-end ranch-property demand are both up sharply nationally — good hook for Home/property-manager outreach and social content positioning Whitefish this month."
+      "apply": "Home · Partners: Fall bookings up 25% (summer down 10%), private villas up 7%, U.S. domestic fall up 40%. Start the Home fall arrival-prep pitch now, and lean on privacy language in Direct/Home outreach."
     },
     {
-      "title": "Inside Luxury Travel's Private Members' Club Boom",
-      "source": "Elite Traveler",
-      "url": "https://elitetraveler.com/travel/travel-private-members-clubs",
-      "apply": "Partners · Direct to Solace: Reinforces the \"by introduction only\" positioning — borrow the discretion/curated-membership language for Direct to Solace materials."
+      "title": "Global Luxury Spending Nears $1.7 Trillion as Shoppers Shift from Status Labels to Experiences",
+      "source": "Gulf News (Bain & Company / Altagamma)",
+      "url": "https://gulfnews.com/business/retail/luxury-spending-hits-169-trillion-but-shoppers-want-more-than-labels-1.500591580",
+      "apply": "Partners · Concierge: Experience sentiment growing 1.5x faster than goods. Use in vendor-recruiting calls for experience vendors and in Collection marketing."
     },
     {
       "title": "Glacier National Park Begins Reopening Following Flooding",
       "source": "Flathead Beacon",
       "url": "https://flatheadbeacon.com/2026/07/01/glacier-national-park-begins-reopening-following-flooding/",
-      "apply": "Home · Concierge: Going-to-the-Sun Road is open and a new reservation-only shuttle system just launched for the July 4th weekend; Many Glacier campground and boating remain closed. Confirm status before dispatching any client into that area this week."
+      "apply": "Home · Concierge: Going-to-the-Sun Road and Many Glacier trails reopened Jul 1, plus a new reservation-only shuttle system. Confirm status before dispatching any client into that area this week."
     }
   ],
   "general_news": [
     {
-      "title": "Trump returns to Mount Rushmore for a Fourth of July fireworks show",
-      "source": "Fox News",
-      "url": "https://www.foxnews.com/politics/trump-kicks-off-fourth-july-weekend-symbolic-salute-americas-legacy"
-    },
-    {
-      "title": "Iran begins public mourning for Ayatollah killed in February",
+      "title": "Second Russian missile-and-drone strike on Kyiv in a week kills at least 20 on eve of NATO summit",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cx2k4k7jqeno"
+      "url": "https://www.bbc.com/news/articles/cewqqnd7zdwo"
     },
     {
-      "title": "Iran warns oil tankers to use approved routes in Strait of Hormuz or face a 'forceful response'",
-      "source": "The Star / AP",
-      "url": "https://www.thestar.com.my/news/world/2026/07/03/iran-warns-oil-tankers-to-use-approved-routes-in-strait-of-hormuz-or-face-a-039forceful-response039"
+      "title": "Huge crowds fill Tehran streets for Khamenei's funeral procession",
+      "source": "BBC News",
+      "url": "https://www.bbc.co.uk/news/articles/cdejj44kl70o"
+    },
+    {
+      "title": "USMNT beats Bosnia-Herzegovina 2-0, first World Cup knockout win since 2002",
+      "source": "NPR / ESPN",
+      "url": ""
     }
   ]
 }
