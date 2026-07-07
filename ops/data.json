@@ -1,50 +1,24 @@
 {
-  "date": "Monday, July 6",
-  "generated_at": "8:02 AM MT",
+  "date": "Tuesday, July 7",
+  "generated_at": "8:03 AM MT",
   "priorities": [
-    "Two vendor follow-up drafts are sitting in Gmail from Saturday's check — Glacier K9 Resort & Spa and MyRide — just waiting on approval to send.",
-    "Five vendor agreements were reconciled to \"Accepted\" status on July 5 (Wild Horse Limousine, Blume Photography, Riverstone Outfitters, Montana Boarders, Marianne Wiest Photography) — next step is payment details + welcome packet to move them to fully active.",
-    "No calendar events and no new Collection inquiries today. Call list: Dog Club Kalispell and Gary/Glacier Aviation (Call First, still unresolved) plus Mum's Flowers and Montana Picnic Co (email exhausted, ready for a revival call).",
-    "Dashboard live-read (HyperApp) still isn't wired into the briefing session — this is the fourth day running with awaiting/initiatives unverified. Worth a fix.",
-    "Glacier National Park's Going-to-the-Sun Road and Many Glacier trails reopened after flooding, plus a new reservation-only shuttle system — good moment to call the aviation/outfitter vendors catching up on demand."
+    "Dashboard live-read (HyperApp) is still not wired into the brief — that's 5 days running with awaiting/initiatives unverified. Worth asking the Daily Briefing agent to check its tool access.",
+    "Work today's Call Cue Cards — Gary at Glacier Aviation has a real payment-terms objection to resolve (reply already drafted in vendors@), and Dog Club Kalispell just needs a callback confirming Solace is real.",
+    "Two vendor outreach drafts — Glacier K9 Resort & Spa and MyRide — have been sitting since Saturday waiting on approval to send.",
+    "Wild Horse Limousine's agreement may already be signed (reconciled to Accepted on July 5) — confirm with Partners Vendor Liaison and move Jason to payment-details collection instead of re-pitching him on a call.",
+    "Glacier Park International starts weeknight runway closures this week through July 31 (~40% fewer flights) — get ahead of it with a ground-transport backup plan for any Home or Direct client with a midweek July arrival."
   ],
   "awaiting": [],
   "initiatives": [],
   "news": [
-    {
-      "title": "Skip Summer, Chase the Cold: How the Wealthy Are Rewriting Luxury Travel in 2026",
-      "source": "Global Travel Collection / PR Newswire",
-      "url": "https://www.prnewswire.com/news-releases/skip-summer-chase-the-cold-how-the-wealthy-are-rewriting-luxury-travel-in-2026-302816050.html",
-      "apply": "Home · Partners: Fall bookings up 25% (summer down 10%), private villas up 7%, U.S. domestic fall up 40%. Start the Home fall arrival-prep pitch now, and lean on privacy language in Direct/Home outreach."
-    },
-    {
-      "title": "Global Luxury Spending Nears $1.7 Trillion as Shoppers Shift from Status Labels to Experiences",
-      "source": "Gulf News (Bain & Company / Altagamma)",
-      "url": "https://gulfnews.com/business/retail/luxury-spending-hits-169-trillion-but-shoppers-want-more-than-labels-1.500591580",
-      "apply": "Partners · Concierge: Experience sentiment growing 1.5x faster than goods. Use in vendor-recruiting calls for experience vendors and in Collection marketing."
-    },
-    {
-      "title": "Glacier National Park Begins Reopening Following Flooding",
-      "source": "Flathead Beacon",
-      "url": "https://flatheadbeacon.com/2026/07/01/glacier-national-park-begins-reopening-following-flooding/",
-      "apply": "Home · Concierge: Going-to-the-Sun Road and Many Glacier trails reopened Jul 1, plus a new reservation-only shuttle system. Confirm status before dispatching any client into that area this week."
-    }
+    { "title": "GTC: Luxury Travelers Trade Summer Crowds for Fall, Arctic", "source": "Luxury Travel Advisor", "url": "https://www.luxurytraveladvisor.com/your-business/gtc-data-coolcations-and-shoulder-season-travel-rise", "apply": "Home · Partners: fall U.S. luxury bookings up 40% YoY (Hawaii, Miami, ranches), private villas up 7% — good week to send the Home fall arrival-prep pitch to Recreation Stays and Shores to Summit before shoulder season fills up." },
+    { "title": "How AI concierge services are reinventing luxury", "source": "Business Standard", "url": "https://www.business-standard.com/video-gallery/general/how-ai-concierge-services-are-reinventing-luxury-179000.htm", "apply": "Concierge: global outlets now cover \"AI concierge\" as a mainstream luxury category — useful validation for Solace's own positioning language." },
+    { "title": "Glacier National Park Begins Reopening Following Flooding", "source": "Flathead Beacon", "url": "https://flatheadbeacon.com/2026/07/01/glacier-national-park-begins-reopening-following-flooding/", "apply": "Home · Concierge: Going-to-the-Sun Road and Many Glacier are open again with a new reservation-only shuttle system — flag to any Home/Direct client with a July visit so they grab recreation.gov shuttle tickets early." },
+    { "title": "Runway repair work expected to begin at Glacier Park International Airport next week", "source": "Daily Inter Lake", "url": "https://dailyinterlake.com/news/2026/jun/30/glacier-park-international-airport-to-limit-flights-in-july-for-runway-overhaul/", "apply": "Home · Concierge: runway closures most weeknights through July 31 cut July flights ~40% — flag to clients with midweek arrivals so Solace can line up ground transport from Kalispell/Missoula." }
   ],
   "general_news": [
-    {
-      "title": "Second Russian missile-and-drone strike on Kyiv in a week kills at least 20 on eve of NATO summit",
-      "source": "BBC News",
-      "url": "https://www.bbc.com/news/articles/cewqqnd7zdwo"
-    },
-    {
-      "title": "Huge crowds fill Tehran streets for Khamenei's funeral procession",
-      "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cdejj44kl70o"
-    },
-    {
-      "title": "USMNT beats Bosnia-Herzegovina 2-0, first World Cup knockout win since 2002",
-      "source": "NPR / ESPN",
-      "url": ""
-    }
+    { "title": "Zelensky presses Nato for air defence systems after intense Russian strikes", "source": "BBC News", "url": "https://www.bbc.com/news/articles/c9d227e5zj6o" },
+    { "title": "Macron safe after explosions in Syrian capital near French president's hotel", "source": "BBC News", "url": "https://www.bbc.com/news/articles/c2eylx1jj9ko" },
+    { "title": "French court clears way for Marine Le Pen to run for president but orders her to wear electronic tag", "source": "BBC News", "url": "https://www.bbc.com/news/live/c70yk5xjyl1t" }
   ]
 }
