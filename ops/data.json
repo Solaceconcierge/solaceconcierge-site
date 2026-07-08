@@ -1,24 +1,21 @@
 {
-  "date": "Tuesday, July 7",
-  "generated_at": "8:03 AM MT",
+  "date": "Wednesday, July 8",
+  "generated_at": "8:07 AM MT",
   "priorities": [
-    "Dashboard live-read (HyperApp) is still not wired into the brief — that's 5 days running with awaiting/initiatives unverified. Worth asking the Daily Briefing agent to check its tool access.",
-    "Work today's Call Cue Cards — Gary at Glacier Aviation has a real payment-terms objection to resolve (reply already drafted in vendors@), and Dog Club Kalispell just needs a callback confirming Solace is real.",
-    "Two vendor outreach drafts — Glacier K9 Resort & Spa and MyRide — have been sitting since Saturday waiting on approval to send.",
-    "Wild Horse Limousine's agreement may already be signed (reconciled to Accepted on July 5) — confirm with Partners Vendor Liaison and move Jason to payment-details collection instead of re-pitching him on a call.",
-    "Glacier Park International starts weeknight runway closures this week through July 31 (~40% fewer flights) — get ahead of it with a ground-transport backup plan for any Home or Direct client with a midweek July arrival."
+    "Ops Cockpit and the Operations Dashboard both show zero active vendors, but a W-9 just came back signed for a new vendor (Sunshine River Farms) — worth checking that the underlying vendor data source is actually in sync (same dashboard-read gap flagged in yesterday's brief).",
+    "Confirm Wild Horse Limousine's real status with Partners Vendor Liaison before calling Jason — the cue card still says 'payment terms pending,' but ops notes from July 5 suggest his agreement may already be signed.",
+    "Work today's two open Call First cards: Dog Club Kalispell (quick legitimacy callback) and Gary at Glacier Aviation (payment-terms objection — reply already drafted in vendors@, ready to send).",
+    "Two vendor outreach drafts — Glacier K9 Resort & Spa and MyRide — have reportedly been waiting on approval since last Saturday. Worth a decision: send or drop.",
+    "Glacier Park International's weeknight runway closures continue through July 31 (~40% fewer flights) — flag to any Home or Direct client with a midweek July arrival so Solace can line up ground transport."
   ],
   "awaiting": [],
   "initiatives": [],
   "news": [
-    { "title": "GTC: Luxury Travelers Trade Summer Crowds for Fall, Arctic", "source": "Luxury Travel Advisor", "url": "https://www.luxurytraveladvisor.com/your-business/gtc-data-coolcations-and-shoulder-season-travel-rise", "apply": "Home · Partners: fall U.S. luxury bookings up 40% YoY (Hawaii, Miami, ranches), private villas up 7% — good week to send the Home fall arrival-prep pitch to Recreation Stays and Shores to Summit before shoulder season fills up." },
-    { "title": "How AI concierge services are reinventing luxury", "source": "Business Standard", "url": "https://www.business-standard.com/video-gallery/general/how-ai-concierge-services-are-reinventing-luxury-179000.htm", "apply": "Concierge: global outlets now cover \"AI concierge\" as a mainstream luxury category — useful validation for Solace's own positioning language." },
-    { "title": "Glacier National Park Begins Reopening Following Flooding", "source": "Flathead Beacon", "url": "https://flatheadbeacon.com/2026/07/01/glacier-national-park-begins-reopening-following-flooding/", "apply": "Home · Concierge: Going-to-the-Sun Road and Many Glacier are open again with a new reservation-only shuttle system — flag to any Home/Direct client with a July visit so they grab recreation.gov shuttle tickets early." },
-    { "title": "Runway repair work expected to begin at Glacier Park International Airport next week", "source": "Daily Inter Lake", "url": "https://dailyinterlake.com/news/2026/jun/30/glacier-park-international-airport-to-limit-flights-in-july-for-runway-overhaul/", "apply": "Home · Concierge: runway closures most weeknights through July 31 cut July flights ~40% — flag to clients with midweek arrivals so Solace can line up ground transport from Kalispell/Missoula." }
+    { "title": "Skip Summer, Chase the Cold: How the Wealthy Are Rewriting Luxury Travel in 2026", "source": "Global Travel Collection / PR Newswire", "url": "https://www.prnewswire.com/news-releases/skip-summer-chase-the-cold-how-the-wealthy-are-rewriting-luxury-travel-in-2026-302816050.html", "apply": "Home · Partners: fall U.S. luxury bookings up 40% YoY (Hawaii, Miami, ranches), private villas up 7% — good week to pitch Solace/Home's fall arrival-prep package to property managers before shoulder season fills up." },
+    { "title": "Hospitality's real question isn't legal. It's cultural.", "source": "eHotelier Insights", "url": "https://insights.ehotelier.com/insights/2026/07/06/hospitalitys-real-question-isnt-legal-its-cultural/", "apply": "Concierge: validates Solace's outcome-focused voice over human-relationship framing as AI absorbs transactional work industry-wide." },
+    { "title": "Helicopter Crew Details Mount Siyeh Rescue in Glacier", "source": "Outside Online", "url": "https://www.outsideonline.com/outdoor-adventure/exploration-survival/mount-siyeh-glacier-helicopter-rescue/", "apply": "Concierge · Partners: good prompt to add a satellite-communicator reminder to arrival-prep safety checklists, and a natural opener for today's call with Gary at Glacier Aviation." }
   ],
   "general_news": [
-    { "title": "Zelensky presses Nato for air defence systems after intense Russian strikes", "source": "BBC News", "url": "https://www.bbc.com/news/articles/c9d227e5zj6o" },
-    { "title": "Macron safe after explosions in Syrian capital near French president's hotel", "source": "BBC News", "url": "https://www.bbc.com/news/articles/c2eylx1jj9ko" },
-    { "title": "French court clears way for Marine Le Pen to run for president but orders her to wear electronic tag", "source": "BBC News", "url": "https://www.bbc.com/news/live/c70yk5xjyl1t" }
+    { "title": "Trump says Iran ceasefire is 'over' after fresh US strikes; Iran retaliates against Bahrain and Kuwait", "source": "BBC News", "url": "https://www.bbc.co.uk/news/live/c17y1vnn2qxt" }
   ]
 }
