@@ -1,21 +1,22 @@
 {
-  "date": "Wednesday, July 8",
-  "generated_at": "8:07 AM MT",
+  "date": "Thursday, July 9",
+  "generated_at": "8:10 AM MT",
   "priorities": [
-    "Ops Cockpit and the Operations Dashboard both show zero active vendors, but a W-9 just came back signed for a new vendor (Sunshine River Farms) — worth checking that the underlying vendor data source is actually in sync (same dashboard-read gap flagged in yesterday's brief).",
-    "Confirm Wild Horse Limousine's real status with Partners Vendor Liaison before calling Jason — the cue card still says 'payment terms pending,' but ops notes from July 5 suggest his agreement may already be signed.",
-    "Work today's two open Call First cards: Dog Club Kalispell (quick legitimacy callback) and Gary at Glacier Aviation (payment-terms objection — reply already drafted in vendors@, ready to send).",
-    "Two vendor outreach drafts — Glacier K9 Resort & Spa and MyRide — have reportedly been waiting on approval since last Saturday. Worth a decision: send or drop.",
-    "Glacier Park International's weeknight runway closures continue through July 31 (~40% fewer flights) — flag to any Home or Direct client with a midweek July arrival so Solace can line up ground transport."
+    "Ops Cockpit still shows zero vendors and zero active clients for the second day running, even though real vendor conversations are underway (Jason, Gary, Dog Club, and others) — worth confirming with Partners Vendor Liaison whether the underlying data source is actually in sync.",
+    "Calendar and inbox are both quiet today — a good window to work through today's 5 vendor Call Cue Cards (Wild Horse, Dog Club, Glacier Aviation, Montana Picnic Co, Mum's Flowers).",
+    "A message to 4kimee423@gmail.com bounced yesterday — likely meant for Kimberlee Johnson re: the July 16 Glacier rodeo trip. Track down the right address and resend.",
+    "Follow up on the Wild Wind Music lead ('Mark,' a 4-piece Americana/rock band) dropped in Slack about 5 days ago — add to the Partners pipeline as a live-entertainment prospect.",
+    "Decide on the two vendor outreach drafts (Glacier K9 Resort & Spa and MyRide) reportedly waiting on approval since last Saturday — send or drop."
   ],
   "awaiting": [],
   "initiatives": [],
   "news": [
-    { "title": "Skip Summer, Chase the Cold: How the Wealthy Are Rewriting Luxury Travel in 2026", "source": "Global Travel Collection / PR Newswire", "url": "https://www.prnewswire.com/news-releases/skip-summer-chase-the-cold-how-the-wealthy-are-rewriting-luxury-travel-in-2026-302816050.html", "apply": "Home · Partners: fall U.S. luxury bookings up 40% YoY (Hawaii, Miami, ranches), private villas up 7% — good week to pitch Solace/Home's fall arrival-prep package to property managers before shoulder season fills up." },
-    { "title": "Hospitality's real question isn't legal. It's cultural.", "source": "eHotelier Insights", "url": "https://insights.ehotelier.com/insights/2026/07/06/hospitalitys-real-question-isnt-legal-its-cultural/", "apply": "Concierge: validates Solace's outcome-focused voice over human-relationship framing as AI absorbs transactional work industry-wide." },
-    { "title": "Helicopter Crew Details Mount Siyeh Rescue in Glacier", "source": "Outside Online", "url": "https://www.outsideonline.com/outdoor-adventure/exploration-survival/mount-siyeh-glacier-helicopter-rescue/", "apply": "Concierge · Partners: good prompt to add a satellite-communicator reminder to arrival-prep safety checklists, and a natural opener for today's call with Gary at Glacier Aviation." }
+    { "title": "Luxury travel trends 2026: private villas now preferred by ~60% of U.S. luxury travelers over hotels", "source": "PC Tech Magazine", "url": "https://pctechmag.com/2026/07/luxury-travel-trends-shaping-premium-destinations/", "apply": "Concierge · Home — this is Solace's exact lane (smooth arrivals, privacy, fewer decisions). Worth weaving this stat into property-manager pitch materials." },
+    { "title": "Middle East luxury travel shifts toward 'quiet luxury' — privacy and personalization over visible opulence", "source": "Travel And Tour World", "url": "https://www.travelandtourworld.com/news/article/32k7crdetlmc/", "apply": "Concierge · Brand — validates 'Quiet Luxury, Seamlessly Delivered' as a live market trend. Good hook for an authority-style social post this week." },
+    { "title": "Hotels roll out AI concierge apps (Innspire, The Elser Miami) for pre-arrival, digital keys, and F&B", "source": "eHotelier Insights", "url": "https://insights.ehotelier.com/global-news/2026/07/08/innspire-officially-launches-guest-flows-at-hitec/", "apply": "Partners · Concierge — guest expectations for frictionless tech are rising. Reinforce that Solace pairs quiet local expertise with that same convenience, not tech alone." },
+    { "title": "Flathead River marks 50 years of Wild and Scenic River protection", "source": "News Block", "url": "https://news-block.net/flathead-river-marks-50-years-of-wild-and-scenic-protection-as-threats-and-stewardship-persist", "apply": "Local · Brand — a clean, low-lift local-pride social post tying Solace's deeply-local voice to a genuine Flathead milestone." }
   ],
   "general_news": [
-    { "title": "Trump says Iran ceasefire is 'over' after fresh US strikes; Iran retaliates against Bahrain and Kuwait", "source": "BBC News", "url": "https://www.bbc.co.uk/news/live/c17y1vnn2qxt" }
+    { "title": "U.S. strikes Iran again, Tehran fires back at Gulf Arab states; oil prices and regional markets react", "source": "NPR / AP", "url": "https://www.npr.org/2026/07/09/g-s1-132670/us-iran-strikes" }
   ]
 }
