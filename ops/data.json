@@ -1,22 +1,23 @@
 {
-  "date": "Thursday, July 9",
-  "generated_at": "8:10 AM MT",
+  "date": "Friday, July 10",
+  "generated_at": "8:20 AM MT",
   "priorities": [
-    "Ops Cockpit still shows zero vendors and zero active clients for the second day running, even though real vendor conversations are underway (Jason, Gary, Dog Club, and others) — worth confirming with Partners Vendor Liaison whether the underlying data source is actually in sync.",
-    "Calendar and inbox are both quiet today — a good window to work through today's 5 vendor Call Cue Cards (Wild Horse, Dog Club, Glacier Aviation, Montana Picnic Co, Mum's Flowers).",
-    "A message to 4kimee423@gmail.com bounced yesterday — likely meant for Kimberlee Johnson re: the July 16 Glacier rodeo trip. Track down the right address and resend.",
-    "Follow up on the Wild Wind Music lead ('Mark,' a 4-piece Americana/rock band) dropped in Slack about 5 days ago — add to the Partners pipeline as a live-entertainment prospect.",
-    "Decide on the two vendor outreach drafts (Glacier K9 Resort & Spa and MyRide) reportedly waiting on approval since last Saturday — send or drop."
+    "Get the Operations Dashboard connection checked — HyperApp access has been failing for this agent since at least July 3, so today's dashboard numbers are unverified placeholders.",
+    "Make today's 4 vendor revival calls — Dog Club Kalispell, Mum's Flowers, Montana Picnic Co, and Tesoro Mio Spa.",
+    "Double-check Wild Horse Limousine's (Jason) real status — conflicting log entries from July 6.",
+    "Close the loop on the WildWind Music private-events band lead shared in Slack July 4.",
+    "Two small inbox items: Documenso partner agreement signature check, and resend Kimberlee Johnson's bounced rodeo tickets."
   ],
   "awaiting": [],
   "initiatives": [],
   "news": [
-    { "title": "Luxury travel trends 2026: private villas now preferred by ~60% of U.S. luxury travelers over hotels", "source": "PC Tech Magazine", "url": "https://pctechmag.com/2026/07/luxury-travel-trends-shaping-premium-destinations/", "apply": "Concierge · Home — this is Solace's exact lane (smooth arrivals, privacy, fewer decisions). Worth weaving this stat into property-manager pitch materials." },
-    { "title": "Middle East luxury travel shifts toward 'quiet luxury' — privacy and personalization over visible opulence", "source": "Travel And Tour World", "url": "https://www.travelandtourworld.com/news/article/32k7crdetlmc/", "apply": "Concierge · Brand — validates 'Quiet Luxury, Seamlessly Delivered' as a live market trend. Good hook for an authority-style social post this week." },
-    { "title": "Hotels roll out AI concierge apps (Innspire, The Elser Miami) for pre-arrival, digital keys, and F&B", "source": "eHotelier Insights", "url": "https://insights.ehotelier.com/global-news/2026/07/08/innspire-officially-launches-guest-flows-at-hitec/", "apply": "Partners · Concierge — guest expectations for frictionless tech are rising. Reinforce that Solace pairs quiet local expertise with that same convenience, not tech alone." },
-    { "title": "Flathead River marks 50 years of Wild and Scenic River protection", "source": "News Block", "url": "https://news-block.net/flathead-river-marks-50-years-of-wild-and-scenic-protection-as-threats-and-stewardship-persist", "apply": "Local · Brand — a clean, low-lift local-pride social post tying Solace's deeply-local voice to a genuine Flathead milestone." }
+    { "title": "Luxury travelers are trading peak summer for shoulder season and Arctic escapes", "source": "Luxury Travel Advisor", "url": "https://www.luxurytraveladvisor.com/your-business/gtc-data-coolcations-and-shoulder-season-travel-rise", "apply": "Start floating fall/shoulder-season Glacier itineraries to Direct and Luxury clients now, ahead of the crowd." },
+    { "title": "Luxury is shifting from owning more to feeling more — 'meaning' is the new purchase filter", "source": "Unity Marketing", "url": "https://unitymarketingonline.com/meaning-is-the-new-currency-of-luxury-where-quality-of-life-outranks-quantity-of-things/", "apply": "Lean on the Collection's curated-experience language in marketing rather than a transactional service-menu tone." },
+    { "title": "Whitefish's out-of-state buyer pool is broadening beyond remote workers", "source": "KeyCrew", "url": "https://keycrew.co/journal/whitefish-is-still-drawing-buyers-from-outside-montana-but-the-profile-has-shifted/", "apply": "This steadier second-home buyer pool is exactly who the Solace/Home subscription pitch is built for." },
+    { "title": "Glacier National Park employees vote to unionize", "source": "Daily Montanan", "url": "https://dailymontanan.com/2026/07/07/glacier-employees-vote-to-unionize/", "apply": "Watch for seasonal staffing shifts when confirming park-dependent itinerary items." }
   ],
   "general_news": [
-    { "title": "U.S. strikes Iran again, Tehran fires back at Gulf Arab states; oil prices and regional markets react", "source": "NPR / AP", "url": "https://www.npr.org/2026/07/09/g-s1-132670/us-iran-strikes" }
+    { "title": "US strikes Iran again as Tehran hits back at Gulf bases, straining the ceasefire", "source": "France 24 / ABC News", "url": "https://www.france24.com/en/middle-east/20260710-us-iran-conflict-escalates-missile-strikes-threaten-middle-east-ceasefire" },
+    { "title": "Venezuela earthquake death toll tops 3,800, complicating the US-backed political transition", "source": "France 24 (AFP)", "url": "https://www.france24.com/en/live-news/20260710-venezuela-quake-tragedy-threatens-to-set-back-democratic-transition" }
   ]
 }
