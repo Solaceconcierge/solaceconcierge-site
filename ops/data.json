@@ -1,23 +1,22 @@
 {
-  "date": "Friday, July 10",
-  "generated_at": "8:20 AM MT",
+  "date": "Monday, July 13",
+  "generated_at": "8:15 AM MT",
   "priorities": [
-    "Get the Operations Dashboard connection checked — HyperApp access has been failing for this agent since at least July 3, so today's dashboard numbers are unverified placeholders.",
-    "Make today's 4 vendor revival calls — Dog Club Kalispell, Mum's Flowers, Montana Picnic Co, and Tesoro Mio Spa.",
-    "Double-check Wild Horse Limousine's (Jason) real status — conflicting log entries from July 6.",
-    "Close the loop on the WildWind Music private-events band lead shared in Slack July 4.",
-    "Two small inbox items: Documenso partner agreement signature check, and resend Kimberlee Johnson's bounced rodeo tickets."
+    "Operations Dashboard (HyperApp) access has now been down 10+ days (since at least July 3) — worth getting someone to check this agent's HyperApp access so cockpit and candidate numbers are live again instead of placeholders.",
+    "Reply in #all-solace-concierge on whether to add All Out Junk Removal (406-407-4623) and Rosterra Landscape Co. (406-250-5400) to the vendor database — posted this morning from Friday's flyer photos.",
+    "Work through today's 5 call cue cards — Gary (Glacier Aviation) has a live payment-terms objection to resolve, and Jason's (Wild Horse) real status still needs verifying before you call.",
+    "No email or Slack activity came in at all over the weekend — worth a quick gut-check that contact@ auto-forwarding and the Collection inquiry pipeline are actually fine, even though the periodic sweep ran cleanly and found nothing.",
+    "Consider a quick 'quiet luxury' or local-pride social post this week — the Flathead River Fest 50th anniversary and the hospitality AI/human-balance piece are both low-lift content angles."
   ],
   "awaiting": [],
   "initiatives": [],
   "news": [
-    { "title": "Luxury travelers are trading peak summer for shoulder season and Arctic escapes", "source": "Luxury Travel Advisor", "url": "https://www.luxurytraveladvisor.com/your-business/gtc-data-coolcations-and-shoulder-season-travel-rise", "apply": "Start floating fall/shoulder-season Glacier itineraries to Direct and Luxury clients now, ahead of the crowd." },
-    { "title": "Luxury is shifting from owning more to feeling more — 'meaning' is the new purchase filter", "source": "Unity Marketing", "url": "https://unitymarketingonline.com/meaning-is-the-new-currency-of-luxury-where-quality-of-life-outranks-quantity-of-things/", "apply": "Lean on the Collection's curated-experience language in marketing rather than a transactional service-menu tone." },
-    { "title": "Whitefish's out-of-state buyer pool is broadening beyond remote workers", "source": "KeyCrew", "url": "https://keycrew.co/journal/whitefish-is-still-drawing-buyers-from-outside-montana-but-the-profile-has-shifted/", "apply": "This steadier second-home buyer pool is exactly who the Solace/Home subscription pitch is built for." },
-    { "title": "Glacier National Park employees vote to unionize", "source": "Daily Montanan", "url": "https://dailymontanan.com/2026/07/07/glacier-employees-vote-to-unionize/", "apply": "Watch for seasonal staffing shifts when confirming park-dependent itinerary items." }
+    { "title": "Hospitality's real question isn't legal. It's cultural.", "source": "eHotelier", "url": "https://insights.ehotelier.com/insights/2026/07/06/hospitalitys-real-question-isnt-legal-its-cultural/", "apply": "AI absorbs the routine coordination; the human judgment and relationship layer is the real differentiator — keep leaning into that in how Solace talks about itself." },
+    { "title": "GTC: Luxury Travelers Trade Summer Crowds for Fall, Arctic", "source": "Luxury Travel Advisor", "url": "https://www.luxurytraveladvisor.com/your-business/gtc-data-coolcations-and-shoulder-season-travel-rise", "apply": "Fall U.S. bookings up ~40% YoY, private villas up 7% — start floating shoulder-season Glacier itineraries to Direct/Luxury clients now, and lean into 'private property' language for Home pitches." },
+    { "title": "ExplorUS Expands Partnership with roommaster, Bringing AI Concierge to More Than 20 Park Destinations", "source": "Hotel Speak", "url": "https://www.hotelspeak.com/2026/07/explorus-expands-partnership-with-roommaster-bringing-ai-concierge-to-more-than-20-park-destinations/", "apply": "'AI concierge' is becoming normal industry vocabulary — good cover to keep using outcome-focused language without overclaiming a human-only team." },
+    { "title": "Flathead River Fest celebrates 50 years of Wild and Scenic river designation", "source": "NBC Montana", "url": "https://nbcmontana.com/news/local/flathead-river-fest-celebrates-50-years-of-wild-and-scenic-river-designation", "apply": "Clean, low-lift local-pride social post tying Solace's deeply-local voice to a genuine 50-year Flathead milestone." }
   ],
   "general_news": [
-    { "title": "US strikes Iran again as Tehran hits back at Gulf bases, straining the ceasefire", "source": "France 24 / ABC News", "url": "https://www.france24.com/en/middle-east/20260710-us-iran-conflict-escalates-missile-strikes-threaten-middle-east-ceasefire" },
-    { "title": "Venezuela earthquake death toll tops 3,800, complicating the US-backed political transition", "source": "France 24 (AFP)", "url": "https://www.france24.com/en/live-news/20260710-venezuela-quake-tragedy-threatens-to-set-back-democratic-transition" }
+    { "title": "US and Iran trade fire as tensions rise over the Strait of Hormuz", "source": "BBC", "url": "https://www.bbc.com/news/articles/cevlr112pmgo" }
   ]
 }
