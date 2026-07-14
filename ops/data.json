@@ -1,22 +1,23 @@
 {
-  "date": "Monday, July 13",
+  "date": "Tuesday, July 14",
   "generated_at": "8:15 AM MT",
   "priorities": [
-    "Operations Dashboard (HyperApp) access has now been down 10+ days (since at least July 3) — worth getting someone to check this agent's HyperApp access so cockpit and candidate numbers are live again instead of placeholders.",
-    "Reply in #all-solace-concierge on whether to add All Out Junk Removal (406-407-4623) and Rosterra Landscape Co. (406-250-5400) to the vendor database — posted this morning from Friday's flyer photos.",
-    "Work through today's 5 call cue cards — Gary (Glacier Aviation) has a live payment-terms objection to resolve, and Jason's (Wild Horse) real status still needs verifying before you call.",
-    "No email or Slack activity came in at all over the weekend — worth a quick gut-check that contact@ auto-forwarding and the Collection inquiry pipeline are actually fine, even though the periodic sweep ran cleanly and found nothing.",
-    "Consider a quick 'quiet luxury' or local-pride social post this week — the Flathead River Fest 50th anniversary and the hospitality AI/human-balance piece are both low-lift content angles."
+    "Send Jordan's drafted reply for The Still Water inquiry (written June 25, still unsent — 19 days) or confirm it was already handled by phone; his dates are Aug 14-17.",
+    "The Operations Dashboard connection (HyperApp) has now been down 11+ days — the dashboard numbers in today's brief are placeholders, not real counts. Worth flagging to Hyperagent support or a technical helper so future briefs are accurate again.",
+    "Work through today's 5 call cue cards — Gary at Glacier Aviation has a live payment-terms objection to resolve, and the two new landscape/junk-removal leads from Sunday just need a quick first call.",
+    "Whitefish Legacy Center's grand opening is tomorrow, July 15 (4-8pm) at Beaver Lakes — a good low-lift local-pride touchpoint this week."
   ],
   "awaiting": [],
   "initiatives": [],
   "news": [
-    { "title": "Hospitality's real question isn't legal. It's cultural.", "source": "eHotelier", "url": "https://insights.ehotelier.com/insights/2026/07/06/hospitalitys-real-question-isnt-legal-its-cultural/", "apply": "AI absorbs the routine coordination; the human judgment and relationship layer is the real differentiator — keep leaning into that in how Solace talks about itself." },
-    { "title": "GTC: Luxury Travelers Trade Summer Crowds for Fall, Arctic", "source": "Luxury Travel Advisor", "url": "https://www.luxurytraveladvisor.com/your-business/gtc-data-coolcations-and-shoulder-season-travel-rise", "apply": "Fall U.S. bookings up ~40% YoY, private villas up 7% — start floating shoulder-season Glacier itineraries to Direct/Luxury clients now, and lean into 'private property' language for Home pitches." },
-    { "title": "ExplorUS Expands Partnership with roommaster, Bringing AI Concierge to More Than 20 Park Destinations", "source": "Hotel Speak", "url": "https://www.hotelspeak.com/2026/07/explorus-expands-partnership-with-roommaster-bringing-ai-concierge-to-more-than-20-park-destinations/", "apply": "'AI concierge' is becoming normal industry vocabulary — good cover to keep using outcome-focused language without overclaiming a human-only team." },
-    { "title": "Flathead River Fest celebrates 50 years of Wild and Scenic river designation", "source": "NBC Montana", "url": "https://nbcmontana.com/news/local/flathead-river-fest-celebrates-50-years-of-wild-and-scenic-river-designation", "apply": "Clean, low-lift local-pride social post tying Solace's deeply-local voice to a genuine 50-year Flathead milestone." }
+    { "title": "McKinsey/BoF: Luxury clients now put travel above every other purchase", "source": "Luxury Travel Advisor", "url": "https://www.luxurytraveladvisor.com/your-business/mckinsey-report-luxury-clients-would-rather-travel-shop", "apply": "Wellness is the #1 lifestyle category behind travel (45% of clients) — build a wellness add-on into Signature/Direct itineraries as a standing offer, not just on request." },
+    { "title": "47% of HNWIs now run households in 3+ countries, up from 18% two years ago", "source": "RESIDENT", "url": "https://resident.com/luxury-news/2026/07/10/47-of-hnwis-now-run-households-in-three-or-more-countries-new-report-finds", "apply": "Third-party validation for the Solace/Home and Direct to Solace thesis — worth quoting in property manager and Direct-prospect outreach." },
+    { "title": "How Climate Change Will Reshape Luxury Travel", "source": "Vogue", "url": "https://www.vogue.com/article/how-climate-change-will-reshape-luxury-travel", "apply": "Travelers are shifting toward cooler, higher-altitude 'comfort-seeking' destinations and longer shoulder seasons — Montana/Glacier fits that positioning exactly. Lean into it for fall Direct/Luxury inquiries." },
+    { "title": "The New Heart and Hub of the Whitefish Trail — Whitefish Legacy Center grand opening July 15", "source": "Flathead Beacon", "url": "https://flatheadbeacon.com/2026/07/13/the-new-heart-and-hub-of-the-whitefish-trail/", "apply": "Grand opening is tomorrow, 4-8pm at Beaver Lakes — worth stopping by (trail-adjacent property owners are a natural Home audience) or a quick local-pride social mention this week." },
+    { "title": "Falling rock struck a visitor on Going-to-the-Sun Road near Logan Pass", "source": "KBZK", "url": "https://www.kbzk.com/news/person-struck-by-a-falling-rock-at-glacier-national-park", "apply": "Useful caveat for any Glacier day-trip itinerary this week — build in timing flexibility and check NPS road alerts before confirming timed-entry plans." }
   ],
   "general_news": [
-    { "title": "US and Iran trade fire as tensions rise over the Strait of Hormuz", "source": "BBC", "url": "https://www.bbc.com/news/articles/cevlr112pmgo" }
+    { "title": "US strikes Iran for a third night; Tehran retaliates near the Strait of Hormuz, oil prices rise", "source": "AP News", "url": "https://apnews.com/article/iran-us-hormuz-strait-war-july-14-2026-abd060c55feea216625689e57d8f76be" },
+    { "title": "Longtime South Carolina Sen. Lindsey Graham dies at 71", "source": "ABC News", "url": "https://abcnews.com/us" }
   ]
 }
