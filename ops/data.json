@@ -1,23 +1,50 @@
 {
-  "date": "Tuesday, July 14",
-  "generated_at": "8:15 AM MT",
+  "date": "Wednesday, July 15",
+  "generated_at": "8:10 AM MT",
   "priorities": [
-    "Send Jordan's drafted reply for The Still Water inquiry (written June 25, still unsent — 19 days) or confirm it was already handled by phone; his dates are Aug 14-17.",
-    "The Operations Dashboard connection (HyperApp) has now been down 11+ days — the dashboard numbers in today's brief are placeholders, not real counts. Worth flagging to Hyperagent support or a technical helper so future briefs are accurate again.",
-    "Work through today's 5 call cue cards — Gary at Glacier Aviation has a live payment-terms objection to resolve, and the two new landscape/junk-removal leads from Sunday just need a quick first call.",
-    "Whitefish Legacy Center's grand opening is tomorrow, July 15 (4-8pm) at Beaver Lakes — a good low-lift local-pride touchpoint this week."
+    "Call Jason Koller (Wild Horse Limousine) about payment terms — the one thing blocking his signature after 12+ days.",
+    "Call Gary Kaufman (Glacier Aviation) with the payment-timing answer — his June 30 objection needs a direct response, not a generic check-in.",
+    "Call back The Dog Club in Kalispell for a quick legitimacy reassurance, then send the intake form.",
+    "Calendar is wide open today — good day to revive Mum's Flowers and Montana Picnic Co before festival season peaks."
   ],
   "awaiting": [],
   "initiatives": [],
   "news": [
-    { "title": "McKinsey/BoF: Luxury clients now put travel above every other purchase", "source": "Luxury Travel Advisor", "url": "https://www.luxurytraveladvisor.com/your-business/mckinsey-report-luxury-clients-would-rather-travel-shop", "apply": "Wellness is the #1 lifestyle category behind travel (45% of clients) — build a wellness add-on into Signature/Direct itineraries as a standing offer, not just on request." },
-    { "title": "47% of HNWIs now run households in 3+ countries, up from 18% two years ago", "source": "RESIDENT", "url": "https://resident.com/luxury-news/2026/07/10/47-of-hnwis-now-run-households-in-three-or-more-countries-new-report-finds", "apply": "Third-party validation for the Solace/Home and Direct to Solace thesis — worth quoting in property manager and Direct-prospect outreach." },
-    { "title": "How Climate Change Will Reshape Luxury Travel", "source": "Vogue", "url": "https://www.vogue.com/article/how-climate-change-will-reshape-luxury-travel", "apply": "Travelers are shifting toward cooler, higher-altitude 'comfort-seeking' destinations and longer shoulder seasons — Montana/Glacier fits that positioning exactly. Lean into it for fall Direct/Luxury inquiries." },
-    { "title": "The New Heart and Hub of the Whitefish Trail — Whitefish Legacy Center grand opening July 15", "source": "Flathead Beacon", "url": "https://flatheadbeacon.com/2026/07/13/the-new-heart-and-hub-of-the-whitefish-trail/", "apply": "Grand opening is tomorrow, 4-8pm at Beaver Lakes — worth stopping by (trail-adjacent property owners are a natural Home audience) or a quick local-pride social mention this week." },
-    { "title": "Falling rock struck a visitor on Going-to-the-Sun Road near Logan Pass", "source": "KBZK", "url": "https://www.kbzk.com/news/person-struck-by-a-falling-rock-at-glacier-national-park", "apply": "Useful caveat for any Glacier day-trip itinerary this week — build in timing flexibility and check NPS road alerts before confirming timed-entry plans." }
+    {
+      "title": "Hushpitality is the luxury travel trend defining 2026",
+      "source": "Grazia Magazine",
+      "url": "https://graziamagazine.com/us/articles/hushpitality-luxury-travel-trend-quiet-luxury-hotels/",
+      "apply": "Borrow the 'Hushpitality' language for Collection copy — The Still Water, The Slow Return, and The Quiet Vow are already built for exactly this trend."
+    },
+    {
+      "title": "McKinsey: luxury clients would rather travel than shop; wellness ranks #1 lifestyle category",
+      "source": "Luxury Travel Advisor",
+      "url": "https://www.luxurytraveladvisor.com/your-business/mckinsey-report-luxury-clients-would-rather-travel-shop",
+      "apply": "Wellness demand is rising nationally — worth reviving the stalled wellness vendors already on this week's call list (Tesoro Mio Spa, Vibe Wellness)."
+    },
+    {
+      "title": "Summer events drive a seasonal cash boost for Northwest Montana businesses",
+      "source": "Daily Inter Lake",
+      "url": "https://dailyinterlake.com/news/2026/jul/13/how-events-big-and-small-bring-businessand-busy-nessto-northwest-montana-towns/",
+      "apply": "Festival season (Under the Big Sky, Arts in the Park) is peak demand for group and vendor coordination — good week to firm up backup transportation and outdoor/picnic vendors."
+    },
+    {
+      "title": "Discover Kalispell restructures after executive director's retirement",
+      "source": "Daily Inter Lake",
+      "url": "https://dailyinterlake.com/news/2026/jul/12/discover-kalispell-undergoes-restructuring-after-executive-directors-departure/",
+      "apply": "New destination marketing leadership is a good excuse for a low-pressure introduction from Solace as a concierge resource for visiting groups."
+    }
   ],
   "general_news": [
-    { "title": "US strikes Iran for a third night; Tehran retaliates near the Strait of Hormuz, oil prices rise", "source": "AP News", "url": "https://apnews.com/article/iran-us-hormuz-strait-war-july-14-2026-abd060c55feea216625689e57d8f76be" },
-    { "title": "Longtime South Carolina Sen. Lindsey Graham dies at 71", "source": "ABC News", "url": "https://abcnews.com/us" }
+    {
+      "title": "US military reimposes blockade of Iranian ports",
+      "source": "AP News",
+      "url": "https://apnews.com/article/iran-us-hormuz-strait-war-july-15-2026-b7c592f269d822407dd6b5641602bf25"
+    },
+    {
+      "title": "Stripe and Advent make $53B takeover offer for PayPal",
+      "source": "CNBC",
+      "url": "https://www.cnbc.com/2026/07/15/stripe-advent-offer-to-buy-paypal-for-more-than-53-billion-reuters.html"
+    }
   ]
 }
