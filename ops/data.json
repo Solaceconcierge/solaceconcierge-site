@@ -1,45 +1,56 @@
 {
-  "date": "Thursday, July 16",
+  "date": "Friday, July 17",
   "generated_at": "8:20 AM MT",
   "priorities": [
-    "Call Jason Koller (Wild Horse Limousine) about payment terms — still the one thing blocking his signature after 12+ days.",
-    "Call Gary Kaufman (Glacier Aviation) with a direct answer to his card-on-file objection — the drafted email alone hasn't moved it.",
-    "Call back The Dog Club in Kalispell for a quick legitimacy reassurance, then text over the intake form.",
-    "Calendar's wide open — good day to revive Montana Picnic Co and ring Chef Nate Snyder (today's wellness/connection travel trend points at both).",
-    "Follow up on Monday's two phone-only leads (All Out Junk Removal, Rosterra Landscape) — quick intro call to grab an email for the application form."
+    "Call Jason Koller (Wild Horse Limousine) about payment terms — still the blocker on his signature.",
+    "Call Gary Kaufman (Glacier Aviation) with a direct answer to his card-on-file objection.",
+    "Call back The Dog Club in Kalispell for a quick legitimacy reassurance, then text the intake form.",
+    "Calendar's wide open — good day to also ring Mum's Flowers, no reply yet after two emails."
   ],
   "awaiting": [],
   "initiatives": [],
   "news": [
     {
+      "title": "Hushpitality Is the Luxury Travel Trend Defining 2026",
+      "source": "Grazia",
+      "url": "https://graziamagazine.com/us/articles/hushpitality-luxury-travel-trend-quiet-luxury-hotels/",
+      "apply": "Hilton's own trend report just validated quiet luxury as the story of 2026 — lean on it in this week's social copy and lead with The Still Water / The Slow Return on Collection inquiries."
+    },
+    {
       "title": "Forget Experiences. Luxury Travel Is Now Selling Connection.",
       "source": "Luxury Travel Advisor",
       "url": "https://www.luxurytraveladvisor.com/your-business/forget-experiences-luxury-travel-now-selling-connection",
-      "apply": "Lean into the Collection's group experiences — The Gathering, The Common Ground, The Last Fling — as shared-passion rituals, not itineraries."
+      "apply": "Self-organized family and friend groups are up 450% since 2020 — position The Gathering and The Common Ground as belonging, not logistics."
     },
     {
-      "title": "The Influence of Concierge Intelligence on the Evolution of Corporate Travel",
-      "source": "Hospitality Business Review APAC",
-      "url": "https://www.hospitalitybusinessreviewapac.com/news/the-influence-of-concierge-intelligence-on-the-evolution-of-corporate-travel-nwid-890.html",
-      "apply": "Validates the human+AI hybrid model industry-wide — keep client copy on outcomes ('the details are handled'), not 'your dedicated person.'"
+      "title": "Italian Startup Vero Concierge Launches Personalized Luxury Hospitality Service on Amalfi Coast",
+      "source": "EU Startups News",
+      "url": "https://eustartups.news/italian-startup-vero-concierge-launches-personalized-luxury-hospitality-service-on-amalfi-coast/",
+      "apply": "Direct model match — their growth path is B2B partnerships with villa managers, the same property-manager channel Solace/Home is building."
     },
     {
-      "title": "Workers to plug historic oil well near Kintla Lake, Glacier National Park",
-      "source": "Missoulian",
-      "url": "https://missoulian.com/outdoors/article_1d0a4aa3-7656-484c-a7f1-f77545f93069.html",
-      "apply": "Trail and camping access near Kintla Lake/North Fork closes late July through August — flag now if any Glacier itinerary touches that area."
+      "title": "The New Heart and Hub of the Whitefish Trail",
+      "source": "Flathead Beacon",
+      "url": "https://flatheadbeacon.com/2026/07/13/the-new-heart-and-hub-of-the-whitefish-trail/",
+      "apply": "New Welcome Center just opened at 855 Beaver Lake Rd (Wed 4-8pm, Sat 1-6pm through Sept 30) with a pump track and skills park — a fresh local rec for family or Little Explorers-style requests."
+    },
+    {
+      "title": "Man severely injured after rock hits vehicle on Going-to-the-Sun Road",
+      "source": "Hungry Horse News",
+      "url": "https://hungryhorsenews.com/news/2026/jul/13/man-severely-injured-after-rock-hits-vehicle-on-the-going-to-the-sun-road/",
+      "apply": "Rockfall closed the Rimrocks section for 2 hours July 11 — worth a caution line in any Glacier self-drive itinerary, or steer toward a guided shuttle instead."
     }
   ],
   "general_news": [
     {
-      "title": "US expands strikes into northern Iran and disables ship trying to run blockade",
+      "title": "US expands airstrike campaign against Iran, hitting bridges amid Hormuz shipping crisis",
       "source": "AP News",
       "url": "https://apnews.com/article/iran-us-hormuz-strait-war-july-16-2026-f98ff56554de2336f0e85bb5fdcae769"
     },
     {
-      "title": "Trump immediately fires the new court-appointed top prosecutor in Seattle",
-      "source": "NBC News",
-      "url": "https://www.nbcnews.com/politics/trump-administration/trump-immediately-fires-new-court-appointed-top-prosecutor-seattle-rcna587773"
+      "title": "Iran and US step up attacks as Hormuz shipping halts again",
+      "source": "SBS News",
+      "url": "https://www.sbs.com.au/news/article/iran-and-us-step-up-attacks-as-hormuz-shipping-halts-again/rvsl8u05w"
     }
   ]
 }
