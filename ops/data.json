@@ -1,56 +1,33 @@
 {
-  "date": "Friday, July 17",
-  "generated_at": "8:20 AM MT",
+  "date": "Tuesday, July 21",
+  "generated_at": "8:02 AM MT",
   "priorities": [
-    "Call Jason Koller (Wild Horse Limousine) about payment terms — still the blocker on his signature.",
-    "Call Gary Kaufman (Glacier Aviation) with a direct answer to his card-on-file objection.",
-    "Call back The Dog Club in Kalispell for a quick legitimacy reassurance, then text the intake form.",
-    "Calendar's wide open — good day to also ring Mum's Flowers, no reply yet after two emails."
+    "Resolve Jason Koller's (Wild Horse Limousine) payment-terms question — his signature is the one thing blocking the agreement.",
+    "Send the overdue bon voyage email for Cristina Zaharia's trip (TravelJoy reminder, unactioned since yesterday morning).",
+    "Close the loop with Gary Kaufman (Glacier Aviation) — confirm the card-on-file explanation landed and see if a custom agreement gets him signed.",
+    "New vendor lead: Stumptown Floral (Hannah Boll, Coram/Somers) does Glacier NP wedding & elopement floral — a fit for The Quiet Vow / The Milestone. Find contact info and add to the Group 2 call list.",
+    "When there's 20 spare minutes: 201 unread inbox messages, mostly newsletters — a bulk-archive pass would help."
+  ],
+  "priority_emails": [
+    {
+      "from": "TravelJoy (Cristina Zaharia's Trip)",
+      "subject": "Reminder: Send bon voyage email (Cristina Zaharia's Trip)",
+      "preview": "Send bon voyage email When: Mon Jul 20 9:00am Trip: Cristina Zaharia's Trip Client: Cristina Zaharia SEND BON VOYAGE EMAIL",
+      "received": "Mon, Jul 20, 7:55 AM MT",
+      "gmail_url": "",
+      "draft": "Wishing you a wonderful trip, Cristina — we hope every detail comes together exactly as planned. If anything comes up while you're traveling, we're just a call away. Enjoy every moment."
+    }
   ],
   "awaiting": [],
   "initiatives": [],
   "news": [
-    {
-      "title": "Hushpitality Is the Luxury Travel Trend Defining 2026",
-      "source": "Grazia",
-      "url": "https://graziamagazine.com/us/articles/hushpitality-luxury-travel-trend-quiet-luxury-hotels/",
-      "apply": "Hilton's own trend report just validated quiet luxury as the story of 2026 — lean on it in this week's social copy and lead with The Still Water / The Slow Return on Collection inquiries."
-    },
-    {
-      "title": "Forget Experiences. Luxury Travel Is Now Selling Connection.",
-      "source": "Luxury Travel Advisor",
-      "url": "https://www.luxurytraveladvisor.com/your-business/forget-experiences-luxury-travel-now-selling-connection",
-      "apply": "Self-organized family and friend groups are up 450% since 2020 — position The Gathering and The Common Ground as belonging, not logistics."
-    },
-    {
-      "title": "Italian Startup Vero Concierge Launches Personalized Luxury Hospitality Service on Amalfi Coast",
-      "source": "EU Startups News",
-      "url": "https://eustartups.news/italian-startup-vero-concierge-launches-personalized-luxury-hospitality-service-on-amalfi-coast/",
-      "apply": "Direct model match — their growth path is B2B partnerships with villa managers, the same property-manager channel Solace/Home is building."
-    },
-    {
-      "title": "The New Heart and Hub of the Whitefish Trail",
-      "source": "Flathead Beacon",
-      "url": "https://flatheadbeacon.com/2026/07/13/the-new-heart-and-hub-of-the-whitefish-trail/",
-      "apply": "New Welcome Center just opened at 855 Beaver Lake Rd (Wed 4-8pm, Sat 1-6pm through Sept 30) with a pump track and skills park — a fresh local rec for family or Little Explorers-style requests."
-    },
-    {
-      "title": "Man severely injured after rock hits vehicle on Going-to-the-Sun Road",
-      "source": "Hungry Horse News",
-      "url": "https://hungryhorsenews.com/news/2026/jul/13/man-severely-injured-after-rock-hits-vehicle-on-the-going-to-the-sun-road/",
-      "apply": "Rockfall closed the Rimrocks section for 2 hours July 11 — worth a caution line in any Glacier self-drive itinerary, or steer toward a guided shuttle instead."
-    }
+    { "title": "Forget Experiences. Luxury Travel Is Now Selling Connection.", "source": "Luxury Travel Advisor", "url": "https://www.luxurytraveladvisor.com/your-business/forget-experiences-luxury-travel-now-selling-connection", "apply": "Self-organized affinity/family groups are up 450% since 2020 — lean into The Gathering and The Common Ground as belonging, not logistics." },
+    { "title": "Luxury Travelers Don't Want Perfect Service Anymore — Here's What They Want Instead", "source": "AOL / Travel + Leisure", "url": "https://www.aol.com/articles/luxury-travelers-don-t-want-132123000.html", "apply": "Industry language is shifting from service to care — validates Solace's existing brand voice; good material for this week's Instagram post." },
+    { "title": "Visitors Jockey for Shuttle Reservations as Glacier Park Debuts Three-Hour Logan Pass Parking Limit", "source": "Flathead Beacon", "url": "https://flatheadbeacon.com/2026/07/20/visitors-jockey-for-shuttle-reservations-as-glacier-park-debuts-three-hour-logan-pass-parking-limit/", "apply": "Any Glacier-touching itinerary now needs a shuttle reservation booked 60 days out or the night before at recreation.gov." },
+    { "title": "Two Whitefish Residents Launch Community Ride Service for Under the Big Sky Festival", "source": "KXLF", "url": "https://www.kxlf.com/community/salute-to-service/two-whitefish-residents-launch-community-ride-service-for-under-the-big-sky-festival", "apply": "Uriah Rosenzwag (406-300-2071) and Jessica Robinson (406-471-2102) are running local rides this festival week — worth a call about referral overflow." }
   ],
   "general_news": [
-    {
-      "title": "US expands airstrike campaign against Iran, hitting bridges amid Hormuz shipping crisis",
-      "source": "AP News",
-      "url": "https://apnews.com/article/iran-us-hormuz-strait-war-july-16-2026-f98ff56554de2336f0e85bb5fdcae769"
-    },
-    {
-      "title": "Iran and US step up attacks as Hormuz shipping halts again",
-      "source": "SBS News",
-      "url": "https://www.sbs.com.au/news/article/iran-and-us-step-up-attacks-as-hormuz-shipping-halts-again/rvsl8u05w"
-    }
+    { "title": "US launches 10th consecutive night of strikes on Iran as Strait of Hormuz tensions escalate; oil tops $90/barrel", "source": "NPR", "url": "https://www.npr.org/2026/07/20/nx-s1-5900601/us-iran-updates" },
+    { "title": "Trump's primetime speech fails to unlock votes to pass the SAVE America Act", "source": "NBC News", "url": "https://www.nbcnews.com/politics/congress/trumps-primetime-election-speech-fails-votes-pass-save-america-act-rcna588362" }
   ]
 }
