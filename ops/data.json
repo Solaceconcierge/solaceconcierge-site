@@ -1,33 +1,78 @@
 {
-  "date": "Tuesday, July 21",
+  "date": "Wednesday, July 22",
   "generated_at": "8:02 AM MT",
   "priorities": [
-    "Resolve Jason Koller's (Wild Horse Limousine) payment-terms question — his signature is the one thing blocking the agreement.",
-    "Send the overdue bon voyage email for Cristina Zaharia's trip (TravelJoy reminder, unactioned since yesterday morning).",
-    "Close the loop with Gary Kaufman (Glacier Aviation) — confirm the card-on-file explanation landed and see if a custom agreement gets him signed.",
-    "New vendor lead: Stumptown Floral (Hannah Boll, Coram/Somers) does Glacier NP wedding & elopement floral — a fit for The Quiet Vow / The Milestone. Find contact info and add to the Group 2 call list.",
-    "When there's 20 spare minutes: 201 unread inbox messages, mostly newsletters — a bulk-archive pass would help."
+    "TravelJoy [Urgent]: Bon voyage email for Cristina Zaharia's trip was due Monday July 20. Verify — is this an active engagement? If yes, send the email now. If it's a test or expired, dismiss it.",
+    "Vendor calls today: Jason Koller / Wild Horse (payment terms), Dog Club Kalispell (legitimacy), Gary Kaufman / Glacier Aviation (payment framing). Start with Jason.",
+    "Route the two unprocessed 'Vendors' Slack images + Wild Wind Music lead to Partners Vendor Liaison for prospect intake.",
+    "Bear season flag: Add a brief wildlife-awareness note to your arrival prep template for Big Mountain-area clients.",
+    "Make.com MCP tools: They now support external MCP servers in AI Agents — worth a 5-minute read."
   ],
   "priority_emails": [
     {
-      "from": "TravelJoy (Cristina Zaharia's Trip)",
+      "from": "TravelJoy",
       "subject": "Reminder: Send bon voyage email (Cristina Zaharia's Trip)",
-      "preview": "Send bon voyage email When: Mon Jul 20 9:00am Trip: Cristina Zaharia's Trip Client: Cristina Zaharia SEND BON VOYAGE EMAIL",
-      "received": "Mon, Jul 20, 7:55 AM MT",
-      "gmail_url": "",
-      "draft": "Wishing you a wonderful trip, Cristina — we hope every detail comes together exactly as planned. If anything comes up while you're traveling, we're just a call away. Enjoy every moment."
+      "preview": "Send bon voyage email - When: Mon Jul 20 9:00am - Trip: Cristina Zaharia's Trip - Client: Cristina Zaharia. SEND BON VOYAGE EMAIL.",
+      "received": "Mon, Jul 20 · 1:55 PM UTC",
+      "draft": "Hi Cristina — wishing you a wonderful trip! Everything is in order on our end. Please don't hesitate to reach out if you need anything along the way. Warmly, Brittany Alcott · Solace Concierge"
     }
   ],
   "awaiting": [],
-  "initiatives": [],
+  "initiatives": [
+    {
+      "name": "Vendor Network Build",
+      "division": "partners",
+      "progress": 20,
+      "nextStep": "Make vendor calls: Wild Horse, Dog Club, Glacier Aviation. Then route Slack vendor images to PVL."
+    },
+    {
+      "name": "Solace Operations Dashboard",
+      "division": "concierge",
+      "progress": 65,
+      "nextStep": "Rebuild missing vendor database table and verify Supabase cockpit connection."
+    }
+  ],
   "news": [
-    { "title": "Forget Experiences. Luxury Travel Is Now Selling Connection.", "source": "Luxury Travel Advisor", "url": "https://www.luxurytraveladvisor.com/your-business/forget-experiences-luxury-travel-now-selling-connection", "apply": "Self-organized affinity/family groups are up 450% since 2020 — lean into The Gathering and The Common Ground as belonging, not logistics." },
-    { "title": "Luxury Travelers Don't Want Perfect Service Anymore — Here's What They Want Instead", "source": "AOL / Travel + Leisure", "url": "https://www.aol.com/articles/luxury-travelers-don-t-want-132123000.html", "apply": "Industry language is shifting from service to care — validates Solace's existing brand voice; good material for this week's Instagram post." },
-    { "title": "Visitors Jockey for Shuttle Reservations as Glacier Park Debuts Three-Hour Logan Pass Parking Limit", "source": "Flathead Beacon", "url": "https://flatheadbeacon.com/2026/07/20/visitors-jockey-for-shuttle-reservations-as-glacier-park-debuts-three-hour-logan-pass-parking-limit/", "apply": "Any Glacier-touching itinerary now needs a shuttle reservation booked 60 days out or the night before at recreation.gov." },
-    { "title": "Two Whitefish Residents Launch Community Ride Service for Under the Big Sky Festival", "source": "KXLF", "url": "https://www.kxlf.com/community/salute-to-service/two-whitefish-residents-launch-community-ride-service-for-under-the-big-sky-festival", "apply": "Uriah Rosenzwag (406-300-2071) and Jessica Robinson (406-471-2102) are running local rides this festival week — worth a call about referral overflow." }
+    {
+      "title": "US Luxury Tourism shifts to experiential travel — Flathead Valley is well-positioned",
+      "source": "Travel And Tour World",
+      "url": "https://www.travelandtourworld.com/news/article/yiswgic7j16p/",
+      "apply": "Concierge: Frame Collection experiences as locally immersive, not just coordinated."
+    },
+    {
+      "title": "Four Seasons Mykonos opens — curated island excursions as the differentiator",
+      "source": "Hotel News Resource",
+      "url": "https://www.hotelnewsresource.com/article142198.html",
+      "apply": "Concierge: Same playbook as The Collection. Bookmark their experience framing."
+    },
+    {
+      "title": "Grizzly euthanized near Big Mountain — high bear activity this summer",
+      "source": "Whitefish Pilot",
+      "url": "https://whitefishpilot.com/news/2026/jul/22/troublesome-black-bears-and-a-grizzly-mortality-near-big-mountain/",
+      "apply": "Concierge/Home: Add wildlife-awareness note to arrival prep for Big Mountain-area clients."
+    },
+    {
+      "title": "Iron Horse Golf Club involved in Whitefish fire station funding pitch",
+      "source": "Flathead Beacon",
+      "url": "https://flatheadbeacon.com/2026/07/22/whitefish-city-council-hears-funding-pitch-for-second-fire-station-north-of-viaduct/",
+      "apply": "Partners: Iron Horse residents are high-net-worth — potential future Direct/Home clients."
+    }
   ],
   "general_news": [
-    { "title": "US launches 10th consecutive night of strikes on Iran as Strait of Hormuz tensions escalate; oil tops $90/barrel", "source": "NPR", "url": "https://www.npr.org/2026/07/20/nx-s1-5900601/us-iran-updates" },
-    { "title": "Trump's primetime speech fails to unlock votes to pass the SAVE America Act", "source": "NBC News", "url": "https://www.nbcnews.com/politics/congress/trumps-primetime-election-speech-fails-votes-pass-save-america-act-rcna588362" }
+    {
+      "title": "US strikes Iran for 11th consecutive night; oil hits $94",
+      "source": "BBC / NPR",
+      "url": "https://www.bbc.co.uk/news/articles/cdrv0p37k8jo"
+    },
+    {
+      "title": "Trump approves 30-year nuclear agreement with Saudi Arabia",
+      "source": "AP News",
+      "url": "https://apnews.com/article/trump-saudi-arabia-nuclear-program-uranium-6bb82164c890a7dc335cbfc2c628a3da"
+    },
+    {
+      "title": "Generic drug tariffs: zero now, 100% in 2028, 200% a year later",
+      "source": "CNBC",
+      "url": "https://www.cnbc.com/2026/07/22/trump-generic-drugs-tariffs-medicine-trade-.html"
+    }
   ]
 }
