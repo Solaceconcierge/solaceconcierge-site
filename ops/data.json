@@ -1,78 +1,75 @@
 {
-  "date": "Wednesday, July 22",
-  "generated_at": "8:02 AM MT",
+  "date": "Thursday, July 23",
+  "generated_at": "8:03 AM MT",
   "priorities": [
-    "TravelJoy [Urgent]: Bon voyage email for Cristina Zaharia's trip was due Monday July 20. Verify — is this an active engagement? If yes, send the email now. If it's a test or expired, dismiss it.",
-    "Vendor calls today: Jason Koller / Wild Horse (payment terms), Dog Club Kalispell (legitimacy), Gary Kaufman / Glacier Aviation (payment framing). Start with Jason.",
-    "Route the two unprocessed 'Vendors' Slack images + Wild Wind Music lead to Partners Vendor Liaison for prospect intake.",
-    "Bear season flag: Add a brief wildlife-awareness note to your arrival prep template for Big Mountain-area clients.",
-    "Make.com MCP tools: They now support external MCP servers in AI Agents — worth a 5-minute read."
+    "Review the 2 vendor images posted in #all-solace-concierge — extract contact details and add to pipeline",
+    "Call Jason Koller / Wild Horse Limousine — payment terms blocking signature since June 24",
+    "Send Gary Kaufman / Glacier Aviation payment-timing email before calling — objection is specific",
+    "Check contact@solaceconcierge.com for Jordan Avery / Still Water — draft needs real guest email"
   ],
-  "priority_emails": [
-    {
-      "from": "TravelJoy",
-      "subject": "Reminder: Send bon voyage email (Cristina Zaharia's Trip)",
-      "preview": "Send bon voyage email - When: Mon Jul 20 9:00am - Trip: Cristina Zaharia's Trip - Client: Cristina Zaharia. SEND BON VOYAGE EMAIL.",
-      "received": "Mon, Jul 20 · 1:55 PM UTC",
-      "draft": "Hi Cristina — wishing you a wonderful trip! Everything is in order on our end. Please don't hesitate to reach out if you need anything along the way. Warmly, Brittany Alcott · Solace Concierge"
-    }
-  ],
+  "priority_emails": [],
   "awaiting": [],
   "initiatives": [
     {
-      "name": "Vendor Network Build",
+      "name": "Wild Horse Limousine Agreement",
       "division": "partners",
-      "progress": 20,
-      "nextStep": "Make vendor calls: Wild Horse, Dog Club, Glacier Aviation. Then route Slack vendor images to PVL."
+      "progress": 60,
+      "nextStep": "Resolve payment terms with Jason Koller and get agreement signed"
     },
     {
-      "name": "Solace Operations Dashboard",
-      "division": "concierge",
-      "progress": 65,
-      "nextStep": "Rebuild missing vendor database table and verify Supabase cockpit connection."
+      "name": "Glacier Aviation Agreement",
+      "division": "partners",
+      "progress": 55,
+      "nextStep": "Send payment-timing email response and request Gary Kaufman signature"
     }
   ],
   "news": [
     {
-      "title": "US Luxury Tourism shifts to experiential travel — Flathead Valley is well-positioned",
-      "source": "Travel And Tour World",
-      "url": "https://www.travelandtourworld.com/news/article/yiswgic7j16p/",
-      "apply": "Concierge: Frame Collection experiences as locally immersive, not just coordinated."
+      "title": "Virtuoso 2026: luxury travelers ask 'will this create memories?' — not 'what's cheapest?'",
+      "source": "The Roaming Boomers / Virtuoso",
+      "url": "https://www.theroamingboomers.com/luxury-travel-trends-2026/",
+      "apply": "Concierge: Use in PM pitches — guests want flawless execution, not the lowest price"
     },
     {
-      "title": "Four Seasons Mykonos opens — curated island excursions as the differentiator",
-      "source": "Hotel News Resource",
-      "url": "https://www.hotelnewsresource.com/article142198.html",
-      "apply": "Concierge: Same playbook as The Collection. Bookmark their experience framing."
+      "title": "Exclusive Resorts president: 'The logistics aren't the value. Their absence is.'",
+      "source": "Worth.com",
+      "url": "https://worth.com/what-the-wealthiest-travelers-are-really-buying/",
+      "apply": "Home: This quote is the Solace/Home pitch. Draft for landing page."
     },
     {
-      "title": "Grizzly euthanized near Big Mountain — high bear activity this summer",
+      "title": "2026 luxury shift: access over assets, human expertise valued over algorithms",
+      "source": "Spirited Asia",
+      "url": "https://www.spiritedasia.com/2026/07/makers-shakers-12-charlotte-travel-louen-tang/",
+      "apply": "Partners: Reinforce Solace is the trusted local referral layer, not a booking platform"
+    },
+    {
+      "title": "Grizzly euthanized near Whitefish; 13 bears monitored on Big Mountain",
       "source": "Whitefish Pilot",
       "url": "https://whitefishpilot.com/news/2026/jul/22/troublesome-black-bears-and-a-grizzly-mortality-near-big-mountain/",
-      "apply": "Concierge/Home: Add wildlife-awareness note to arrival prep for Big Mountain-area clients."
+      "apply": "Home: Add wildlife conflict check to seasonal onboarding SOP"
     },
     {
-      "title": "Iron Horse Golf Club involved in Whitefish fire station funding pitch",
+      "title": "Whitefish proposes second fire station at Iron Horse Golf Club — $10M, voter levy likely",
       "source": "Flathead Beacon",
       "url": "https://flatheadbeacon.com/2026/07/22/whitefish-city-council-hears-funding-pitch-for-second-fire-station-north-of-viaduct/",
-      "apply": "Partners: Iron Horse residents are high-net-worth — potential future Direct/Home clients."
+      "apply": "Home: Monitor — faster emergency response north of viaduct; relevant to property risk profiles"
     }
   ],
   "general_news": [
     {
-      "title": "US strikes Iran for 11th consecutive night; oil hits $94",
-      "source": "BBC / NPR",
-      "url": "https://www.bbc.co.uk/news/articles/cdrv0p37k8jo"
+      "title": "US launches 12th night of strikes on Iran; oil hits $93/barrel",
+      "source": "AP / Newser",
+      "url": "https://www.newser.com/article/42ff3de8d135ad72ff3ba4d94cc0921d/us-military-says-its-carrying-out-strikes-on-iran-as-both-sides-threaten-civilian-infrastructure.html"
     },
     {
-      "title": "Trump approves 30-year nuclear agreement with Saudi Arabia",
-      "source": "AP News",
-      "url": "https://apnews.com/article/trump-saudi-arabia-nuclear-program-uranium-6bb82164c890a7dc335cbfc2c628a3da"
+      "title": "Trump-Saudi nuclear deal conditional on joining Abraham Accords",
+      "source": "NBC News",
+      "url": "https://www.nbcnews.com/politics/national-security/trumps-deal-saudi-arabia-reverses-longtime-us-policy-rcna588824"
     },
     {
-      "title": "Generic drug tariffs: zero now, 100% in 2028, 200% a year later",
-      "source": "CNBC",
-      "url": "https://www.cnbc.com/2026/07/22/trump-generic-drugs-tariffs-medicine-trade-.html"
+      "title": "Jim Jordan refers Jack Smith to DOJ for allegedly lying to Congress",
+      "source": "Newsweek",
+      "url": "https://www.newsweek.com/jack-smith-faces-doj-criminal-referral-accused-of-lying-in-testimony-12231914"
     }
   ]
 }
