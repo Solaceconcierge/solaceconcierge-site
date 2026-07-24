@@ -9,13 +9,14 @@
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400&family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&display=swap" rel="stylesheet">
 <style>
   * { margin: 0; padding: 0; box-sizing: border-box; }
-  html, body { height: 100%; overflow: hidden; }
+  html, body { height: 100%; }
 
   body {
     font-family: 'Inter', sans-serif;
     color: #EFE5CC;
     min-height: 100dvh;
     position: relative;
+    overflow-x: hidden;
   }
 
   /* Background image */
@@ -24,24 +25,21 @@
     inset: 0;
     z-index: 0;
   }
-
   .bg img {
     width: 100%; height: 100%;
     object-fit: cover;
     object-position: center 40%;
   }
-
-  /* Dark overlay — heavy enough for text legibility */
   .bg::after {
     content: '';
     position: absolute;
     inset: 0;
     background: linear-gradient(
       to bottom,
-      rgba(10,10,10,0.55) 0%,
-      rgba(10,10,10,0.7) 40%,
-      rgba(10,10,10,0.85) 70%,
-      rgba(10,10,10,0.92) 100%
+      rgba(10,10,10,0.5) 0%,
+      rgba(10,10,10,0.65) 35%,
+      rgba(10,10,10,0.82) 65%,
+      rgba(10,10,10,0.93) 100%
     );
   }
 
@@ -55,20 +53,17 @@
     align-items: center;
     justify-content: center;
     padding: 2.5rem 2rem;
-    overflow-y: auto;
   }
 
-  /* Top bar */
   .top-bar {
     font-weight: 200;
-    font-size: 0.5rem;
-    letter-spacing: 0.35em;
+    font-size: 0.45rem;
+    letter-spacing: 0.4em;
     text-transform: uppercase;
-    color: rgba(239,229,204,0.35);
-    margin-bottom: 2.5rem;
+    color: rgba(239,229,204,0.3);
+    margin-bottom: 2rem;
   }
 
-  /* Headline */
   .headline {
     font-family: 'Cormorant Garamond', serif;
     font-style: italic;
@@ -77,30 +72,27 @@
     color: #EFE5CC;
     margin-bottom: 0.5rem;
     text-align: center;
-    line-height: 1.2;
+    line-height: 1.15;
   }
 
   .sub {
     font-weight: 300;
-    font-size: 0.78rem;
-    color: rgba(239,229,204,0.45);
+    font-size: 0.75rem;
+    color: rgba(239,229,204,0.4);
     letter-spacing: 0.06em;
     text-align: center;
     line-height: 1.6;
-    max-width: 300px;
-    margin-bottom: 2.5rem;
+    max-width: 280px;
+    margin-bottom: 2rem;
   }
 
-  /* Contact card area */
   .card {
     width: 100%;
     max-width: 320px;
   }
 
-  .contact-row {
-    margin-bottom: 0.6rem;
-  }
-
+  /* Contact buttons */
+  .contact-row { margin-bottom: 0.5rem; }
   .contact-row a {
     display: block;
     font-weight: 300;
@@ -108,36 +100,34 @@
     color: #EFE5CC;
     text-decoration: none;
     padding: 13px 0;
-    border: 1px solid rgba(239,229,204,0.1);
+    border: 1px solid rgba(239,229,204,0.09);
     background: rgba(10,10,10,0.3);
-    backdrop-filter: blur(8px);
-    -webkit-backdrop-filter: blur(8px);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
     text-align: center;
-    transition: all 0.25s ease;
+    transition: all 0.2s ease;
     letter-spacing: 0.04em;
   }
-
   .contact-row a:active {
     background: rgba(201,169,97,0.1);
     border-color: rgba(201,169,97,0.3);
   }
-
   .contact-label {
-    font-size: 0.45rem;
+    font-size: 0.42rem;
     font-weight: 200;
     text-transform: uppercase;
     letter-spacing: 0.35em;
-    color: rgba(239,229,204,0.3);
+    color: rgba(239,229,204,0.28);
     display: block;
     margin-bottom: 2px;
   }
 
-  /* Save button */
+  /* Save Contact — gold button */
   .save-btn {
     display: block;
     width: 100%;
     padding: 15px 0;
-    margin-top: 1rem;
+    margin-top: 0.75rem;
     background: #C9A961;
     color: #0A0A0A;
     border: none;
@@ -150,94 +140,87 @@
     text-decoration: none;
     text-align: center;
   }
-
   .save-btn:active { opacity: 0.85; }
 
-  /* Links row */
+  /* Three link boxes */
   .links {
     display: flex;
     gap: 0;
-    margin-top: 1.25rem;
+    margin-top: 1rem;
     width: 100%;
     max-width: 320px;
   }
-
   .link-box {
     flex: 1;
     display: block;
     text-decoration: none;
     text-align: center;
-    padding: 14px 8px;
-    border: 1px solid rgba(239,229,204,0.07);
-    background: rgba(10,10,10,0.25);
+    padding: 13px 6px;
+    border: 1px solid rgba(239,229,204,0.06);
+    background: rgba(10,10,10,0.2);
     backdrop-filter: blur(8px);
     -webkit-backdrop-filter: blur(8px);
     transition: all 0.2s ease;
   }
-
-  .link-box:first-child { border-right: none; }
+  .link-box + .link-box { border-left: none; }
   .link-box:active { background: rgba(201,169,97,0.06); }
-
   .link-box-label {
-    font-size: 0.4rem;
+    font-size: 0.38rem;
     font-weight: 200;
     text-transform: uppercase;
-    letter-spacing: 0.3em;
-    color: rgba(239,229,204,0.28);
+    letter-spacing: 0.25em;
+    color: rgba(239,229,204,0.25);
     display: block;
-    margin-bottom: 3px;
+    margin-bottom: 2px;
   }
-
   .link-box-name {
     font-family: 'Cormorant Garamond', serif;
     font-style: italic;
     font-weight: 300;
-    font-size: 0.82rem;
-    color: rgba(239,229,204,0.8);
+    font-size: 0.78rem;
+    color: rgba(239,229,204,0.75);
   }
-
   .link-box-url {
-    font-size: 0.45rem;
+    font-size: 0.4rem;
     font-weight: 200;
-    letter-spacing: 0.08em;
-    color: rgba(201,169,97,0.5);
+    letter-spacing: 0.06em;
+    color: rgba(201,169,97,0.45);
     display: block;
-    margin-top: 3px;
+    margin-top: 2px;
   }
 
-  /* Footer */
   .footer {
-    margin-top: 2rem;
+    margin-top: 1.75rem;
     font-weight: 200;
-    font-size: 0.45rem;
+    font-size: 0.42rem;
     letter-spacing: 0.25em;
     text-transform: uppercase;
-    color: rgba(239,229,204,0.15);
+    color: rgba(239,229,204,0.12);
   }
 
   @media (max-width: 360px) {
     .headline { font-size: 2rem; }
     .content { padding: 2rem 1.5rem; }
+    .links { flex-direction: column; }
+    .link-box + .link-box { border-left: 1px solid rgba(239,229,204,0.06); border-top: none; }
   }
 
-  @media (max-height: 700px) {
-    .top-bar { margin-bottom: 1.5rem; }
-    .sub { margin-bottom: 1.5rem; }
-    .footer { margin-top: 1.25rem; }
+  @media (max-height: 680px) {
+    .top-bar { margin-bottom: 1.25rem; }
+    .sub { margin-bottom: 1.25rem; }
+    .footer { margin-top: 1rem; }
   }
 </style>
 </head>
 <body>
 
-<!-- Background -->
 <div class="bg">
   <img src="https://pub.hyperagent.com/api/published/pbf01KRF44BBT_S4F69D0W5MH4XFCW/img_hero_terrace.png" alt="">
 </div>
 
-<!-- Content -->
 <div class="content">
 
-  <div class="top-bar">Private Coordination · Flathead Valley</div>
+  <div class="top-bar">Private Coordination · Flathead Valley · Montana</div>
 
   <h1 class="headline">Find solace.</h1>
   <p class="sub">Every detail considered. Every arrangement, seamless.</p>
@@ -255,9 +238,12 @@
         contact@solaceconcierge.com
       </a>
     </div>
-    <a class="save-btn" id="save-contact" href="#">Save Contact</a>
+
+    <!-- Save Contact — downloads vCard with Solace logo as contact photo -->
+    <a class="save-btn" href="https://pub.hyperagent.com/api/published/pbf01KY8Y7GYH_R4VSCQ1W488VP1HD/solace.vcf" download="Solace Concierge.vcf">Save Contact</a>
   </div>
 
+  <!-- Three destinations -->
   <div class="links">
     <a class="link-box" href="https://solacemontana.com" target="_blank" rel="noopener noreferrer">
       <span class="link-box-label">Website</span>
@@ -269,38 +255,16 @@
       <span class="link-box-name">Request</span>
       <span class="link-box-url">solacemt.com</span>
     </a>
+    <a class="link-box" href="https://hyperagent.com/s/rPmFieIYxor3unXpai7cnw" target="_blank" rel="noopener noreferrer">
+      <span class="link-box-label">Pricing</span>
+      <span class="link-box-name">Details</span>
+      <span class="link-box-url">how it works</span>
+    </a>
   </div>
 
   <div class="footer">Solace Concierge LLC</div>
 
 </div>
-
-<script>
-document.getElementById('save-contact').addEventListener('click', function(e) {
-  e.preventDefault();
-  const vcard = [
-    'BEGIN:VCARD',
-    'VERSION:3.0',
-    'FN:Solace Concierge',
-    'ORG:Solace Concierge LLC',
-    'TEL;TYPE=WORK,VOICE:+14062136887',
-    'EMAIL;TYPE=WORK:contact@solaceconcierge.com',
-    'URL:https://solacemontana.com',
-    'ADR;TYPE=WORK:;;Flathead Valley;Montana;;US',
-    'NOTE:Private coordination for the Flathead Valley. Website: solacemontana.com | App: solacemt.com',
-    'END:VCARD'
-  ].join('\n');
-  const blob = new Blob([vcard], { type: 'text/vcard;charset=utf-8' });
-  const url = URL.createObjectURL(blob);
-  const a = document.createElement('a');
-  a.href = url;
-  a.download = 'Solace Concierge.vcf';
-  document.body.appendChild(a);
-  a.click();
-  document.body.removeChild(a);
-  URL.revokeObjectURL(url);
-});
-</script>
 
 </body>
 </html>
