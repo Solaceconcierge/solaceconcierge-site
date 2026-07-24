@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Solace Concierge — Flathead Valley, Montana</title>
+<meta name="description" content="Private coordination for the Flathead Valley. Solace handles the details.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400&family=Cormorant+Garamond:ital,wght@1,300;1,400&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { height: 100%; }
+  body {
+    font-family: 'Inter', sans-serif;
+    background: #0A0A0A;
+    color: #EFE5CC;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100dvh;
+    padding: 2rem;
+  }
+
+  .card {
+    text-align: center;
+    max-width: 340px;
+    width: 100%;
+  }
+
+  .wordmark {
+    font-weight: 200;
+    letter-spacing: 0.5em;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    margin-bottom: 2.5rem;
+    color: #EFE5CC;
+  }
+
+  .tagline {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-weight: 300;
+    font-size: 1.3rem;
+    line-height: 1.4;
+    color: #EFE5CC;
+    margin-bottom: 0.6rem;
+  }
+
+  .sub {
+    font-weight: 300;
+    font-size: 0.75rem;
+    color: rgba(239,229,204,0.4);
+    letter-spacing: 0.15em;
+    margin-bottom: 3rem;
+  }
+
+  .rule {
+    width: 30px;
+    height: 1px;
+    background: #C9A961;
+    margin: 0 auto 2.5rem;
+  }
+
+  /* Contact links */
+  .contact-row {
+    margin-bottom: 1rem;
+  }
+
+  .contact-row a {
+    display: block;
+    font-weight: 300;
+    font-size: 0.9rem;
+    color: #EFE5CC;
+    text-decoration: none;
+    padding: 14px 0;
+    border: 1px solid rgba(239,229,204,0.12);
+    transition: all 0.25s ease;
+    letter-spacing: 0.05em;
+  }
+
+  .contact-row a:active {
+    background: rgba(239,229,204,0.06);
+  }
+
+  .contact-label {
+    font-size: 0.55rem;
+    font-weight: 200;
+    text-transform: uppercase;
+    letter-spacing: 0.3em;
+    color: rgba(239,229,204,0.35);
+    display: block;
+    margin-bottom: 4px;
+  }
+
+  /* Save contact button */
+  .save-btn {
+    display: block;
+    width: 100%;
+    padding: 16px 0;
+    margin-top: 1.5rem;
+    background: #C9A961;
+    color: #0A0A0A;
+    border: none;
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+    font-size: 0.7rem;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+    transition: opacity 0.25s ease;
+  }
+
+  .save-btn:active { opacity: 0.8; }
+
+  /* App + site links */
+  .links {
+    margin-top: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .links a {
+    font-weight: 200;
+    font-size: 0.65rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: rgba(239,229,204,0.45);
+    text-decoration: none;
+    padding: 10px 0;
+    border-bottom: 1px solid rgba(239,229,204,0.06);
+    transition: color 0.2s ease;
+  }
+
+  .links a:active { color: #C9A961; }
+
+  .footer {
+    margin-top: 3rem;
+    font-weight: 200;
+    font-size: 0.55rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: rgba(239,229,204,0.2);
+  }
+</style>
+</head>
+<body>
+
+<div class="card">
+
+  <div class="wordmark">S O L A C E</div>
+
+  <div class="tagline">Private coordination for the Flathead Valley.</div>
+  <div class="sub">Flathead Valley, Montana</div>
+
+  <div class="rule"></div>
+
+  <!-- Contact -->
+  <div class="contact-row">
+    <a href="tel:+14062136887">
+      <span class="contact-label">Call</span>
+      (406) 213-6887
+    </a>
+  </div>
+
+  <div class="contact-row">
+    <a href="mailto:contact@solaceconcierge.com">
+      <span class="contact-label">Email</span>
+      contact@solaceconcierge.com
+    </a>
+  </div>
+
+  <!-- Save Contact (vCard) -->
+  <a class="save-btn" id="save-contact" href="#" download="Solace Concierge.vcf">Save Contact</a>
+
+  <!-- App + Site links -->
+  <div class="links">
+    <a href="https://solacemt.com" target="_blank" rel="noopener noreferrer">Open the Solace App →</a>
+    <a href="https://solacemontana.com" target="_blank" rel="noopener noreferrer">Visit solacemontana.com →</a>
+  </div>
+
+  <div class="footer">Solace Concierge LLC</div>
+
+</div>
+
+<script>
+// Generate vCard on the fly and trigger download
+document.getElementById('save-contact').addEventListener('click', function(e) {
+  e.preventDefault();
+  const vcard = [
+    'BEGIN:VCARD',
+    'VERSION:3.0',
+    'FN:Solace Concierge',
+    'ORG:Solace Concierge LLC',
+    'TEL;TYPE=WORK,VOICE:+14062136887',
+    'EMAIL;TYPE=WORK:contact@solaceconcierge.com',
+    'URL:https://solacemontana.com',
+    'ADR;TYPE=WORK:;;Flathead Valley;Montana;;US',
+    'NOTE:Private coordination for the Flathead Valley. solacemontana.com | App: solacemt.com',
+    'END:VCARD'
+  ].join('\n');
+
+  const blob = new Blob([vcard], { type: 'text/vcard;charset=utf-8' });
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement('a');
+  a.href = url;
+  a.download = 'Solace Concierge.vcf';
+  document.body.appendChild(a);
+  a.click();
+  document.body.removeChild(a);
+  URL.revokeObjectURL(url);
+});
+</script>
+
+</body>
+</html>
