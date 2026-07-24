@@ -1,75 +1,78 @@
 {
-  "date": "Thursday, July 23",
-  "generated_at": "8:03 AM MT",
+  "date": "Friday, July 24",
+  "generated_at": "8:05 AM MT",
   "priorities": [
-    "Review the 2 vendor images posted in #all-solace-concierge — extract contact details and add to pipeline",
-    "Call Jason Koller / Wild Horse Limousine — payment terms blocking signature since June 24",
-    "Send Gary Kaufman / Glacier Aviation payment-timing email before calling — objection is specific",
-    "Check contact@solaceconcierge.com for Jordan Avery / Still Water — draft needs real guest email"
+    "Identify the vendor who signed last night — visit documenso.com/sign or check vendors@ for the signer name, then update Active Vendor Profiles",
+    "Call Jason Koller (Wild Horse Limousine) at (406) 756-2290 — walk through deposit timing, close the agreement",
+    "Call The Dog Club Kalispell at (406) 890-2220 — they reached out first; one legitimacy question stands between them and the form",
+    "Work through today's 5-call list: Wild Horse, Dog Club, Glacier Aviation, Mum's Flowers, Chef Nate Snyder",
+    "Review the two vendor images in Slack (July 11 post) — ask assistant to extract contact details from IMG_1183 and IMG_1184"
   ],
-  "priority_emails": [],
+  "priority_emails": [
+    {
+      "from": "Documenso",
+      "subject": "Signing Complete!",
+      "preview": "Solace:Partners — Preferred Partner Agreement was signed by all signers. Download the completed document to identify the vendor.",
+      "received": "Thu Jul 23, 7:47 PM",
+      "draft": "Great news — your Preferred Partner Agreement has been fully signed. I'll log your information in our vendor network and reach out shortly with your next steps for activation."
+    }
+  ],
   "awaiting": [],
   "initiatives": [
     {
-      "name": "Wild Horse Limousine Agreement",
-      "division": "partners",
-      "progress": 60,
-      "nextStep": "Resolve payment terms with Jason Koller and get agreement signed"
+      "name": "Vendor Agreement Pipeline",
+      "division": "Partners",
+      "progress": 45,
+      "nextStep": "Identify last night's Documenso signer and update Active Vendor Profiles"
     },
     {
-      "name": "Glacier Aviation Agreement",
-      "division": "partners",
-      "progress": 55,
-      "nextStep": "Send payment-timing email response and request Gary Kaufman signature"
+      "name": "Solace/Home Market Development",
+      "division": "Home",
+      "progress": 20,
+      "nextStep": "Draft wildfire-prep bulletin for prospective Home clients"
     }
   ],
   "news": [
     {
-      "title": "Virtuoso 2026: luxury travelers ask 'will this create memories?' — not 'what's cheapest?'",
-      "source": "The Roaming Boomers / Virtuoso",
-      "url": "https://www.theroamingboomers.com/luxury-travel-trends-2026/",
-      "apply": "Concierge: Use in PM pitches — guests want flawless execution, not the lowest price"
+      "title": "Auster at Dome Mountain opens — luxury Montana retreat near Yellowstone",
+      "source": "Travel and Tour World",
+      "url": "https://www.travelandtourworld.com/news/article/tfomoo8lbajq/",
+      "apply": "Concierge + Partners: Guests arriving at Auster often continue north to Glacier/Whitefish — Solace is the natural arrangement partner for those needs."
     },
     {
-      "title": "Exclusive Resorts president: 'The logistics aren't the value. Their absence is.'",
-      "source": "Worth.com",
-      "url": "https://worth.com/what-the-wealthiest-travelers-are-really-buying/",
-      "apply": "Home: This quote is the Solace/Home pitch. Draft for landing page."
+      "title": "Montana STR study: Flathead County #1 at $207M visitor spending",
+      "source": "UM BBER",
+      "url": "https://www.travelandtourworld.com/news/article/dshuq0ibuhv5/",
+      "apply": "Home + Partners: Hard data for PM outreach — Flathead is Montana's largest STR market."
     },
     {
-      "title": "2026 luxury shift: access over assets, human expertise valued over algorithms",
-      "source": "Spirited Asia",
-      "url": "https://www.spiritedasia.com/2026/07/makers-shakers-12-charlotte-travel-louen-tang/",
-      "apply": "Partners: Reinforce Solace is the trusted local referral layer, not a booking platform"
+      "title": "Flathead Valley wildfire risk rising — drying conditions ahead",
+      "source": "Flathead Beacon",
+      "url": "https://flatheadbeacon.com/2026/07/23/flathead-valley-holding-our-own-so-far-in-2026-wildfire-season-but-drying-conditions-on-the-horizon/",
+      "apply": "Home: Property prep check for second-home clients — gutters, firewood, grass."
     },
     {
-      "title": "Grizzly euthanized near Whitefish; 13 bears monitored on Big Mountain",
+      "title": "Grizzly bear euthanized near Whitefish — 9 bears relocated this season",
       "source": "Whitefish Pilot",
       "url": "https://whitefishpilot.com/news/2026/jul/22/troublesome-black-bears-and-a-grizzly-mortality-near-big-mountain/",
-      "apply": "Home: Add wildlife conflict check to seasonal onboarding SOP"
-    },
-    {
-      "title": "Whitefish proposes second fire station at Iron Horse Golf Club — $10M, voter levy likely",
-      "source": "Flathead Beacon",
-      "url": "https://flatheadbeacon.com/2026/07/22/whitefish-city-council-hears-funding-pitch-for-second-fire-station-north-of-viaduct/",
-      "apply": "Home: Monitor — faster emergency response north of viaduct; relevant to property risk profiles"
+      "apply": "Concierge + Home: Include bear-aware outdoor trash note in arrival prep for Big Mountain / north Whitefish properties."
     }
   ],
   "general_news": [
     {
-      "title": "US launches 12th night of strikes on Iran; oil hits $93/barrel",
-      "source": "AP / Newser",
-      "url": "https://www.newser.com/article/42ff3de8d135ad72ff3ba4d94cc0921d/us-military-says-its-carrying-out-strikes-on-iran-as-both-sides-threaten-civilian-infrastructure.html"
-    },
-    {
-      "title": "Trump-Saudi nuclear deal conditional on joining Abraham Accords",
+      "title": "U.S. launches 13th night of Iran strikes; Trump weighing 'massive attack'",
       "source": "NBC News",
-      "url": "https://www.nbcnews.com/politics/national-security/trumps-deal-saudi-arabia-reverses-longtime-us-policy-rcna588824"
+      "url": "https://www.nbcnews.com/world/iran/us-iran-strikes-trump-massive-attack-war-hormuz-red-sea-oil-rcna589016"
     },
     {
-      "title": "Jim Jordan refers Jack Smith to DOJ for allegedly lying to Congress",
-      "source": "Newsweek",
-      "url": "https://www.newsweek.com/jack-smith-faces-doj-criminal-referral-accused-of-lying-in-testimony-12231914"
+      "title": "House narrowly votes to halt Iran military action; Senate rejects similar measure",
+      "source": "AP News",
+      "url": "https://apnews.com/article/iran-us-hormuz-strait-war-24-july-2026-78c2dbf538f6e61ab816479a4d9bdd85"
+    },
+    {
+      "title": "Oil briefly tops $100/barrel as Hormuz traffic stalls",
+      "source": "BBC News",
+      "url": "https://www.bbc.com/news/articles/c05ql5llj4do"
     }
   ]
 }
