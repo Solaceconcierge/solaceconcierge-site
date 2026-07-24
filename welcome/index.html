@@ -2,81 +2,103 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 <title>Find Solace — Flathead Valley, Montana</title>
-<meta name="description" content="Private coordination for the Flathead Valley. Solace handles the details.">
+<meta name="description" content="Private coordination for the Flathead Valley.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400&family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&display=swap" rel="stylesheet">
 <style>
   * { margin: 0; padding: 0; box-sizing: border-box; }
-  html, body { height: 100%; }
+  html, body { height: 100%; overflow: hidden; }
+
   body {
     font-family: 'Inter', sans-serif;
-    background: #0A0A0A;
     color: #EFE5CC;
+    min-height: 100dvh;
+    position: relative;
+  }
+
+  /* Background image */
+  .bg {
+    position: fixed;
+    inset: 0;
+    z-index: 0;
+  }
+
+  .bg img {
+    width: 100%; height: 100%;
+    object-fit: cover;
+    object-position: center 40%;
+  }
+
+  /* Dark overlay — heavy enough for text legibility */
+  .bg::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+      to bottom,
+      rgba(10,10,10,0.55) 0%,
+      rgba(10,10,10,0.7) 40%,
+      rgba(10,10,10,0.85) 70%,
+      rgba(10,10,10,0.92) 100%
+    );
+  }
+
+  /* Content */
+  .content {
+    position: relative;
+    z-index: 1;
+    min-height: 100dvh;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    min-height: 100dvh;
-    padding: 2rem;
+    padding: 2.5rem 2rem;
+    overflow-y: auto;
   }
 
-  .card {
-    text-align: center;
-    max-width: 340px;
-    width: 100%;
-  }
-
-  /* Find Solace headline — links to main site */
-  .find-solace {
-    display: block;
-    text-decoration: none;
-    margin-bottom: 0.5rem;
-  }
-
-  .find-solace-word {
-    font-family: 'Inter', sans-serif;
+  /* Top bar */
+  .top-bar {
     font-weight: 200;
-    letter-spacing: 0.5em;
-    font-size: 0.6rem;
+    font-size: 0.5rem;
+    letter-spacing: 0.35em;
     text-transform: uppercase;
-    color: rgba(239,229,204,0.4);
-    display: block;
-    margin-bottom: 0.4rem;
+    color: rgba(239,229,204,0.35);
+    margin-bottom: 2.5rem;
   }
 
-  .find-solace-headline {
+  /* Headline */
+  .headline {
     font-family: 'Cormorant Garamond', serif;
-    font-weight: 400;
     font-style: italic;
-    font-size: 2rem;
+    font-weight: 300;
+    font-size: clamp(2.2rem, 8vw, 3.2rem);
     color: #EFE5CC;
-    letter-spacing: 0.02em;
-  }
-
-  .find-solace-headline span {
-    color: #C9A961;
+    margin-bottom: 0.5rem;
+    text-align: center;
+    line-height: 1.2;
   }
 
   .sub {
     font-weight: 300;
-    font-size: 0.7rem;
-    color: rgba(239,229,204,0.35);
-    letter-spacing: 0.12em;
-    margin-bottom: 2.5rem;
+    font-size: 0.78rem;
+    color: rgba(239,229,204,0.45);
+    letter-spacing: 0.06em;
+    text-align: center;
     line-height: 1.6;
+    max-width: 300px;
+    margin-bottom: 2.5rem;
   }
 
-  .rule {
-    width: 30px;
-    height: 1px;
-    background: #C9A961;
-    margin: 0 auto 2rem;
+  /* Contact card area */
+  .card {
+    width: 100%;
+    max-width: 320px;
   }
 
-  /* Contact links */
   .contact-row {
-    margin-bottom: 0.75rem;
+    margin-bottom: 0.6rem;
   }
 
   .contact-row a {
@@ -85,162 +107,171 @@
     font-size: 0.85rem;
     color: #EFE5CC;
     text-decoration: none;
-    padding: 14px 0;
+    padding: 13px 0;
     border: 1px solid rgba(239,229,204,0.1);
+    background: rgba(10,10,10,0.3);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    text-align: center;
     transition: all 0.25s ease;
     letter-spacing: 0.04em;
   }
 
   .contact-row a:active {
-    background: rgba(201,169,97,0.08);
-    border-color: rgba(201,169,97,0.25);
+    background: rgba(201,169,97,0.1);
+    border-color: rgba(201,169,97,0.3);
   }
 
   .contact-label {
-    font-size: 0.5rem;
+    font-size: 0.45rem;
     font-weight: 200;
     text-transform: uppercase;
     letter-spacing: 0.35em;
     color: rgba(239,229,204,0.3);
     display: block;
-    margin-bottom: 3px;
+    margin-bottom: 2px;
   }
 
-  /* Save contact button */
+  /* Save button */
   .save-btn {
     display: block;
     width: 100%;
-    padding: 16px 0;
-    margin-top: 1.25rem;
+    padding: 15px 0;
+    margin-top: 1rem;
     background: #C9A961;
     color: #0A0A0A;
     border: none;
     font-family: 'Inter', sans-serif;
     font-weight: 300;
-    font-size: 0.65rem;
+    font-size: 0.6rem;
     letter-spacing: 0.3em;
     text-transform: uppercase;
     cursor: pointer;
     text-decoration: none;
     text-align: center;
-    transition: opacity 0.25s ease;
   }
 
-  .save-btn:active { opacity: 0.8; }
+  .save-btn:active { opacity: 0.85; }
 
-  /* App + site links */
+  /* Links row */
   .links {
-    margin-top: 2rem;
     display: flex;
     gap: 0;
+    margin-top: 1.25rem;
+    width: 100%;
+    max-width: 320px;
   }
 
   .link-box {
     flex: 1;
     display: block;
     text-decoration: none;
-    padding: 18px 10px;
-    border: 1px solid rgba(239,229,204,0.08);
-    transition: all 0.25s ease;
+    text-align: center;
+    padding: 14px 8px;
+    border: 1px solid rgba(239,229,204,0.07);
+    background: rgba(10,10,10,0.25);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    transition: all 0.2s ease;
   }
 
-  .link-box:first-child {
-    border-right: none;
-  }
-
-  .link-box:active {
-    background: rgba(201,169,97,0.06);
-  }
+  .link-box:first-child { border-right: none; }
+  .link-box:active { background: rgba(201,169,97,0.06); }
 
   .link-box-label {
-    font-size: 0.45rem;
+    font-size: 0.4rem;
     font-weight: 200;
     text-transform: uppercase;
     letter-spacing: 0.3em;
-    color: rgba(239,229,204,0.3);
+    color: rgba(239,229,204,0.28);
     display: block;
-    margin-bottom: 5px;
+    margin-bottom: 3px;
   }
 
   .link-box-name {
     font-family: 'Cormorant Garamond', serif;
     font-style: italic;
     font-weight: 300;
-    font-size: 0.9rem;
-    color: #EFE5CC;
+    font-size: 0.82rem;
+    color: rgba(239,229,204,0.8);
   }
 
   .link-box-url {
-    font-size: 0.5rem;
+    font-size: 0.45rem;
     font-weight: 200;
-    letter-spacing: 0.1em;
-    color: rgba(201,169,97,0.6);
+    letter-spacing: 0.08em;
+    color: rgba(201,169,97,0.5);
     display: block;
-    margin-top: 4px;
+    margin-top: 3px;
   }
 
+  /* Footer */
   .footer {
-    margin-top: 2.5rem;
+    margin-top: 2rem;
     font-weight: 200;
-    font-size: 0.5rem;
+    font-size: 0.45rem;
     letter-spacing: 0.25em;
     text-transform: uppercase;
     color: rgba(239,229,204,0.15);
   }
 
   @media (max-width: 360px) {
-    .find-solace-headline { font-size: 1.7rem; }
-    .links { flex-direction: column; }
-    .link-box:first-child { border-right: 1px solid rgba(239,229,204,0.08); border-bottom: none; }
+    .headline { font-size: 2rem; }
+    .content { padding: 2rem 1.5rem; }
+  }
+
+  @media (max-height: 700px) {
+    .top-bar { margin-bottom: 1.5rem; }
+    .sub { margin-bottom: 1.5rem; }
+    .footer { margin-top: 1.25rem; }
   }
 </style>
 </head>
 <body>
 
-<div class="card">
+<!-- Background -->
+<div class="bg">
+  <img src="https://pub.hyperagent.com/api/published/pbf01KRF44BBT_S4F69D0W5MH4XFCW/img_hero_terrace.png" alt="">
+</div>
 
-  <!-- Find Solace — taps through to main site -->
-  <a class="find-solace" href="https://solacemontana.com" target="_blank" rel="noopener noreferrer">
-    <span class="find-solace-word">F I N D</span>
-    <span class="find-solace-headline"><span>S</span>olace.</span>
-  </a>
-  <p class="sub">Private coordination for the Flathead Valley.<br>Every detail considered. Every arrangement, seamless.</p>
+<!-- Content -->
+<div class="content">
 
-  <div class="rule"></div>
+  <div class="top-bar">Private Coordination · Flathead Valley</div>
 
-  <!-- Contact -->
-  <div class="contact-row">
-    <a href="tel:+14062136887">
-      <span class="contact-label">Call</span>
-      (406) 213-6887
-    </a>
+  <h1 class="headline">Find solace.</h1>
+  <p class="sub">Every detail considered. Every arrangement, seamless.</p>
+
+  <div class="card">
+    <div class="contact-row">
+      <a href="tel:+14062136887">
+        <span class="contact-label">Call</span>
+        (406) 213-6887
+      </a>
+    </div>
+    <div class="contact-row">
+      <a href="mailto:contact@solaceconcierge.com">
+        <span class="contact-label">Email</span>
+        contact@solaceconcierge.com
+      </a>
+    </div>
+    <a class="save-btn" id="save-contact" href="#">Save Contact</a>
   </div>
 
-  <div class="contact-row">
-    <a href="mailto:contact@solaceconcierge.com">
-      <span class="contact-label">Email</span>
-      contact@solaceconcierge.com
-    </a>
-  </div>
-
-  <!-- Save Contact -->
-  <a class="save-btn" id="save-contact" href="#">Save Contact</a>
-
-  <!-- Website + App side by side -->
   <div class="links">
     <a class="link-box" href="https://solacemontana.com" target="_blank" rel="noopener noreferrer">
       <span class="link-box-label">Website</span>
-      <span class="link-box-name">Explore Solace</span>
+      <span class="link-box-name">Explore</span>
       <span class="link-box-url">solacemontana.com</span>
     </a>
     <a class="link-box" href="https://solacemt.com" target="_blank" rel="noopener noreferrer">
       <span class="link-box-label">App</span>
-      <span class="link-box-name">Submit a Request</span>
+      <span class="link-box-name">Request</span>
       <span class="link-box-url">solacemt.com</span>
     </a>
   </div>
 
-  <div class="footer">Solace Concierge LLC · Flathead Valley, Montana</div>
+  <div class="footer">Solace Concierge LLC</div>
 
 </div>
 
