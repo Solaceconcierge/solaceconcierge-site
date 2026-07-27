@@ -1,78 +1,91 @@
 {
-  "date": "Friday, July 24",
-  "generated_at": "8:05 AM MT",
+  "date": "Monday, July 27",
+  "generated_at": "8:03 AM MT",
   "priorities": [
-    "Identify the vendor who signed last night — visit documenso.com/sign or check vendors@ for the signer name, then update Active Vendor Profiles",
-    "Call Jason Koller (Wild Horse Limousine) at (406) 756-2290 — walk through deposit timing, close the agreement",
-    "Call The Dog Club Kalispell at (406) 890-2220 — they reached out first; one legitimacy question stands between them and the form",
-    "Work through today's 5-call list: Wild Horse, Dog Club, Glacier Aviation, Mum's Flowers, Chef Nate Snyder",
-    "Review the two vendor images in Slack (July 11 post) — ask assistant to extract contact details from IMG_1183 and IMG_1184"
+    "Identify the signed vendor — check Partners Vendor Liaison or Documenso to find who signed Jul 23, move to Onboarded, send 'You're Active' email.",
+    "TravelJoy / Cristina Zaharia — bon voyage reminder overdue since July 20. Confirm handled or follow up.",
+    "Whitefish Marine #4714 (142 Granite Dr, Kimberlee Johnson) — starred email, log in her service events.",
+    "Call First vendors — Jason/Wild Horse, Dog Club, Gary/Glacier Aviation — good Monday for calls.",
+    "Slack vendor images (~July 10) — two unread vendor photos in #all-solace-concierge. Route to Partners Vendor Liaison."
   ],
   "priority_emails": [
     {
-      "from": "Documenso",
-      "subject": "Signing Complete!",
-      "preview": "Solace:Partners — Preferred Partner Agreement was signed by all signers. Download the completed document to identify the vendor.",
-      "received": "Thu Jul 23, 7:47 PM",
-      "draft": "Great news — your Preferred Partner Agreement has been fully signed. I'll log your information in our vendor network and reach out shortly with your next steps for activation."
+      "from": "TravelJoy",
+      "subject": "Reminder: Send bon voyage email (Cristina Zaharia's Trip)",
+      "preview": "Send bon voyage email. When: Mon Jul 20 9:00am. Trip: Cristina Zaharia's Trip. Client: Cristina Zaharia.",
+      "received": "Mon, July 20 at 9:55 AM",
+      "draft": "Hi Cristina — just a quick note as you head into your trip. It was a pleasure coordinating everything. Reach out if anything comes up while you're there. Wishing you a wonderful trip. — Brittany, Solace Concierge"
+    },
+    {
+      "from": "Whitefish Marine",
+      "subject": "Whitefish Marine Reservation Confirmation",
+      "preview": "Booking Summary from Whitefish Marine for Reservation Number: 4714 as of 07/16/2026. Customer: Solace Concierge, 142 Granite Dr, Whitefish.",
+      "received": "Thu, July 16 at 6:10 PM",
+      "draft": "Hi — Brittany Alcott at Solace Concierge. Just confirming receipt of Reservation #4714. Thank you — we'll have the client informed. If anything is needed before the date, I'll reach out. — Brittany, (406) 213-6887"
     }
   ],
   "awaiting": [],
   "initiatives": [
     {
-      "name": "Vendor Agreement Pipeline",
+      "name": "Vendor Onboarding Pipeline",
       "division": "Partners",
       "progress": 45,
-      "nextStep": "Identify last night's Documenso signer and update Active Vendor Profiles"
+      "nextStep": "Identify signed vendor from Documenso Jul 23, move to Onboarded status"
     },
     {
-      "name": "Solace/Home Market Development",
+      "name": "Kimberlee Johnson Active Account",
       "division": "Home",
-      "progress": 20,
-      "nextStep": "Draft wildfire-prep bulletin for prospective Home clients"
+      "progress": 60,
+      "nextStep": "Log Whitefish Marine reservation #4714 in service events"
     }
   ],
   "news": [
     {
-      "title": "Auster at Dome Mountain opens — luxury Montana retreat near Yellowstone",
-      "source": "Travel and Tour World",
-      "url": "https://www.travelandtourworld.com/news/article/tfomoo8lbajq/",
-      "apply": "Concierge + Partners: Guests arriving at Auster often continue north to Glacier/Whitefish — Solace is the natural arrangement partner for those needs."
+      "title": "The Evolving, Widening World of Concierge Services — Market hits $823M in 2026",
+      "source": "Family Wealth Report",
+      "url": "https://www.familywealthreport.com/article.php/ANALYSIS%3A-The-Evolving%2C-Widening-World-Of-Concierge-Services-",
+      "apply": "[Concierge/Partners] Market growing to $1.38B by 2033 at 7.6% CAGR. The outsourced coordinator model is the dominant trend — use in PM pitches and vendor recruiting this week."
     },
     {
-      "title": "Montana STR study: Flathead County #1 at $207M visitor spending",
-      "source": "UM BBER",
-      "url": "https://www.travelandtourworld.com/news/article/dshuq0ibuhv5/",
-      "apply": "Home + Partners: Hard data for PM outreach — Flathead is Montana's largest STR market."
+      "title": "4 Underutilized Hotel Concierge Services — pre-arrival planning, everyday logistics",
+      "source": "Travel Bulletin",
+      "url": "https://travelbulletin.com/tips/trip-prep/useful-concierge-services",
+      "apply": "[Concierge] Build pre-arrival outreach: email clients 5–7 days before arrival with a curated list of what Solace can arrange."
     },
     {
-      "title": "Flathead Valley wildfire risk rising — drying conditions ahead",
-      "source": "Flathead Beacon",
-      "url": "https://flatheadbeacon.com/2026/07/23/flathead-valley-holding-our-own-so-far-in-2026-wildfire-season-but-drying-conditions-on-the-horizon/",
-      "apply": "Home: Property prep check for second-home clients — gutters, firewood, grass."
+      "title": "Flathead Cherry Festival wraps up — peak cherry season on Flathead Lake",
+      "source": "KPAX",
+      "url": "https://www.kpax.com/news/flathead-cherry-festival-draws-thousands-to-downtown-polson-for-cherries-art-and-family-fun",
+      "apply": "[Home/Concierge] Cherry season is peak NOW. Source local Rainier/Lapin cherries for premium welcome baskets — a differentiator no national service can match."
     },
     {
-      "title": "Grizzly bear euthanized near Whitefish — 9 bears relocated this season",
-      "source": "Whitefish Pilot",
-      "url": "https://whitefishpilot.com/news/2026/jul/22/troublesome-black-bears-and-a-grizzly-mortality-near-big-mountain/",
-      "apply": "Concierge + Home: Include bear-aware outdoor trash note in arrival prep for Big Mountain / north Whitefish properties."
+      "title": "Sunflower Companions cares for Flathead Valley elders at home, expanding across NW Montana",
+      "source": "Daily Inter Lake",
+      "url": "https://dailyinterlake.com/news/2026/jul/26/as-the-fathead-valley-grows-older-sunflower-companions-cares-for-elders-in-their-own-homes/",
+      "apply": "[Care] Licensed local in-home care service (hands-on, not coordination). Not a competitor — explore as a referral partner for Solace/Care families who need more than coordination."
+    },
+    {
+      "title": "Western States Benefit Bike Ride — first time in Flathead Valley, routes through Whitefish this week",
+      "source": "Daily Inter Lake",
+      "url": "https://dailyinterlake.com/news/2026/jul/26/western-states-benefit-bike-ride-rolls-into-the-flathead-valley-this-week-in-support-of-ukraine/",
+      "apply": "[Concierge] Cyclists from across the western US are here today through Thursday. Connect with event organizers for future referral opportunities."
     }
   ],
   "general_news": [
     {
-      "title": "U.S. launches 13th night of Iran strikes; Trump weighing 'massive attack'",
+      "title": "US and Iran pause strikes; oil falls ~7% to $83–90/barrel, markets rally",
       "source": "NBC News",
-      "url": "https://www.nbcnews.com/world/iran/us-iran-strikes-trump-massive-attack-war-hormuz-red-sea-oil-rcna589016"
+      "url": "https://www.nbcnews.com/world/iran/oil-prices-slide-us-iran-pause-strikes-trump-diplomacy-hormuz-red-sea-rcna589383"
     },
     {
-      "title": "House narrowly votes to halt Iran military action; Senate rejects similar measure",
-      "source": "AP News",
-      "url": "https://apnews.com/article/iran-us-hormuz-strait-war-24-july-2026-78c2dbf538f6e61ab816479a4d9bdd85"
+      "title": "Shooting at Seattle Center during Bite of Seattle festival — multiple victims",
+      "source": "CNN",
+      "url": "https://edition.cnn.com/2026/07/26/us/seattle-center-shooting-festival"
     },
     {
-      "title": "Oil briefly tops $100/barrel as Hormuz traffic stalls",
-      "source": "BBC News",
-      "url": "https://www.bbc.com/news/articles/c05ql5llj4do"
+      "title": "Hilton leads luxury hotel brand value ranking at $19.2B (+28%)",
+      "source": "Travel Daily News",
+      "url": "https://www.traveldailynews.com/hospitality/hilton-leads-luxury-hotel-brand-value-ranking/"
     }
   ]
 }
