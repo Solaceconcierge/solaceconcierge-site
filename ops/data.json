@@ -1,91 +1,81 @@
 {
-  "date": "Monday, July 27",
-  "generated_at": "8:03 AM MT",
+  "date": "Tuesday, July 28",
+  "generated_at": "8:02 AM MT",
   "priorities": [
-    "Identify the signed vendor — check Partners Vendor Liaison or Documenso to find who signed Jul 23, move to Onboarded, send 'You're Active' email.",
-    "TravelJoy / Cristina Zaharia — bon voyage reminder overdue since July 20. Confirm handled or follow up.",
-    "Whitefish Marine #4714 (142 Granite Dr, Kimberlee Johnson) — starred email, log in her service events.",
-    "Call First vendors — Jason/Wild Horse, Dog Club, Gary/Glacier Aviation — good Monday for calls.",
-    "Slack vendor images (~July 10) — two unread vendor photos in #all-solace-concierge. Route to Partners Vendor Liaison."
+    "Process Brittany's July 11 Slack vendor photos (IMG_1183, IMG_1184) — route to Partners Liaison to identify and add to database",
+    "Make the 3 priority vendor calls: Jason/Wild Horse (payment terms), Dog Club (legitimacy), Gary/Glacier Aviation (payment objection)",
+    "Call Fly Roofing / Hunter at (406) 607-8266 to lock in a date for Kimberlee Johnson's roof inspection",
+    "Add Wild Wind Music band (WildWindMusicOfficial@gmail.com) to Partners vendor pipeline as Entertainment Prospect",
+    "July memory cleanup window is open — consider scheduling Memory Janitor if there's a quiet block this week"
   ],
-  "priority_emails": [
-    {
-      "from": "TravelJoy",
-      "subject": "Reminder: Send bon voyage email (Cristina Zaharia's Trip)",
-      "preview": "Send bon voyage email. When: Mon Jul 20 9:00am. Trip: Cristina Zaharia's Trip. Client: Cristina Zaharia.",
-      "received": "Mon, July 20 at 9:55 AM",
-      "draft": "Hi Cristina — just a quick note as you head into your trip. It was a pleasure coordinating everything. Reach out if anything comes up while you're there. Wishing you a wonderful trip. — Brittany, Solace Concierge"
-    },
-    {
-      "from": "Whitefish Marine",
-      "subject": "Whitefish Marine Reservation Confirmation",
-      "preview": "Booking Summary from Whitefish Marine for Reservation Number: 4714 as of 07/16/2026. Customer: Solace Concierge, 142 Granite Dr, Whitefish.",
-      "received": "Thu, July 16 at 6:10 PM",
-      "draft": "Hi — Brittany Alcott at Solace Concierge. Just confirming receipt of Reservation #4714. Thank you — we'll have the client informed. If anything is needed before the date, I'll reach out. — Brittany, (406) 213-6887"
-    }
-  ],
+  "priority_emails": [],
   "awaiting": [],
   "initiatives": [
     {
-      "name": "Vendor Onboarding Pipeline",
-      "division": "Partners",
-      "progress": 45,
-      "nextStep": "Identify signed vendor from Documenso Jul 23, move to Onboarded status"
+      "name": "Vendor Pipeline Build",
+      "division": "partners",
+      "progress": 15,
+      "nextStep": "Make priority vendor calls — Jason, Dog Club, Gary"
     },
     {
-      "name": "Kimberlee Johnson Active Account",
-      "division": "Home",
+      "name": "Kimberlee Johnson Onboarding",
+      "division": "home",
       "progress": 60,
-      "nextStep": "Log Whitefish Marine reservation #4714 in service events"
+      "nextStep": "Schedule roof inspection with Fly Roofing/Hunter"
     }
   ],
   "news": [
     {
-      "title": "The Evolving, Widening World of Concierge Services — Market hits $823M in 2026",
+      "title": "The Evolving, Widening World of Concierge Services — $823M market in 2026",
       "source": "Family Wealth Report",
       "url": "https://www.familywealthreport.com/article.php/ANALYSIS%3A-The-Evolving%2C-Widening-World-Of-Concierge-Services-",
-      "apply": "[Concierge/Partners] Market growing to $1.38B by 2033 at 7.6% CAGR. The outsourced coordinator model is the dominant trend — use in PM pitches and vendor recruiting this week."
+      "apply": "[Concierge] Lead with coordinator framing when pitching PMs. Industry validates the model."
     },
     {
-      "title": "4 Underutilized Hotel Concierge Services — pre-arrival planning, everyday logistics",
-      "source": "Travel Bulletin",
-      "url": "https://travelbulletin.com/tips/trip-prep/useful-concierge-services",
-      "apply": "[Concierge] Build pre-arrival outreach: email clients 5–7 days before arrival with a curated list of what Solace can arrange."
-    },
-    {
-      "title": "Flathead Cherry Festival wraps up — peak cherry season on Flathead Lake",
-      "source": "KPAX",
-      "url": "https://www.kpax.com/news/flathead-cherry-festival-draws-thousands-to-downtown-polson-for-cherries-art-and-family-fun",
-      "apply": "[Home/Concierge] Cherry season is peak NOW. Source local Rainier/Lapin cherries for premium welcome baskets — a differentiator no national service can match."
-    },
-    {
-      "title": "Sunflower Companions cares for Flathead Valley elders at home, expanding across NW Montana",
+      "title": "Glacier National Park imposes $100/person surcharge on Canadian visitors",
       "source": "Daily Inter Lake",
-      "url": "https://dailyinterlake.com/news/2026/jul/26/as-the-fathead-valley-grows-older-sunflower-companions-cares-for-elders-in-their-own-homes/",
-      "apply": "[Care] Licensed local in-home care service (hands-on, not coordination). Not a competitor — explore as a referral partner for Solace/Care families who need more than coordination."
+      "url": "https://dailyinterlake.com/news/2026/jul/26/gnp-foreign-visitor-fees/",
+      "apply": "[Concierge] Domestic tourism up. Peak season is now — arrival prep, welcome baskets, boat access."
     },
     {
-      "title": "Western States Benefit Bike Ride — first time in Flathead Valley, routes through Whitefish this week",
-      "source": "Daily Inter Lake",
-      "url": "https://dailyinterlake.com/news/2026/jul/26/western-states-benefit-bike-ride-rolls-into-the-flathead-valley-this-week-in-support-of-ukraine/",
-      "apply": "[Concierge] Cyclists from across the western US are here today through Thursday. Connect with event organizers for future referral opportunities."
+      "title": "Amex GBT launches AI travel concierge connector inside Claude",
+      "source": "The Business Travel Magazine",
+      "url": "https://thebusinesstravelmag.com/amex-gbt-introduces-ai-connector-in-claude/",
+      "apply": "[Partners] Document Solace's dispatch workflow — 'AI-coordinated local luxury' story will resonate."
+    },
+    {
+      "title": "Flathead housing market settles into balanced territory — inventory rising",
+      "source": "Livable Flathead",
+      "url": "https://livableflathead.beehiiv.com/p/flathead-housing-market-settles-into-balanced-territory-kalispell-adopts-300m-in-facility-plans-the",
+      "apply": "[Home] More second-home transactions = fresh Solace/Home prospects. Flag new closings."
+    },
+    {
+      "title": "Brown trout detected in Flathead watershed — anglers urged to dispatch",
+      "source": "The Cooldown",
+      "url": "https://www.thecooldown.com/outdoors/brown-trout-flathead-watershed-montana-anglers/",
+      "apply": "[Concierge/Partners] Mention this to fishing guides — shows local knowledge and builds credibility."
     }
   ],
   "general_news": [
     {
-      "title": "US and Iran pause strikes; oil falls ~7% to $83–90/barrel, markets rally",
-      "source": "NBC News",
-      "url": "https://www.nbcnews.com/world/iran/oil-prices-slide-us-iran-pause-strikes-trump-diplomacy-hormuz-red-sea-rcna589383"
+      "title": "Zelensky meets Trump at White House as Ukraine-Iran wars converge",
+      "source": "BBC / CNBC",
+      "url": "https://www.bbc.com/news/articles/c9v4g7e047zo"
     },
     {
-      "title": "Shooting at Seattle Center during Bite of Seattle festival — multiple victims",
-      "source": "CNN",
-      "url": "https://edition.cnn.com/2026/07/26/us/seattle-center-shooting-festival"
+      "title": "US-Iran diplomatic pause holds; oil prices fall 8-9%",
+      "source": "CNBC",
+      "url": "https://www.cnbc.com/2026/07/28/us-iran-war-trump-hormuz.html"
     },
     {
-      "title": "Hilton leads luxury hotel brand value ranking at $19.2B (+28%)",
-      "source": "Travel Daily News",
-      "url": "https://www.traveldailynews.com/hospitality/hilton-leads-luxury-hotel-brand-value-ranking/"
+      "title": "Senator Lindsey Graham funeral in Washington",
+      "source": "ABC News",
+      "url": "https://abcnews.com/Politics/netanyahu-zelenskyy-push-agendas-white-house-meetings-trump/story?id=135123010"
+    },
+    {
+      "title": "Powerful earthquake rocks southern Japan",
+      "source": "AP / ABC News",
+      "url": "https://abcnews.com"
     }
   ]
 }
