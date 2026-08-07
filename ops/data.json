@@ -1,81 +1,76 @@
 {
-  "date": "Tuesday, July 28",
+  "date": "Friday, August 7",
   "generated_at": "8:02 AM MT",
   "priorities": [
-    "Process Brittany's July 11 Slack vendor photos (IMG_1183, IMG_1184) — route to Partners Liaison to identify and add to database",
-    "Make the 3 priority vendor calls: Jason/Wild Horse (payment terms), Dog Club (legitimacy), Gary/Glacier Aviation (payment objection)",
-    "Call Fly Roofing / Hunter at (406) 607-8266 to lock in a date for Kimberlee Johnson's roof inspection",
-    "Add Wild Wind Music band (WildWindMusicOfficial@gmail.com) to Partners vendor pipeline as Entertainment Prospect",
-    "July memory cleanup window is open — consider scheduling Memory Janitor if there's a quiet block this week"
+    "Kimberlee Johnson / Roofer: Fly Roofing canceled. If no callback by mid-morning, start sourcing a backup roofer in Whitefish or Flathead Valley.",
+    "Vendor calls: Jason (Wild Horse agreement blocker) + Dog Club (legitimacy call) + Gary (aviation payment objection) — three open threads, all closeable today.",
+    "Chef Nate Snyder: Best fresh intro call of the week. Mobile private chef, peak season, no email on file.",
+    "Log Kimberlee's electrician: Confirmed August 17 AM, phone (406) 755-8624.",
+    "Glacier NP alert: Mt. Brown Trail closed due to bear attack. Flag for any active guest itineraries including GNP hiking."
   ],
   "priority_emails": [],
   "awaiting": [],
   "initiatives": [
     {
-      "name": "Vendor Pipeline Build",
-      "division": "partners",
-      "progress": 15,
-      "nextStep": "Make priority vendor calls — Jason, Dog Club, Gary"
-    },
-    {
-      "name": "Kimberlee Johnson Onboarding",
+      "name": "Kimberlee Johnson — Home Client Active",
       "division": "home",
       "progress": 60,
-      "nextStep": "Schedule roof inspection with Fly Roofing/Hunter"
+      "nextStep": "Roof inspection rescheduling needed — roofer canceled"
+    },
+    {
+      "name": "Vendor Network Build",
+      "division": "partners",
+      "progress": 15,
+      "nextStep": "Close Wild Horse, Dog Club, Glacier Aviation agreements"
     }
   ],
   "news": [
     {
-      "title": "The Evolving, Widening World of Concierge Services — $823M market in 2026",
-      "source": "Family Wealth Report",
-      "url": "https://www.familywealthreport.com/article.php/ANALYSIS%3A-The-Evolving%2C-Widening-World-Of-Concierge-Services-",
-      "apply": "[Concierge] Lead with coordinator framing when pitching PMs. Industry validates the model."
+      "title": "US travelers spend more on experiences in 2026 — Arival report",
+      "source": "Travel Daily News",
+      "url": "https://www.traveldailynews.com/statistics-trends/us-travelers-take-fewer-trips-but-spend-more-on-experiences-finds-new-arival-report/",
+      "apply": "Concierge: Affluent travelers increasing trip volume and spending. Collection/Signature tiers perfectly positioned."
     },
     {
-      "title": "Glacier National Park imposes $100/person surcharge on Canadian visitors",
+      "title": "Raffles 'The Butler Did It' — bespoke butler-led experience packages",
+      "source": "Travel Daily News",
+      "url": "https://www.traveldailynews.com/hospitality/raffles-hotels-resorts-launches-exceptional-experiences-created-by-its-legendary-butlers/",
+      "apply": "Concierge: Luxury brands leading with the human curator. Supports Solace Collection positioning."
+    },
+    {
+      "title": "Whitefish fire station: Iron Horse HOA partnership advancing",
+      "source": "Flathead Beacon",
+      "url": "https://flatheadbeacon.com/2026/08/06/whitefish-council-directs-city-staff-to-continue-work-with-iron-horse-for-second-fire-station-north-of-viaduct/",
+      "apply": "Home: Iron Horse is 35% of Whitefish tax base — prime Solace/Home target neighborhood."
+    },
+    {
+      "title": "Bear attack on Mt. Brown Trail — Glacier NP sections closed",
+      "source": "ABC7 News",
+      "url": "https://abc7news.pages.dev/post/missing-hiker-found-dead-mt-brown-trail-suspected-bear-attack-glacier-national-park-montana/19065451/",
+      "apply": "Concierge: Flag for any guest itineraries including Glacier hiking."
+    },
+    {
+      "title": "Sandy Bridgewater solo exhibit — meet-and-greet tonight at Phillips Gallery, Kalispell",
       "source": "Daily Inter Lake",
-      "url": "https://dailyinterlake.com/news/2026/jul/26/gnp-foreign-visitor-fees/",
-      "apply": "[Concierge] Domestic tourism up. Peak season is now — arrival prep, welcome baskets, boat access."
-    },
-    {
-      "title": "Amex GBT launches AI travel concierge connector inside Claude",
-      "source": "The Business Travel Magazine",
-      "url": "https://thebusinesstravelmag.com/amex-gbt-introduces-ai-connector-in-claude/",
-      "apply": "[Partners] Document Solace's dispatch workflow — 'AI-coordinated local luxury' story will resonate."
-    },
-    {
-      "title": "Flathead housing market settles into balanced territory — inventory rising",
-      "source": "Livable Flathead",
-      "url": "https://livableflathead.beehiiv.com/p/flathead-housing-market-settles-into-balanced-territory-kalispell-adopts-300m-in-facility-plans-the",
-      "apply": "[Home] More second-home transactions = fresh Solace/Home prospects. Flag new closings."
-    },
-    {
-      "title": "Brown trout detected in Flathead watershed — anglers urged to dispatch",
-      "source": "The Cooldown",
-      "url": "https://www.thecooldown.com/outdoors/brown-trout-flathead-watershed-montana-anglers/",
-      "apply": "[Concierge/Partners] Mention this to fishing guides — shows local knowledge and builds credibility."
+      "url": "https://dailyinterlake.com/news/2026/aug/06/whitefish-artist-featured-in-phillips-gallery-solo-exhibit-with-meet-and-greet-planned/",
+      "apply": "Concierge: Local cultural event, good for guest referrals. Tonight 5-7 PM."
     }
   ],
   "general_news": [
     {
-      "title": "Zelensky meets Trump at White House as Ukraine-Iran wars converge",
-      "source": "BBC / CNBC",
-      "url": "https://www.bbc.com/news/articles/c9v4g7e047zo"
-    },
-    {
-      "title": "US-Iran diplomatic pause holds; oil prices fall 8-9%",
-      "source": "CNBC",
-      "url": "https://www.cnbc.com/2026/07/28/us-iran-war-trump-hormuz.html"
-    },
-    {
-      "title": "Senator Lindsey Graham funeral in Washington",
+      "title": "US missile stockpiles 'extremely low' after Iran conflict",
       "source": "ABC News",
-      "url": "https://abcnews.com/Politics/netanyahu-zelenskyy-push-agendas-white-house-meetings-trump/story?id=135123010"
+      "url": "https://abcnews.com/Politics/crucial-us-missile-stockpiles-extremely-low-official/story?id=135428997"
     },
     {
-      "title": "Powerful earthquake rocks southern Japan",
-      "source": "AP / ABC News",
-      "url": "https://abcnews.com"
+      "title": "NATO Ankara Summit reaffirms collective defense, pledges €70B to Ukraine",
+      "source": "Bernama",
+      "url": "https://bernama.com/misc/rss/news.php?id=2578493"
+    },
+    {
+      "title": "Bahrain, Kuwait intercept Iranian aerial attacks",
+      "source": "Bernama",
+      "url": "https://www.bernama.com/en/world/news.php?id=2578408"
     }
   ]
 }
