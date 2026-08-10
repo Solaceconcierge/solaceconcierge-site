@@ -1,76 +1,76 @@
 {
-  "date": "Friday, August 7",
-  "generated_at": "8:02 AM MT",
+  "date": "Monday, August 10",
+  "generated_at": "8:05 AM MT",
   "priorities": [
-    "Kimberlee Johnson / Roofer: Fly Roofing canceled. If no callback by mid-morning, start sourcing a backup roofer in Whitefish or Flathead Valley.",
-    "Vendor calls: Jason (Wild Horse agreement blocker) + Dog Club (legitimacy call) + Gary (aviation payment objection) — three open threads, all closeable today.",
-    "Chef Nate Snyder: Best fresh intro call of the week. Mobile private chef, peak season, no email on file.",
-    "Log Kimberlee's electrician: Confirmed August 17 AM, phone (406) 755-8624.",
-    "Glacier NP alert: Mt. Brown Trail closed due to bear attack. Flag for any active guest itineraries including GNP hiking."
+    "Kimberlee Johnson — roofer callback window is TODAY. Call her (907-227-1256), and if no callback yet, reach out to Fly Roofing/Hunter (406-607-8266) to rebook.",
+    "Wild Horse / Jason Koller — payment-terms are the only thing between you and a signed agreement. Highest-leverage vendor call on the list.",
+    "Dog Club Kalispell — they reached out and are interested. A 5-minute call today closes this one.",
+    "Huckleberry Days at Depot Park is live this weekend — walk it for floral, gift, and artisan vendor prospects.",
+    "Vendor database table still returning 'not found' — confirm pipeline is tracked in Vendor Pipeline Tracker doc."
   ],
   "priority_emails": [],
   "awaiting": [],
   "initiatives": [
     {
-      "name": "Kimberlee Johnson — Home Client Active",
+      "name": "Kimberlee Johnson — Active Service Events",
       "division": "home",
-      "progress": 60,
-      "nextStep": "Roof inspection rescheduling needed — roofer canceled"
+      "progress": 45,
+      "nextStep": "Follow up on roofer cancellation; confirm new booking date"
     },
     {
       "name": "Vendor Network Build",
       "division": "partners",
       "progress": 15,
-      "nextStep": "Close Wild Horse, Dog Club, Glacier Aviation agreements"
+      "nextStep": "Resolve Wild Horse payment terms; onboard Dog Club and Glacier Aviation"
     }
   ],
   "news": [
     {
-      "title": "US travelers spend more on experiences in 2026 — Arival report",
-      "source": "Travel Daily News",
-      "url": "https://www.traveldailynews.com/statistics-trends/us-travelers-take-fewer-trips-but-spend-more-on-experiences-finds-new-arival-report/",
-      "apply": "Concierge: Affluent travelers increasing trip volume and spending. Collection/Signature tiers perfectly positioned."
+      "title": "Why the Hotel Concierge Is Still the Luxury Traveller's Best Friend",
+      "source": "Luxury Lifestyle Magazine",
+      "url": "https://www.luxurylifestylemag.co.uk/travel/why-the-hotel-concierge-is-still-the-luxury-travellers-best-friend/",
+      "apply": "Concierge: Guests fact-check ChatGPT with concierges. 'Locally sourced and human-verified' is a sharp differentiator."
     },
     {
-      "title": "Raffles 'The Butler Did It' — bespoke butler-led experience packages",
-      "source": "Travel Daily News",
-      "url": "https://www.traveldailynews.com/hospitality/raffles-hotels-resorts-launches-exceptional-experiences-created-by-its-legendary-butlers/",
-      "apply": "Concierge: Luxury brands leading with the human curator. Supports Solace Collection positioning."
+      "title": "Bilt Expands Hospitality OS to Include Travel Advisers with Agentic Concierge Platform",
+      "source": "PYMNTS",
+      "url": "https://www.pymnts.com/news/2026/bilt-expands-hospitality-offering-to-include-travel-advisers/",
+      "apply": "Concierge/Partners: Industry converging on AI + human touch. Solace is running this playbook locally."
     },
     {
-      "title": "Whitefish fire station: Iron Horse HOA partnership advancing",
-      "source": "Flathead Beacon",
-      "url": "https://flatheadbeacon.com/2026/08/06/whitefish-council-directs-city-staff-to-continue-work-with-iron-horse-for-second-fire-station-north-of-viaduct/",
-      "apply": "Home: Iron Horse is 35% of Whitefish tax base — prime Solace/Home target neighborhood."
+      "title": "Whitefish's Huckleberry Days Celebrates 37 Years — 100+ Local Artists",
+      "source": "KPAX",
+      "url": "https://www.kpax.com/news/whitefishs-huckleberry-days-celebrates-37-years-of-local-art-and-community",
+      "apply": "Partners + Concierge: Walk the event for artisan vendor leads. Tag for Whitefish Hours Collection experience."
     },
     {
-      "title": "Bear attack on Mt. Brown Trail — Glacier NP sections closed",
-      "source": "ABC7 News",
-      "url": "https://abc7news.pages.dev/post/missing-hiker-found-dead-mt-brown-trail-suspected-bear-attack-glacier-national-park-montana/19065451/",
-      "apply": "Concierge: Flag for any guest itineraries including Glacier hiking."
+      "title": "New Boat Launch Fees at Whitefish City Beach — Non-Residents Now $50/Day",
+      "source": "The Magic Riders",
+      "url": "https://themagicriders.com/article/new-boat-launch-fees-at-whitefish-city-beach-what-you-need-to-know",
+      "apply": "Home/Concierge: Update guest briefing templates for lake activities. Flag to Kimberlee Johnson."
     },
     {
-      "title": "Sandy Bridgewater solo exhibit — meet-and-greet tonight at Phillips Gallery, Kalispell",
-      "source": "Daily Inter Lake",
-      "url": "https://dailyinterlake.com/news/2026/aug/06/whitefish-artist-featured-in-phillips-gallery-solo-exhibit-with-meet-and-greet-planned/",
-      "apply": "Concierge: Local cultural event, good for guest referrals. Tonight 5-7 PM."
+      "title": "Luxury Travel Surges as High-Net-Worth Clients Build VIP Itineraries Around Marquee Events",
+      "source": "The Traveler",
+      "url": "https://www.thetraveler.org/luxury-travel-surges-as-augusta-masters-fuels-vip-tourism/",
+      "apply": "Concierge: Build a Flathead Valley anchor event calendar for Collection Signature packages."
     }
   ],
   "general_news": [
     {
-      "title": "US missile stockpiles 'extremely low' after Iran conflict",
-      "source": "ABC News",
-      "url": "https://abcnews.com/Politics/crucial-us-missile-stockpiles-extremely-low-official/story?id=135428997"
+      "title": "US Deploys 20 Warships to Hormuz Amid Iran Standoff",
+      "source": "AP",
+      "url": "https://www.ndtvprofit.com/world/us-deploys-20-warships-in-hormuz-amid-semi-negotiations-with-iran-redirects-55-commercial-vessels-11888283"
     },
     {
-      "title": "NATO Ankara Summit reaffirms collective defense, pledges €70B to Ukraine",
-      "source": "Bernama",
-      "url": "https://bernama.com/misc/rss/news.php?id=2578493"
+      "title": "Markets Mixed; S&P 500 at All-Time Highs, Oil Up on Hormuz Stalemate",
+      "source": "AP",
+      "url": "https://www.ksat.com/business/2026/08/10/asian-shares-track-wall-street-gains-while-oil-prices-bounce-higher/"
     },
     {
-      "title": "Bahrain, Kuwait intercept Iranian aerial attacks",
-      "source": "Bernama",
-      "url": "https://www.bernama.com/en/world/news.php?id=2578408"
+      "title": "Jobs Report: Employers Cut 23K Jobs in July — Fed Patience Hopes Rise",
+      "source": "Associated Press",
+      "url": "https://www.ksat.com/business/2026/08/10/asian-shares-track-wall-street-gains-while-oil-prices-bounce-higher/"
     }
   ]
 }
