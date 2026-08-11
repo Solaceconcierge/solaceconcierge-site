@@ -1,76 +1,29 @@
 {
-  "date": "Monday, August 10",
-  "generated_at": "8:05 AM MT",
+  "date": "Tuesday, August 11",
+  "generated_at": "8:02 AM MT",
   "priorities": [
-    "Kimberlee Johnson — roofer callback window is TODAY. Call her (907-227-1256), and if no callback yet, reach out to Fly Roofing/Hunter (406-607-8266) to rebook.",
-    "Wild Horse / Jason Koller — payment-terms are the only thing between you and a signed agreement. Highest-leverage vendor call on the list.",
-    "Dog Club Kalispell — they reached out and are interested. A 5-minute call today closes this one.",
-    "Huckleberry Days at Depot Park is live this weekend — walk it for floral, gift, and artisan vendor prospects.",
-    "Vendor database table still returning 'not found' — confirm pipeline is tracked in Vendor Pipeline Tracker doc."
+    "Chase roofer for Kimberlee Johnson — callback was expected Aug 3–7; it's now 12 days later. Call Fly Roofing / Hunter at (406) 607-8266 today.",
+    "Confirm electrician appointment for August 17 AM — call (406) 755-8624 to verify; property access contact is Brittany Bates (949) 878-6022.",
+    "Call Jason / Wild Horse Limousine (406-756-2290) — payment terms are the only blocker on the agreement.",
+    "Call Dog Club Kalispell (406-890-2220) — they're interested and waiting on a real person.",
+    "Flag the air quality alert — no outdoor client activities without an AQI check first. Eases by Friday."
   ],
   "priority_emails": [],
   "awaiting": [],
   "initiatives": [
-    {
-      "name": "Kimberlee Johnson — Active Service Events",
-      "division": "home",
-      "progress": 45,
-      "nextStep": "Follow up on roofer cancellation; confirm new booking date"
-    },
-    {
-      "name": "Vendor Network Build",
-      "division": "partners",
-      "progress": 15,
-      "nextStep": "Resolve Wild Horse payment terms; onboard Dog Club and Glacier Aviation"
-    }
+    {"name": "Kimberlee Johnson — Active Service Events", "division": "home", "progress": 50, "nextStep": "Chase roofer callback + confirm electrician Aug 17"},
+    {"name": "Vendor Network Build", "division": "partners", "progress": 20, "nextStep": "Call Wild Horse, Dog Club, Glacier Aviation"}
   ],
   "news": [
-    {
-      "title": "Why the Hotel Concierge Is Still the Luxury Traveller's Best Friend",
-      "source": "Luxury Lifestyle Magazine",
-      "url": "https://www.luxurylifestylemag.co.uk/travel/why-the-hotel-concierge-is-still-the-luxury-travellers-best-friend/",
-      "apply": "Concierge: Guests fact-check ChatGPT with concierges. 'Locally sourced and human-verified' is a sharp differentiator."
-    },
-    {
-      "title": "Bilt Expands Hospitality OS to Include Travel Advisers with Agentic Concierge Platform",
-      "source": "PYMNTS",
-      "url": "https://www.pymnts.com/news/2026/bilt-expands-hospitality-offering-to-include-travel-advisers/",
-      "apply": "Concierge/Partners: Industry converging on AI + human touch. Solace is running this playbook locally."
-    },
-    {
-      "title": "Whitefish's Huckleberry Days Celebrates 37 Years — 100+ Local Artists",
-      "source": "KPAX",
-      "url": "https://www.kpax.com/news/whitefishs-huckleberry-days-celebrates-37-years-of-local-art-and-community",
-      "apply": "Partners + Concierge: Walk the event for artisan vendor leads. Tag for Whitefish Hours Collection experience."
-    },
-    {
-      "title": "New Boat Launch Fees at Whitefish City Beach — Non-Residents Now $50/Day",
-      "source": "The Magic Riders",
-      "url": "https://themagicriders.com/article/new-boat-launch-fees-at-whitefish-city-beach-what-you-need-to-know",
-      "apply": "Home/Concierge: Update guest briefing templates for lake activities. Flag to Kimberlee Johnson."
-    },
-    {
-      "title": "Luxury Travel Surges as High-Net-Worth Clients Build VIP Itineraries Around Marquee Events",
-      "source": "The Traveler",
-      "url": "https://www.thetraveler.org/luxury-travel-surges-as-augusta-masters-fuels-vip-tourism/",
-      "apply": "Concierge: Build a Flathead Valley anchor event calendar for Collection Signature packages."
-    }
+    {"title": "US luxury travel boom fuels high stakes at Virtuoso Week 2026", "source": "The Traveler", "url": "https://www.thetraveler.org/usa-luxury-travel-boom-fuels-high-stakes-at-virtuoso-week/", "apply": "Fall 2026 is outpacing summer — push fall arrival prep packages now. [Concierge/Home]"},
+    {"title": "Virtuoso: 28% jump in wellness-focused hotel bookings", "source": "Latte Luxury News", "url": "https://us.latteluxurynews.com/2026/08/10/virtuoso-reports-major-boost-in-wellness-travel/", "apply": "Prioritize spa/wellness vendors (Tesoro Mio, Vibe Wellness) in this week's call list. [Partners]"},
+    {"title": "Destination wedding planners now primary gatekeepers of luxury travel demand", "source": "Skift", "url": "https://wlt.skift.com/2026/08/10/the-new-gatekeepers-of-luxury-travel-how-planners-are-driving-destination-wedding-demand/", "apply": "Research Whitefish/Bigfork event planners for warm outreach — one relationship = client pipeline. [Concierge]"},
+    {"title": "Air quality alert in Flathead County — wildfire smoke", "source": "Flathead Beacon", "url": "https://flatheadbeacon.com/2026/08/10/air-quality-alert-issued-in-flathead-county-as-crews-make-progress-on-skillet-fire/", "apply": "Check AQI before any outdoor client activity this week. Eases by Friday. [Concierge/Home]"},
+    {"title": "Wasabi restaurant Whitefish permanently closed", "source": "NBC Montana", "url": "https://nbcmontana.com/news/local/wasabi-restaurant-closes-permanently-after-tragedy-fire-sale-set-for-monday", "apply": "Remove from restaurant shortlists and update Venue Guide. [Concierge]"}
   ],
   "general_news": [
-    {
-      "title": "US Deploys 20 Warships to Hormuz Amid Iran Standoff",
-      "source": "AP",
-      "url": "https://www.ndtvprofit.com/world/us-deploys-20-warships-in-hormuz-amid-semi-negotiations-with-iran-redirects-55-commercial-vessels-11888283"
-    },
-    {
-      "title": "Markets Mixed; S&P 500 at All-Time Highs, Oil Up on Hormuz Stalemate",
-      "source": "AP",
-      "url": "https://www.ksat.com/business/2026/08/10/asian-shares-track-wall-street-gains-while-oil-prices-bounce-higher/"
-    },
-    {
-      "title": "Jobs Report: Employers Cut 23K Jobs in July — Fed Patience Hopes Rise",
-      "source": "Associated Press",
-      "url": "https://www.ksat.com/business/2026/08/10/asian-shares-track-wall-street-gains-while-oil-prices-bounce-higher/"
-    }
+    {"title": "Trump pivots to Iran sanctions as Hormuz standoff continues — oil near $90/barrel", "source": "CBS News", "url": "https://www.cbsnews.com/live-updates/iran-war-us-negotiation-strait-of-hormuz/"},
+    {"title": "Americans endured hottest month in 132 years", "source": "Multiple outlets", "url": "https://drydenwire.com/news/morning-headlines-tuesday-aug-11-2026/"},
+    {"title": "Zuckerberg publishes essay on superintelligence vision", "source": "Multiple outlets", "url": "https://drydenwire.com/news/morning-headlines-tuesday-aug-11-2026/"}
   ]
 }
