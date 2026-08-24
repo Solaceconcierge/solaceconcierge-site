@@ -1,29 +1,26 @@
 {
-  "date": "Tuesday, August 11",
-  "generated_at": "8:02 AM MT",
+  "date": "Monday, August 24",
+  "generated_at": "8:01 AM MT",
   "priorities": [
-    "Chase roofer for Kimberlee Johnson — callback was expected Aug 3–7; it's now 12 days later. Call Fly Roofing / Hunter at (406) 607-8266 today.",
-    "Confirm electrician appointment for August 17 AM — call (406) 755-8624 to verify; property access contact is Brittany Bates (949) 878-6022.",
-    "Call Jason / Wild Horse Limousine (406-756-2290) — payment terms are the only blocker on the agreement.",
-    "Call Dog Club Kalispell (406-890-2220) — they're interested and waiting on a real person.",
-    "Flag the air quality alert — no outdoor client activities without an AQI check first. Eases by Friday."
+    "Call Jason Koller (Wild Horse Limousine) to resolve the payment-terms question blocking his signature.",
+    "Call Gary Kaufman (Glacier Aviation) with the card-on-file payment answer.",
+    "Return the Dog Club Kalispell's call/email.",
+    "Push Montana Picnic Co (Alisia) to sign the outstanding agreement.",
+    "Consider a short client note on wildfire smoke + air quality resources this week."
   ],
-  "priority_emails": [],
   "awaiting": [],
   "initiatives": [
-    {"name": "Kimberlee Johnson — Active Service Events", "division": "home", "progress": 50, "nextStep": "Chase roofer callback + confirm electrician Aug 17"},
-    {"name": "Vendor Network Build", "division": "partners", "progress": 20, "nextStep": "Call Wild Horse, Dog Club, Glacier Aviation"}
+    { "name": "Kimberlee Johnson — Home client onboarding (roof + electrical inspections)", "division": "home", "progress": 60, "nextStep": "Awaiting vendor call-backs for roof inspection scheduling." }
   ],
   "news": [
-    {"title": "US luxury travel boom fuels high stakes at Virtuoso Week 2026", "source": "The Traveler", "url": "https://www.thetraveler.org/usa-luxury-travel-boom-fuels-high-stakes-at-virtuoso-week/", "apply": "Fall 2026 is outpacing summer — push fall arrival prep packages now. [Concierge/Home]"},
-    {"title": "Virtuoso: 28% jump in wellness-focused hotel bookings", "source": "Latte Luxury News", "url": "https://us.latteluxurynews.com/2026/08/10/virtuoso-reports-major-boost-in-wellness-travel/", "apply": "Prioritize spa/wellness vendors (Tesoro Mio, Vibe Wellness) in this week's call list. [Partners]"},
-    {"title": "Destination wedding planners now primary gatekeepers of luxury travel demand", "source": "Skift", "url": "https://wlt.skift.com/2026/08/10/the-new-gatekeepers-of-luxury-travel-how-planners-are-driving-destination-wedding-demand/", "apply": "Research Whitefish/Bigfork event planners for warm outreach — one relationship = client pipeline. [Concierge]"},
-    {"title": "Air quality alert in Flathead County — wildfire smoke", "source": "Flathead Beacon", "url": "https://flatheadbeacon.com/2026/08/10/air-quality-alert-issued-in-flathead-county-as-crews-make-progress-on-skillet-fire/", "apply": "Check AQI before any outdoor client activity this week. Eases by Friday. [Concierge/Home]"},
-    {"title": "Wasabi restaurant Whitefish permanently closed", "source": "NBC Montana", "url": "https://nbcmontana.com/news/local/wasabi-restaurant-closes-permanently-after-tragedy-fire-sale-set-for-monday", "apply": "Remove from restaurant shortlists and update Venue Guide. [Concierge]"}
+    { "title": "Air Mail: luxury travel agents reborn as fixers for the super-rich", "source": "Air Mail", "url": "https://airmail.news/issues/2026-8-22/sherpas-to-the-jet-set", "apply": "Concierge — pull the 'no is never the final answer' framing into Signature/Direct copy." },
+    { "title": "Bilt partners with Blacklane for global chauffeur booking", "source": "Breaking Travel News", "url": "https://www.breakingtravelnews.com/news/article/bilt-welcomes-blacklane-to-its-ecosystem/", "apply": "Partners — proof point for the referral-network model when talking to Wild Horse Limousine." },
+    { "title": "Clean Air pop-up events across Kalispell, Columbia Falls, Whitefish this week", "source": "Flathead Beacon", "url": "https://flatheadbeacon.com/2026/08/23/wildfire-smoke-prompts-clean-air-pop-up-events-in-flathead-valley/", "apply": "Home/Care — timely content hook on indoor air quality for clients during smoke season." },
+    { "title": "Six new wildfires sparked by lightning in Flathead National Forest", "source": "KPAX", "url": "https://www.kpax.com/news/flathead-national-forest-wildfire-update-6-new-fire-starts-sparked-by-lightning-strikes", "apply": "Home/Concierge — proactive check-in for clients near the Whitefish Divide area." }
   ],
   "general_news": [
-    {"title": "Trump pivots to Iran sanctions as Hormuz standoff continues — oil near $90/barrel", "source": "CBS News", "url": "https://www.cbsnews.com/live-updates/iran-war-us-negotiation-strait-of-hormuz/"},
-    {"title": "Americans endured hottest month in 132 years", "source": "Multiple outlets", "url": "https://drydenwire.com/news/morning-headlines-tuesday-aug-11-2026/"},
-    {"title": "Zuckerberg publishes essay on superintelligence vision", "source": "Multiple outlets", "url": "https://drydenwire.com/news/morning-headlines-tuesday-aug-11-2026/"}
+    { "title": "U.S. vows 'economic D-Day' sanctions as Iran threatens Gulf oil exports", "source": "The Japan Times", "url": "https://www.japantimes.co.jp/news/2026/08/24/world/us-economic-d-day-iran-oil-exports/" },
+    { "title": "Zelensky warns Russia likely to mobilize 300,000 more troops", "source": "CNN", "url": "https://www.cnn.com/2026/08/23/europe/zelensky-ukraine-russia-mobilization-intl" },
+    { "title": "Syria and Israel hold US-mediated talks in Jordan", "source": "Al Jazeera", "url": "https://www.aljazeera.com/news/2026/8/24/syria-israel-hold-us-mediated-talks-in-jordan-to-de-escalate-tensions" }
   ]
 }
