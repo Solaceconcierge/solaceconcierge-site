@@ -1,26 +1,22 @@
 {
-  "date": "Monday, August 24",
-  "generated_at": "8:01 AM MT",
+  "date": "Tuesday, August 25",
+  "generated_at": "8:02 AM MT",
   "priorities": [
-    "Call Jason Koller (Wild Horse Limousine) to resolve the payment-terms question blocking his signature.",
-    "Call Gary Kaufman (Glacier Aviation) with the card-on-file payment answer.",
-    "Return the Dog Club Kalispell's call/email.",
-    "Push Montana Picnic Co (Alisia) to sign the outstanding agreement.",
-    "Consider a short client note on wildfire smoke + air quality resources this week."
+    "Call Jason Koller (Wild Horse Limousine) to resolve the payment-terms blocker and get his agreement signed — oldest open vendor item.",
+    "Call back The Dog Club to establish legitimacy and get them into the application form.",
+    "Check vendors@ for a reply from Gary Kaufman (Glacier Aviation) before calling — lead with the payment-timing answer if he hasn't replied.",
+    "Consider a brief smoke/air-quality heads-up to Home and Care clients given the Deer Creek Fire and regional wildfire smoke forecast.",
+    "No calendar events and no new client inquiries today — a good day to push on vendor pipeline work."
   ],
   "awaiting": [],
-  "initiatives": [
-    { "name": "Kimberlee Johnson — Home client onboarding (roof + electrical inspections)", "division": "home", "progress": 60, "nextStep": "Awaiting vendor call-backs for roof inspection scheduling." }
-  ],
+  "initiatives": [],
   "news": [
-    { "title": "Air Mail: luxury travel agents reborn as fixers for the super-rich", "source": "Air Mail", "url": "https://airmail.news/issues/2026-8-22/sherpas-to-the-jet-set", "apply": "Concierge — pull the 'no is never the final answer' framing into Signature/Direct copy." },
-    { "title": "Bilt partners with Blacklane for global chauffeur booking", "source": "Breaking Travel News", "url": "https://www.breakingtravelnews.com/news/article/bilt-welcomes-blacklane-to-its-ecosystem/", "apply": "Partners — proof point for the referral-network model when talking to Wild Horse Limousine." },
-    { "title": "Clean Air pop-up events across Kalispell, Columbia Falls, Whitefish this week", "source": "Flathead Beacon", "url": "https://flatheadbeacon.com/2026/08/23/wildfire-smoke-prompts-clean-air-pop-up-events-in-flathead-valley/", "apply": "Home/Care — timely content hook on indoor air quality for clients during smoke season." },
-    { "title": "Six new wildfires sparked by lightning in Flathead National Forest", "source": "KPAX", "url": "https://www.kpax.com/news/flathead-national-forest-wildfire-update-6-new-fire-starts-sparked-by-lightning-strikes", "apply": "Home/Concierge — proactive check-in for clients near the Whitefish Divide area." }
+    { "title": "5 Tensions Luxury Travel Advisors and Suppliers Still Can't Resolve", "source": "Luxury Travel Advisor", "url": "https://www.luxurytraveladvisor.com/your-business/5-tensions-luxury-travel-advisors-and-suppliers-still-cant-resolve", "apply": "Partners: keep leaning on the written Preferred Partner agreement so vendor expectations never drift into a handshake-only relationship." },
+    { "title": "The Surrey, A Corinthia Hotel launches full-property buyout with dedicated concierge team", "source": "Global Traveler", "url": "https://www.globaltravelerusa.com/the-surrey-a-corinthia-hotel-introduces-the-surrey-entirely-yours-experience/", "apply": "Concierge/Luxury: borrow 'a team devoted entirely to them' framing for Milestone/Group pitches." },
+    { "title": "Virtuoso Canada: 'It's all about trust' — human connection as AI enters luxury travel planning", "source": "TravelTradeToday", "url": "https://traveltrade.today/travel-technology/artificial-intelligence/virtuoso-canadas-karen-hardie-discusses-luxury-ai-and-human-power/", "apply": "Keep client- and vendor-facing copy outcome-focused rather than tech-forward." }
   ],
   "general_news": [
-    { "title": "U.S. vows 'economic D-Day' sanctions as Iran threatens Gulf oil exports", "source": "The Japan Times", "url": "https://www.japantimes.co.jp/news/2026/08/24/world/us-economic-d-day-iran-oil-exports/" },
-    { "title": "Zelensky warns Russia likely to mobilize 300,000 more troops", "source": "CNN", "url": "https://www.cnn.com/2026/08/23/europe/zelensky-ukraine-russia-mobilization-intl" },
-    { "title": "Syria and Israel hold US-mediated talks in Jordan", "source": "Al Jazeera", "url": "https://www.aljazeera.com/news/2026/8/24/syria-israel-hold-us-mediated-talks-in-jordan-to-de-escalate-tensions" }
+    { "title": "Trump threatens 50% tariffs on Canadian cars and trucks amid trade fight", "source": "Reuters", "url": "https://www.reuters.com/business/autos-transportation/trump-says-he-will-raise-tariffs-all-cars-trucks-50-amid-canada-trade-spat-2026-08-24/" },
+    { "title": "US Treasury launches sweeping new sanctions push against Iran", "source": "BBC", "url": "https://www.bbc.com/news/articles/c0qxew81y83o" }
   ]
 }
