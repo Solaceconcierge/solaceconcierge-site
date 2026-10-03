@@ -64,6 +64,13 @@
   .contact .phone{font-size:19px;letter-spacing:.12em;color:var(--gold);margin-top:12px}
   .contact .site{font-size:11px;letter-spacing:.38em;text-transform:uppercase;margin-top:12px}
   .contact .towns{margin-top:36px;padding-top:28px;border-top:1px solid rgba(201,169,97,.25);font-size:10px;letter-spacing:.26em;text-transform:uppercase;color:rgba(239,229,204,.55);line-height:2.1}
+
+  .share{text-align:center;margin:0 0 60px}
+  .share .q{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:20px;line-height:1.4;margin-bottom:20px}
+  .share button,.share a.btn{display:inline-block;font-family:'Inter',sans-serif;font-size:11px;font-weight:400;letter-spacing:.32em;text-transform:uppercase;color:var(--cream);background:var(--black);border:none;border-radius:0;padding:16px 30px;cursor:pointer;-webkit-appearance:none}
+  .share .alt{display:block;margin-top:16px;font-size:12px;letter-spacing:.06em;color:var(--muted)}
+  .share .alt a{border-bottom:1px solid var(--rule);padding-bottom:2px;margin:0 6px}
+  .share .done{display:none;margin-top:12px;font-size:12px;color:var(--accent);letter-spacing:.06em}
 </style>
 </head>
 <body>
@@ -106,6 +113,12 @@
     </figure>
 
     <a class="pricing" href="https://solacemontana.com/#faq"><span>How pricing works</span><span class="arr">→</span></a>
+    <section class="share">
+      <p class="q">Know someone who would appreciate this?</p>
+      <button type="button" id="shareBtn">Share Solace</button>
+      <span class="alt"><a id="mailShare" href="#">Email it</a>·<a id="textShare" href="#">Text it</a>·<a id="copyShare" href="#">Copy link</a></span>
+      <span class="done" id="copied">Link copied.</span>
+    </section>
   </main>
 
   <section class="contact">
@@ -118,5 +131,24 @@
     <div class="towns">Whitefish · Kalispell · Columbia Falls<br>Bigfork · Lakeside · Glacier corridor</div>
   </section>
 </div>
+
+<script>
+(function(){
+  var url='https://solacemontana.com/card/';
+  var title='Solace — Private Coordination, Flathead Valley';
+  var text='Thought of you. Solace quietly handles home readiness, guest details and trusted local vendors across the Flathead Valley.';
+  var btn=document.getElementById('shareBtn');
+  document.getElementById('mailShare').href='mailto:?subject='+encodeURIComponent('Thought you might like Solace')+'&body='+encodeURIComponent(text+'\n\n'+url);
+  document.getElementById('textShare').href='sms:?&body='+encodeURIComponent(text+' '+url);
+  function copy(e){if(e)e.preventDefault();
+    var done=function(){var c=document.getElementById('copied');c.style.display='block';setTimeout(function(){c.style.display='none'},2500)};
+    if(navigator.clipboard){navigator.clipboard.writeText(url).then(done,function(){prompt('Copy this link:',url)})}else{prompt('Copy this link:',url)}}
+  document.getElementById('copyShare').addEventListener('click',copy);
+  btn.addEventListener('click',function(){
+    if(navigator.share){navigator.share({title:title,text:text,url:url}).catch(function(){})}
+    else{window.location.href=document.getElementById('mailShare').href}
+  });
+})();
+</script>
 </body>
 </html>
