@@ -84,6 +84,28 @@
   .share button{background:transparent;color:var(--ink);border:1px solid var(--rule)}
   a:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-offset:5px}
   @media(max-width:360px){main{padding-left:24px;padding-right:24px}.detail{margin-left:-24px;margin-right:-24px}.intro{font-size:29px}.share a.btn{letter-spacing:.2em;padding:16px 20px}.contact{padding-left:20px;padding-right:20px}}
+
+  /* Responsive desktop presentation; phone layout remains stacked. */
+  .wrap{max-width:1040px}
+  .how{max-width:680px;margin-left:auto;margin-right:auto}
+  @media(min-width:760px){
+    .hero{height:420px}
+    .hero .mark{top:80px}
+    .wordmark{font-size:32px}
+    .tagline{font-size:24px}
+    main{padding:16px 64px 0}
+    .intro{font-size:44px}
+    .lead{font-size:17px}
+    section[aria-label="What SOLACE coordinates"]{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:28px;border-top:1px solid var(--rule);border-bottom:1px solid var(--rule)}
+    .path{border:none;padding:30px 0;gap:14px}
+    .path:last-child{border-bottom:none}
+    .label{letter-spacing:.24em}
+    .how{margin-top:48px}
+    .detail{margin-left:-64px;margin-right:-64px}
+    .detail img{height:360px}
+    .detail figcaption{font-size:23px}
+    .share .inquire{display:inline-block}
+  }
 </style>
 </head>
 <body>
