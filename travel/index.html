@@ -558,6 +558,13 @@
     .dining__btn { justify-content: center; padding: 19px 20px; letter-spacing: 0.3em; }
   }
 
+  .dining__intro { max-width: 600px; margin: 70px auto 0; }
+  .dining__intro-rule { width: 36px; height: 1px; background: var(--hairline); margin: 0 auto 40px; }
+  .dining__intro-title { font-family: var(--italic); font-style: italic; font-weight: 400; font-size: clamp(26px, 2.8vw, 36px); line-height: 1.2; color: var(--ink); margin: 0 auto 22px; max-width: 22ch; }
+  .dining__intro-body { font-family: var(--sans); font-weight: 300; font-size: 15.5px; line-height: 1.85; color: var(--ink-soft); }
+  .dining__intro-body + .dining__intro-body { margin-top: 1em; }
+  @media (max-width: 600px) { .dining__intro { margin-top: 54px; } }
+
   /* dining inquiry modal */
   .dine { position: fixed; inset: 0; z-index: 300; display: flex; align-items: center; justify-content: center; padding: 24px; visibility: hidden; pointer-events: none; }
   .dine.is-open { visibility: visible; pointer-events: auto; }
@@ -772,6 +779,13 @@
         <a class="dining__btn dining__btn--ghost" href="https://app.theprimanetwork.com/17322/SOLACE-VIP" target="_blank" rel="noopener noreferrer"><span>Explore VIP Dining</span><span aria-hidden="true">&#8599;</span></a>
       </div>
       <p class="dining__note">Any reservation fee, deposit, or venue policy is shared with you before a booking is confirmed. VIP Dining opens our booking partner in a new tab.</p>
+
+      <div class="dining__intro">
+        <div class="dining__intro-rule"></div>
+        <h3 class="dining__intro-title">More than a reservation.<br>A personal introduction.</h3>
+        <p class="dining__intro-body">Through our worldwide dining partners, your reservation is communicated directly to restaurant management, allowing the team to anticipate your arrival and recognize your booking as a VIP guest.</p>
+        <p class="dining__intro-body">From intimate dinners to sought-after tables in the world&rsquo;s most exciting cities, we help make the experience feel considered before you even arrive.</p>
+      </div>
     </div>
   </div>
 </section>
