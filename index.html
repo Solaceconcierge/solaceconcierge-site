@@ -1294,6 +1294,75 @@
     .reveal { opacity: 1; transform: none; transition: none; }
     .marquee__track { animation: none; }
   }
+
+
+  /* ─────────  SHORT INQUIRY  ───────── */
+  .inq { padding: 18vh 0 17vh; background: var(--ivory); }
+  .inq__head { text-align: center; max-width: 620px; margin: 0 auto 54px; }
+  .inq__eyebrow { font-family: var(--sans); font-weight: 200; font-size: 11px; letter-spacing: 0.46em; text-transform: uppercase; color: var(--gold); margin-bottom: 30px; }
+  .inq__rule { width: 36px; height: 1px; background: var(--gold); margin: 0 auto 30px; }
+  .inq__title { font-family: var(--italic); font-style: italic; font-weight: 400; font-size: clamp(32px, 4vw, 54px); line-height: 1.14; color: var(--ink); margin-bottom: 20px; }
+  .inq__sub { font-family: var(--sans); font-weight: 300; font-size: 15.5px; line-height: 1.8; color: var(--ink-soft); }
+  .inq__form { max-width: 560px; margin: 0 auto; display: grid; gap: 26px; }
+  .inq__row { display: grid; grid-template-columns: 1fr 1fr; gap: 26px; }
+  .inq__field { display: flex; flex-direction: column; gap: 8px; }
+  .inq__label { font-family: var(--sans); font-weight: 400; font-size: 10.5px; letter-spacing: 0.3em; text-transform: uppercase; color: var(--muted); }
+  .inq__label em { font-style: normal; text-transform: none; letter-spacing: 0.02em; opacity: 0.8; }
+  .inq__input, .inq__select, .inq__text { font-family: var(--sans); font-weight: 300; font-size: 16px; color: var(--ink); background: transparent; border: 0; border-bottom: 1px solid var(--hairline); padding: 10px 0; border-radius: 0; outline: none; width: 100%; transition: border-color 0.3s ease; -webkit-appearance: none; appearance: none; }
+  .inq__select { background-image: linear-gradient(45deg, transparent 50%, var(--muted) 50%), linear-gradient(135deg, var(--muted) 50%, transparent 50%); background-position: calc(100% - 10px) 55%, calc(100% - 5px) 55%; background-size: 5px 5px; background-repeat: no-repeat; padding-right: 24px; }
+  .inq__text { min-height: 92px; resize: vertical; line-height: 1.6; }
+  .inq__input:focus, .inq__select:focus, .inq__text:focus { border-bottom-color: var(--gold); }
+  .inq__travel { display: none; font-family: var(--italic); font-style: italic; font-size: 17px; line-height: 1.6; color: var(--ink-soft); border-left: 1px solid var(--gold); padding: 6px 0 6px 18px; }
+  .inq__travel a { color: var(--ink); border-bottom: 1px solid var(--gold); text-decoration: none; font-style: normal; font-family: var(--sans); font-size: 11px; letter-spacing: 0.3em; text-transform: uppercase; }
+  .inq__submit { justify-self: center; margin-top: 10px; display: inline-flex; gap: 14px; align-items: center; background: var(--ink); color: var(--ivory); border: 1px solid var(--ink); font-family: var(--sans); font-weight: 300; font-size: 11.5px; letter-spacing: 0.42em; text-transform: uppercase; padding: 20px 46px; cursor: pointer; transition: background 0.4s ease, border-color 0.4s ease; }
+  .inq__submit:hover { background: var(--gold); border-color: var(--gold); }
+  .inq__submit[disabled] { opacity: 0.55; cursor: default; }
+  .inq__privacy { text-align: center; font-family: var(--sans); font-weight: 300; font-size: 12.5px; line-height: 1.7; color: var(--muted); }
+  .inq__msg { text-align: center; font-family: var(--italic); font-style: italic; font-size: 19px; line-height: 1.6; color: var(--ink); min-height: 0; }
+  .inq__msg a { color: inherit; }
+  .inq__hp { position: absolute; left: -9999px; width: 1px; height: 1px; overflow: hidden; }
+  .inq__alt { text-align: center; margin-top: 30px; font-family: var(--sans); font-weight: 300; font-size: 12px; letter-spacing: 0.16em; text-transform: uppercase; color: var(--muted); }
+  .inq__alt a { color: inherit; text-decoration: none; border-bottom: 1px solid var(--hairline); padding-bottom: 2px; }
+  @media (max-width: 600px) {
+    .inq { padding: 12vh 0 12vh; }
+    .inq__row { grid-template-columns: 1fr; }
+    .inq__submit { width: 100%; justify-content: center; padding: 19px 20px; letter-spacing: 0.32em; }
+  }
+  .hero__headline--long { max-width: 16ch; font-size: clamp(48px, 6.6vw, 104px); }
+  @media (max-width: 720px) { .hero__headline--long { font-size: clamp(40px, 10.5vw, 58px); } }
+
+  /* ─────────  WELCOME POPUP  ───────── */
+  .welcome { position: fixed; inset: 0; z-index: 300; display: flex; align-items: center; justify-content: center; padding: 24px; visibility: hidden; pointer-events: none; }
+  .welcome.is-open { visibility: visible; pointer-events: auto; }
+  .welcome__veil { position: absolute; inset: 0; background: rgba(10,10,10,0.42); -webkit-backdrop-filter: blur(3px); backdrop-filter: blur(3px); opacity: 0; transition: opacity 0.7s ease; }
+  .welcome.is-open .welcome__veil { opacity: 1; }
+  .welcome__card { position: relative; width: 100%; max-width: 440px; background: var(--ivory); color: var(--ink); padding: 46px 42px 30px; box-shadow: 0 30px 80px rgba(10,10,10,0.28); opacity: 0; transform: translateY(18px); transition: opacity 0.7s ease, transform 0.8s cubic-bezier(0.16,1,0.3,1); }
+  .welcome.is-open .welcome__card { opacity: 1; transform: translateY(0); }
+  .welcome__card:focus { outline: none; }
+  .welcome__close { position: absolute; top: 12px; right: 12px; width: 40px; height: 40px; border: 0; background: transparent; color: var(--muted); font-family: var(--sans); font-weight: 200; font-size: 26px; line-height: 1; cursor: pointer; transition: color 0.3s ease; }
+  .welcome__close:hover, .welcome__close:focus-visible { color: var(--ink); }
+  .welcome__eyebrow { font-family: var(--sans); font-weight: 200; font-size: 10.5px; letter-spacing: 0.46em; text-transform: uppercase; color: var(--gold); text-align: center; margin-bottom: 18px; }
+  .welcome__rule { width: 30px; height: 1px; background: var(--gold); margin: 0 auto 20px; }
+  .welcome__title { font-family: var(--italic); font-style: italic; font-weight: 400; font-size: 32px; line-height: 1.15; text-align: center; margin: 0 auto 28px; max-width: 14ch; }
+  .welcome__list { list-style: none; padding: 0; margin: 0; border-top: 1px solid var(--hairline); }
+  .welcome__opt { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 17px 2px; border-bottom: 1px solid var(--hairline); color: var(--ink); text-decoration: none; transition: padding 0.35s ease, color 0.3s ease; }
+  .welcome__opt:hover, .welcome__opt:focus-visible { padding-left: 10px; color: var(--gold-deep, #B0934B); outline: none; }
+  .welcome__name { display: block; font-family: var(--italic); font-style: italic; font-size: 22px; line-height: 1.2; }
+  .welcome__hint { display: block; margin-top: 3px; font-family: var(--sans); font-weight: 300; font-size: 12.5px; letter-spacing: 0.02em; color: var(--muted); }
+  .welcome__arrow { font-family: var(--sans); font-weight: 300; font-size: 15px; color: var(--gold); flex: none; }
+  .welcome__later { display: block; margin: 22px auto 0; border: 0; background: transparent; font-family: var(--sans); font-weight: 300; font-size: 10.5px; letter-spacing: 0.32em; text-transform: uppercase; color: var(--muted); cursor: pointer; padding: 8px 6px; }
+  .welcome__later:hover, .welcome__later:focus-visible { color: var(--ink); }
+  @media (max-width: 600px) {
+    .welcome { align-items: flex-end; padding: 0; }
+    .welcome__card { max-width: none; padding: 34px 26px calc(18px + env(safe-area-inset-bottom)); transform: translateY(40px); }
+    .welcome__title { font-size: 28px; margin-bottom: 20px; }
+    .welcome__opt { padding: 14px 2px; }
+    .welcome__name { font-size: 20px; }
+    .welcome__later { margin-top: 12px; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .welcome__veil, .welcome__card { transition: none; transform: none; }
+  }
 </style>
 <script type="application/ld+json">
 {
@@ -1347,7 +1416,7 @@
         "itemOffered": {
           "@type": "Service",
           "name": "Solace/Luxury",
-          "description": "Vacation guest concierge for the Flathead Valley's most discerning rentals — distributed through property managers, priced by complexity, never by the service itself. 48-hour standard lead time.",
+          "description": "Vacation guest concierge for the Flathead Valley's most discerning rentals — arranged directly or through property managers, priced by complexity, never by the service itself. 48-hour standard lead time.",
           "url": "https://solacemontana.com/luxury/",
           "provider": {"@id": "https://solacemontana.com/#business"},
           "areaServed": "Flathead Valley, Montana"
@@ -1390,6 +1459,16 @@
         "@type": "Offer",
         "itemOffered": {
           "@type": "Service",
+          "name": "Solace/Travel",
+          "description": "Worldwide luxury hotel reservations and travel planning, with access to preferred-hotel programs. Benefits vary by property and eligibility and are not guaranteed.",
+          "url": "https://solacemontana.com/travel/",
+          "provider": {"@id": "https://solacemontana.com/#business"}
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
           "name": "Solace/Partners",
           "description": "A curated network of Flathead Valley's most discerning vendors and trades — florists, private chefs, stewards, drivers, craftsmen. Membership by invitation.",
           "url": "https://solacemontana.com/partners/",
@@ -1419,7 +1498,7 @@
       "name": "Who is SOLACE for?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Four kinds of relationships. Solace/Luxury: guests of high-end vacation rentals, coordinated through their property managers. Solace/Care: families with a loved one in a Flathead Valley care facility. Solace/Home: homeowners with a second home in the valley. Direct to Solace: the whole-season relationship, by introduction only."
+        "text": "Four kinds of relationships. Solace/Luxury: guests of high-end vacation rentals, directly or through their property managers. Solace/Care: families with a loved one in a Flathead Valley care facility. Solace/Home: homeowners with a second home in the valley. Direct to Solace: the whole-season relationship, by introduction only."
       }
     },
     {
@@ -1443,7 +1522,7 @@
       "name": "How do I get started with SOLACE?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "For guests of a Flathead vacation rental, requests move through your property manager and the SOLACE app. For ongoing relationships, write to contact@solaceconcierge.com or call (406) 405-1266. We respond personally."
+        "text": "The simplest way is a short note through the inquiry form on solacemontana.com — a few words is enough. Guests of a partner vacation rental can also go through their property manager and the SOLACE app. Or call (406) 405-1266. We respond personally."
       }
     }
   ]
@@ -1461,12 +1540,14 @@
   <div class="nav__left">
     <a href="#intro"   class="nav__link">Approach</a>
     <a href="#founder" class="nav__link nav__link--hide-mobile">The Founder</a>
+    <a href="/travel/" class="nav__link nav__link--hide-mobile">Travel</a>
   </div>
   <a href="#top" class="nav__center" aria-label="SOLACE — home">
     <span class="nav__monogram" aria-hidden="true"></span>
     <span class="nav__wordmark">Solace</span>
   </a>
   <div class="nav__right">
+    <a href="#inquire" class="nav__link nav__link--hide-mobile" data-pathway="other">Inquire</a>
     <a href="https://solacemt.com" target="_blank" rel="noopener noreferrer" class="nav__link">App</a>
   </div>
 </header>
@@ -1479,8 +1560,8 @@
   <div class="hero__veil" aria-hidden="true"></div>
   <div class="hero__overlay">
     <p class="hero__eyebrow">Private Coordination Company<span class="dot"></span>Flathead Valley<span class="dot"></span>Montana</p>
-    <h1 class="hero__headline">Find solace.</h1>
-    <p class="hero__caption">Quiet luxury, seamlessly delivered — the details of a beautifully kept life in the Flathead.</p>
+    <h1 class="hero__headline hero__headline--long">The Luxury of Having It&nbsp;Handled.</h1>
+    <p class="hero__caption">Private concierge, home coordination, and worldwide travel &mdash; quietly arranged from the Flathead&nbsp;Valley.</p>
     <a class="hero__discover" href="#intro">
       <span>Discover</span>
       <span class="hero__discover-line" aria-hidden="true"></span>
@@ -1503,6 +1584,7 @@
   </div>
 </section>
 
+
 <!-- ═══════════════ SOLACE / LUXURY ═══════════════ -->
 <section class="brand brand--luxury brand--reverse" id="luxury">
   <div class="container">
@@ -1511,7 +1593,7 @@
         <p class="brand__label">Solace<span class="slash">/</span>Luxury</p>
         <div class="brand__rule"></div>
         <h2 class="brand__title">Vacation, prepared in advance.</h2>
-        <p class="brand__body">For guests of the Flathead's most discerning vacation rentals — coordinated through their property manager. SOLACE/Luxury arranges the pre-arrival prep, the dinner reservations, the surprise that makes a stay a memory. Booked with a 48-hour standard.</p>
+        <p class="brand__body">For guests of the Flathead's most discerning vacation rentals — arranged directly, or through their property manager. SOLACE/Luxury arranges the pre-arrival prep, the dinner reservations, the surprise that makes a stay a memory. Booked with a 48-hour standard.</p>
         <p class="brand__body">Simple coordination from $225. Moderate from $450. Complex from $750. Signature arrival prep from $1,250. Vendor costs, deliveries, and gratuities are separate and pre-approved.</p>
         <a class="brand__discover" href="/luxury">
           <span>Discover Solace<span class="slash">/</span>Luxury</span>
@@ -1630,45 +1712,7 @@
   </div>
 </section>
 
-<!-- ═══════════════ THRESHOLD BREAK ═══════════════ -->
-<section class="break break--threshold" id="threshold" aria-label="The valley at dusk">
-  <div class="break__bg-wrap"><div class="break__bg" aria-hidden="true"></div></div>
-  <div class="break__veil" aria-hidden="true"></div>
-  <div class="break__overlay">
-    <div class="break__inner reveal">
-      <p class="break__eyebrow">Solace / Partners</p>
-      <p class="break__quote">The finest hands in the valley, quietly kept.</p>
-    </div>
-  </div>
-</section>
 
-<!-- ═══════════════ SOLACE / PARTNERS ═══════════════ -->
-<section class="brand brand--partners" id="partners">
-  <div class="container">
-    <div class="brand__grid">
-      <div class="brand__media reveal">
-        <div class="brand__image" aria-hidden="true">
-          <video class="brand__video" autoplay muted loop playsinline preload="metadata"
-                 poster="https://pub.hyperagent.com/api/published/pbf01KRW2GWQY_5HMFVSQPX0H4D6Q7/video_partners_chef_v2_poster.jpg"
-                 aria-hidden="true">
-            <source src="https://pub.hyperagent.com/api/published/pbf01KRW2GQRM_MVAEX8S1656RY3NH/video_partners_chef_v2_web.mp4" type="video/mp4">
-          </video>
-        </div>
-      </div>
-      <div class="brand__copy reveal">
-        <p class="brand__label">Solace<span class="slash">/</span>Partners</p>
-        <div class="brand__rule"></div>
-        <h2 class="brand__title">A quiet network of the valley's finest hands.</h2>
-        <p class="brand__body">A curated network of the Flathead's most discerning vendors and trades — florists, private chefs, stewards, drivers, craftsmen. Membership is by invitation, the standard is exacting, and the work that moves through SOLACE is held to the brand it represents.</p>
-        <p class="brand__body">Solace brings organized, pre-qualified requests with clear expectations, approved budgets, and coordinated communication. Preferred vendors are selected for quality, reliability, and professionalism.</p>
-        <a class="brand__discover" href="/partners">
-          <span>Discover Solace<span class="slash">/</span>Partners</span>
-          <span class="brand__discover-line" aria-hidden="true"></span>
-        </a>
-      </div>
-    </div>
-  </div>
-</section>
 
 
 <!-- ═══════════════ FOUNDER ═══════════════ -->
@@ -1705,7 +1749,7 @@
       </div>
       <div class="faq__item reveal">
         <p class="faq__q">Who is SOLACE for?</p>
-        <p class="faq__a">Four kinds of relationships. Solace/Luxury: guests of high-end vacation rentals, coordinated through their property managers. Solace/Care: families with a loved one in a Flathead Valley care facility. Solace/Home: homeowners with a second home in the valley. Direct to Solace: the whole-season relationship, by introduction only.</p>
+        <p class="faq__a">Four kinds of relationships. Solace/Luxury: guests of high-end vacation rentals, directly or through their property managers. Solace/Care: families with a loved one in a Flathead Valley care facility. Solace/Home: homeowners with a second home in the valley. Direct to Solace: the whole-season relationship, by introduction only.</p>
       </div>
       <div class="faq__item reveal">
         <p class="faq__q">Where do you serve?</p>
@@ -1717,9 +1761,63 @@
       </div>
       <div class="faq__item reveal">
         <p class="faq__q">How do I get started?</p>
-        <p class="faq__a">For guests of a Flathead vacation rental, requests move through your property manager and the SOLACE app. For ongoing relationships, write to contact@solaceconcierge.com or call (406) 405-1266. We respond personally.</p>
+        <p class="faq__a">The simplest way is a <a href="#inquire" data-pathway="other" style="color:inherit;text-decoration:underline;text-underline-offset:4px">short note here</a> &mdash; a few words is enough. Guests of a partner vacation rental can also go through their property manager and the SOLACE app. Or call (406) 405-1266. We respond personally.</p>
       </div>
     </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════ SHORT INQUIRY ═══════════════ -->
+<section class="inq" id="inquire" aria-labelledby="inq-title">
+  <div class="container">
+    <div class="inq__head reveal">
+      <p class="inq__eyebrow">Begin with the Details</p>
+      <div class="inq__rule"></div>
+      <h2 class="inq__title" id="inq-title">Tell us what you&rsquo;d like handled.</h2>
+      <p class="inq__sub">A few words is enough. Every request is read and answered personally.</p>
+    </div>
+    <form class="inq__form reveal" data-inquiry data-source="home" novalidate>
+      <div class="inq__field">
+        <label class="inq__label" for="inq-need">What can we arrange?</label>
+        <select class="inq__select" id="inq-need" name="pathway">
+          <option value="visiting">A visit or stay in the valley</option>
+          <option value="home">Something for my home</option>
+          <option value="travel">Travel planning</option>
+          <option value="other" selected>Something else</option>
+        </select>
+      </div>
+      <p class="inq__travel" data-travel-note>Travel is arranged through our secure travel form, so your preferences are captured in one place. <a href="https://secure.foratravel.com/intake/Wu3ycMSOjh" target="_blank" rel="noopener noreferrer">Begin a travel inquiry &rarr;</a></p>
+      <div class="inq__row" data-standard>
+        <div class="inq__field">
+          <label class="inq__label" for="inq-name">Your name</label>
+          <input class="inq__input" id="inq-name" name="name" type="text" autocomplete="name" required>
+        </div>
+        <div class="inq__field">
+          <label class="inq__label" for="inq-email">Email</label>
+          <input class="inq__input" id="inq-email" name="email" type="email" autocomplete="email" inputmode="email" required>
+        </div>
+      </div>
+      <div class="inq__row" data-standard>
+        <div class="inq__field">
+          <label class="inq__label" for="inq-phone">Phone <em>(optional)</em></label>
+          <input class="inq__input" id="inq-phone" name="phone" type="tel" autocomplete="tel" inputmode="tel">
+        </div>
+        <div class="inq__field" data-dates>
+          <label class="inq__label" for="inq-dates">Dates <em>(if known)</em></label>
+          <input class="inq__input" id="inq-dates" name="dates" type="text" placeholder="e.g. July 8&ndash;14">
+        </div>
+      </div>
+      <div class="inq__field" data-standard>
+        <label class="inq__label" for="inq-notes">A few words about the request</label>
+        <textarea class="inq__text" id="inq-notes" name="notes" rows="3"></textarea>
+      </div>
+      <div class="inq__hp" aria-hidden="true"><label>Leave blank<input name="company_website" tabindex="-1" autocomplete="off"></label></div>
+      <button class="inq__submit" type="submit" data-standard><span>Send inquiry</span><span aria-hidden="true">&rarr;</span></button>
+      <p class="inq__privacy" data-standard>Property access details are requested later, through a secure link &mdash; never here.</p>
+      <p class="inq__msg" role="status" aria-live="polite"></p>
+    </form>
+    
   </div>
 </section>
 
@@ -1727,7 +1825,7 @@
 <section class="homeapp" id="app">
   <div class="container">
     <div class="reveal">
-      <p class="homeapp__eyebrow">Now Available</p>
+      <p class="homeapp__eyebrow">Already a Client</p>
       <div class="homeapp__rule"></div>
       <h2 class="homeapp__title">Everything, quietly in hand.</h2>
       <p class="homeapp__sub">Submit requests, track confirmations, and stay ahead of everything the valley asks of your day — from your phone, on your schedule.</p>
@@ -1738,6 +1836,25 @@
     </div>
   </div>
 </section>
+
+
+<!-- ═══════════════ WELCOME POPUP ═══════════════ -->
+<div class="welcome" id="welcome" role="dialog" aria-modal="true" aria-labelledby="welcome-title" aria-hidden="true">
+  <div class="welcome__veil" data-welcome-close></div>
+  <div class="welcome__card" tabindex="-1">
+    <button class="welcome__close" type="button" aria-label="Close" data-welcome-close>&times;</button>
+    <p class="welcome__eyebrow">Welcome to Solace</p>
+    <div class="welcome__rule"></div>
+    <h2 class="welcome__title" id="welcome-title">How may we make life easier?</h2>
+    <ul class="welcome__list">
+      <li><a class="welcome__opt" href="#inquire" data-pathway="visiting" data-welcome-pick><span><span class="welcome__name">I&rsquo;m visiting</span><span class="welcome__hint">Arrival, dining, and experiences</span></span><span class="welcome__arrow" aria-hidden="true">&rarr;</span></a></li>
+      <li><a class="welcome__opt" href="/home/?pathway=home#subscribe" data-welcome-pick><span><span class="welcome__name">I own a home</span><span class="welcome__hint">Setup and ongoing coordination</span></span><span class="welcome__arrow" aria-hidden="true">&rarr;</span></a></li>
+      <li><a class="welcome__opt" href="https://secure.foratravel.com/intake/Wu3ycMSOjh" target="_blank" rel="noopener noreferrer" data-welcome-pick><span><span class="welcome__name">I&rsquo;m planning travel</span><span class="welcome__hint">Hotels and journeys, worldwide</span></span><span class="welcome__arrow" aria-hidden="true">&rarr;</span></a></li>
+      <li><a class="welcome__opt" href="#inquire" data-pathway="other" data-welcome-pick><span><span class="welcome__name">Something else</span><span class="welcome__hint">Tell us in a few words</span></span><span class="welcome__arrow" aria-hidden="true">&rarr;</span></a></li>
+    </ul>
+    <button class="welcome__later" type="button" data-welcome-close>Continue browsing</button>
+  </div>
+</div>
 
 <!-- ═══════════════ FOOTER ═══════════════ -->
 <footer class="footer">
@@ -1757,6 +1874,8 @@
       <a href="/privacy/" style="color: inherit; text-decoration: none; border-bottom: 1px solid rgba(239,229,204,0.25); padding-bottom: 2px;">Privacy</a>
       &ensp;&middot;&ensp;
       <a href="/terms/" style="color: inherit; text-decoration: none; border-bottom: 1px solid rgba(239,229,204,0.25); padding-bottom: 2px;">Terms</a>
+      &ensp;&middot;&ensp;
+      <a href="/partners/" style="color: inherit; text-decoration: none; border-bottom: 1px solid rgba(239,229,204,0.25); padding-bottom: 2px;">For Vendors</a>
     </p>
   </div>
 </footer>
@@ -1849,5 +1968,117 @@
 })();
 </script>
 
+
+<script>
+/* Short inquiry + pathway hand-off. Posts to the existing Solace subscribe function. */
+(() => {
+  const ENDPOINT = 'https://kphcffvjwqgbdyycrcxv.supabase.co/functions/v1/subscribe';
+  const INBOX = 'contact@solaceconcierge.com';
+  const TIER = { visiting: 'luxury', home: 'home', other: 'inquiry', travel: 'travel' };
+  const params = new URLSearchParams(location.search);
+  document.querySelectorAll('form[data-inquiry]').forEach((form) => {
+    const need = form.querySelector('[name="pathway"]');
+    const notes = form.querySelector('[name="notes"]');
+    const msg = form.querySelector('.inq__msg');
+    const sync = () => {
+      const travel = need.value === 'travel';
+      form.querySelectorAll('[data-standard]').forEach((el) => { el.style.display = travel ? 'none' : ''; });
+      form.querySelector('[data-travel-note]').style.display = travel ? 'block' : 'none';
+      const dates = form.querySelector('[data-dates]');
+      if (dates) dates.style.display = (need.value === 'visiting') ? '' : 'none';
+    };
+    const choose = (p) => { if (p && need.querySelector('option[value="' + p + '"]')) { need.value = p; sync(); } };
+    choose(params.get('pathway'));
+    const exp = params.get('experience');
+    if (exp && notes && !notes.value) { choose('visiting'); notes.value = 'I am interested in ' + exp + ' from The Collection.'; }
+    need.addEventListener('change', sync);
+    sync();
+    document.querySelectorAll('a[data-pathway]').forEach((a) => a.addEventListener('click', () => choose(a.dataset.pathway)));
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const d = new FormData(form);
+      if ((d.get('company_website') || '').toString()) return;           // bot trap
+      const v = (k) => (d.get(k) || '').toString().trim();
+      const name = v('name'), email = v('email');
+      const show = (html) => { msg.innerHTML = html; };
+      if (!name || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) { show('Please share your name and a valid email.'); return; }
+      const btn = form.querySelector('.inq__submit'); btn.disabled = true;
+      const pathway = need.value;
+      const payload = {
+        tier: TIER[pathway] || 'inquiry', pathway, name, email,
+        phone: v('phone'), dates: v('dates'), notes: v('notes'),
+        experience: exp || '', source_page: form.dataset.source,
+        route_to: INBOX, submitted_at: new Date().toISOString(),
+      };
+      try {
+        const r = await fetch(ENDPOINT, { method: 'POST', headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' }, body: JSON.stringify(payload) });
+        if (!r.ok) throw new Error('submit_failed');
+        form.querySelectorAll('.inq__field, .inq__row, .inq__submit, .inq__privacy, .inq__travel').forEach((el) => { el.style.display = 'none'; });
+        show('Received, ' + name.split(' ')[0].replace(/[<>&]/g, '') + '. We will be in touch personally.');
+      } catch (err) {
+        const body = encodeURIComponent('Name: ' + name + '\nPhone: ' + v('phone') + '\nDates: ' + v('dates') + '\n\n' + v('notes'));
+        show('Something quiet went wrong on our side. Please <a href="mailto:' + INBOX + '?subject=' + encodeURIComponent('Inquiry — ' + pathway) + '&body=' + body + '">send it by email instead</a> &mdash; your note is already filled in.');
+        btn.disabled = false;
+      }
+    });
+  });
+})();
+</script>
+
+<script>
+/* Welcome popup: opens once after a short pause, remembers dismissal for 30 days. */
+(() => {
+  const el = document.getElementById('welcome');
+  if (!el) return;
+  const KEY = 'solace_welcome_seen', DAYS = 30, DELAY = 6000;
+  const store = { get() { try { return localStorage.getItem(KEY); } catch (e) { return null; } },
+                  set() { try { localStorage.setItem(KEY, String(Date.now())); } catch (e) {} } };
+  const seen = store.get();
+  const fresh = !seen || (Date.now() - Number(seen)) > DAYS * 864e5;
+  const p = new URLSearchParams(location.search);
+  // Never interrupt someone already headed somewhere specific.
+  const arrivingWithIntent = p.has('pathway') || p.has('experience') || p.has('nowelcome') || (location.hash && location.hash !== '#top');
+  let lastFocus = null, timer = null;
+
+  const focusables = () => [...el.querySelectorAll('a[href], button')];
+  const open = () => {
+    if (el.classList.contains('is-open')) return;
+    lastFocus = document.activeElement;
+    el.setAttribute('aria-hidden', 'false');
+    el.classList.add('is-open');
+    store.set();
+    setTimeout(() => { const c = el.querySelector('.welcome__card'); c && c.focus({ preventScroll: true }); }, 350);
+  };
+  const close = (restore = true) => {
+    el.classList.remove('is-open');
+    el.setAttribute('aria-hidden', 'true');
+    store.set();
+    if (restore && lastFocus && lastFocus.focus) lastFocus.focus({ preventScroll: true });
+  };
+
+  el.querySelectorAll('[data-welcome-close]').forEach((b) => b.addEventListener('click', () => close()));
+  el.querySelectorAll('[data-welcome-pick]').forEach((a) => a.addEventListener('click', () => {
+    close(false);
+    if (a.getAttribute('href') === '#inquire') {
+      setTimeout(() => { const n = document.getElementById('inq-name'); n && n.focus({ preventScroll: true }); }, 700);
+    }
+  }));
+  document.addEventListener('keydown', (e) => {
+    if (!el.classList.contains('is-open')) return;
+    if (e.key === 'Escape') { e.preventDefault(); close(); }
+    if (e.key === 'Tab') {
+      const f = focusables(); if (!f.length) return;
+      const first = f[0], last = f[f.length - 1];
+      if (e.shiftKey && document.activeElement === first) { e.preventDefault(); last.focus(); }
+      else if (!e.shiftKey && document.activeElement === last) { e.preventDefault(); first.focus(); }
+    }
+  });
+  // If they start the inquiry on their own, never pop up.
+  document.addEventListener('focusin', (e) => { if (e.target.closest && e.target.closest('form[data-inquiry]')) { clearTimeout(timer); store.set(); } });
+
+  if (fresh && !arrivingWithIntent) timer = setTimeout(open, DELAY);
+  window.solaceWelcome = { open, close };   // e.g. for a future "How can we help?" link
+})();
+</script>
 </body>
 </html>
