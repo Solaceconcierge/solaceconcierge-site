@@ -458,7 +458,7 @@
   <div class="nav__left">
     <a href="/care"     class="nav__link nav__link--active">Care</a>
     <a href="/home"     class="nav__link">Home</a>
-    <a href="/partners" class="nav__link nav__link--hide-mobile">Partners</a>
+    <a href="/travel"   class="nav__link nav__link--hide-mobile">Travel</a>
     <a href="/direct"   class="nav__link nav__link--hide-mobile">Direct</a>
   </div>
   <a href="/" class="nav__center" aria-label="SOLACE — home">
@@ -603,19 +603,19 @@
         <input class="subscribe__input" type="text" id="cs-relation" name="relation" placeholder="Daughter · Son · Power of Attorney · etc.">
       </div>
       <div class="subscribe__field">
-        <label class="subscribe__label" for="cs-resident">Resident's Name</label>
-        <input class="subscribe__input" type="text" id="cs-resident" name="resident" required placeholder="Resident's full name">
+        <label class="subscribe__label" for="cs-resident">Resident's Name (optional)</label>
+        <input class="subscribe__input" type="text" id="cs-resident" name="resident" placeholder="Resident's full name">
       </div>
       <div class="subscribe__field">
-        <label class="subscribe__label" for="cs-facility">Care Facility</label>
-        <input class="subscribe__input" type="text" id="cs-facility" name="facility" required placeholder="Facility name & city">
+        <label class="subscribe__label" for="cs-facility">Care Facility (optional)</label>
+        <input class="subscribe__input" type="text" id="cs-facility" name="facility" placeholder="Facility name & city">
       </div>
       <div class="subscribe__field subscribe__field--full">
         <label class="subscribe__label" for="cs-notes">A Note (optional)</label>
         <textarea class="subscribe__textarea" id="cs-notes" name="notes" rows="3" placeholder="Anything you'd like us to know. The resident's interests, regular kindnesses you'd like in motion, a best time to call."></textarea>
       </div>
       <div class="subscribe__submit-row">
-        <button class="subscribe__submit" type="submit">Begin Subscription</button>
+        <button class="subscribe__submit" type="submit">Send Inquiry</button>
         <p class="subscribe__msg" id="care-subscribe-msg" role="status">Received. We will be in touch within the week.</p>
       </div>
     </form>
@@ -642,6 +642,8 @@
       <a href="/privacy/" style="color: inherit; text-decoration: none; border-bottom: 1px solid rgba(239,229,204,0.25); padding-bottom: 2px;">Privacy</a>
       &ensp;&middot;&ensp;
       <a href="/terms/" style="color: inherit; text-decoration: none; border-bottom: 1px solid rgba(239,229,204,0.25); padding-bottom: 2px;">Terms</a>
+      &ensp;&middot;&ensp;
+      <a href="/partners/" style="color: inherit; text-decoration: none; border-bottom: 1px solid rgba(239,229,204,0.25); padding-bottom: 2px;">For Vendors</a>
     </p>
   </div>
 </footer>
@@ -690,8 +692,8 @@
       const resident = (data.get('resident') || '').toString().trim();
       const facility = (data.get('facility') || '').toString().trim();
       const notes    = (data.get('notes')    || '').toString().trim();
-      if (!name || !email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email) || !resident || !facility) {
-        msg.textContent = 'Please share your name, email, the resident, and the facility.';
+      if (!name || !email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email) ) {
+        msg.textContent = 'Please share your name and a valid email.';
         msg.style.color = 'var(--muted)';
         msg.classList.add('show');
         return;
@@ -707,6 +709,7 @@
               tier: 'care',
               name, email, phone, relation, resident, facility, notes,
               source_page: 'solace/care',
+              pathway: new URLSearchParams(location.search).get('pathway') || 'direct-visit',
               submitted_at: new Date().toISOString(),
             }),
           });

@@ -425,7 +425,7 @@
     <a href="/luxury"   class="nav__link">Luxury</a>
     <a href="/care"     class="nav__link">Care</a>
     <a href="/home"     class="nav__link nav__link--active">Home</a>
-    <a href="/partners" class="nav__link nav__link--hide-mobile">Partners</a>
+    <a href="/travel"   class="nav__link nav__link--hide-mobile">Travel</a>
     <a href="/direct"   class="nav__link nav__link--hide-mobile">Direct</a>
   </div>
   <a href="/" class="nav__center" aria-label="SOLACE — home">
@@ -611,8 +611,9 @@
         <label class="subscribe__label" for="hs-notes">A Note About the Household (optional)</label>
         <textarea class="subscribe__textarea" id="hs-notes" name="notes" rows="3" placeholder="Recurring trades you're already running, seasonal cadence you'd like kept, anything we should know."></textarea>
       </div>
+      <p class="subscribe__note" style="margin:0">Property access details are requested later, through a secure link &mdash; never here.</p>
       <div class="subscribe__submit-row">
-        <button class="subscribe__submit" type="submit">Begin Subscription</button>
+        <button class="subscribe__submit" type="submit">Send Inquiry</button>
         <p class="subscribe__msg" id="home-subscribe-msg" role="status">Thank you. A quiet note will reach you within the week.</p>
       </div>
     </form>
@@ -638,6 +639,8 @@
       <a href="/privacy/" style="color: inherit; text-decoration: none; border-bottom: 1px solid rgba(239,229,204,0.25); padding-bottom: 2px;">Privacy</a>
       &ensp;&middot;&ensp;
       <a href="/terms/" style="color: inherit; text-decoration: none; border-bottom: 1px solid rgba(239,229,204,0.25); padding-bottom: 2px;">Terms</a>
+      &ensp;&middot;&ensp;
+      <a href="/partners/" style="color: inherit; text-decoration: none; border-bottom: 1px solid rgba(239,229,204,0.25); padding-bottom: 2px;">For Vendors</a>
     </p>
   </div>
 </footer>
@@ -698,6 +701,7 @@
               tier: 'home',
               name, email, phone, area, notes,
               source_page: 'solace/home',
+              pathway: new URLSearchParams(location.search).get('pathway') || 'direct-visit',
               submitted_at: new Date().toISOString(),
             }),
           });
