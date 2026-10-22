@@ -3,60 +3,79 @@
 
 User-agent: *
 Allow: /
+Disallow: /ops/
 
 # AI / LLM crawlers — explicitly welcomed
 User-agent: GPTBot
 Allow: /
+Disallow: /ops/
 
 User-agent: OAI-SearchBot
 Allow: /
+Disallow: /ops/
 
 User-agent: ChatGPT-User
 Allow: /
+Disallow: /ops/
 
 User-agent: ClaudeBot
 Allow: /
+Disallow: /ops/
 
 User-agent: anthropic-ai
 Allow: /
+Disallow: /ops/
 
 User-agent: Claude-Web
 Allow: /
+Disallow: /ops/
 
 User-agent: PerplexityBot
 Allow: /
+Disallow: /ops/
 
 User-agent: Perplexity-User
 Allow: /
+Disallow: /ops/
 
 User-agent: Google-Extended
 Allow: /
+Disallow: /ops/
 
 User-agent: GoogleOther
 Allow: /
+Disallow: /ops/
 
 User-agent: CCBot
 Allow: /
+Disallow: /ops/
 
 User-agent: Applebot
 Allow: /
+Disallow: /ops/
 
 User-agent: Applebot-Extended
 Allow: /
+Disallow: /ops/
 
 User-agent: Amazonbot
 Allow: /
+Disallow: /ops/
 
 User-agent: Bytespider
 Allow: /
+Disallow: /ops/
 
 User-agent: Meta-ExternalAgent
 Allow: /
+Disallow: /ops/
 
 User-agent: cohere-ai
 Allow: /
+Disallow: /ops/
 
 User-agent: DuckAssistBot
 Allow: /
+Disallow: /ops/
 
 Sitemap: https://solacemontana.com/sitemap.xml
