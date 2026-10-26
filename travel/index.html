@@ -614,6 +614,11 @@
     .dine__next { padding: 16px 22px; letter-spacing: 0.3em; }
   }
   @media (prefers-reduced-motion: reduce) { .dine__veil, .dine__card { transition: none; transform: none; } }
+
+  /* ─────────  PRIVATE AVIATION  ───────── */
+  .aviation { padding-top: 0 !important; padding-bottom: clamp(56px, 7vw, 96px) !important; }
+  #dining { padding-bottom: clamp(56px, 7vw, 96px) !important; }
+  .aviation .dining__rule { background: var(--hairline); }
 </style>
 <script type="application/ld+json">
 {
@@ -785,6 +790,21 @@
         <h3 class="dining__intro-title">VIP Dining, in select&nbsp;cities.</h3>
         <p class="dining__intro-body">Through our dining partner PRIMA, reservations at participating restaurants are communicated directly to restaurant management, so your arrival is anticipated.</p>
         <p class="dining__intro-body">Participation varies by city&mdash;some cities include many restaurants, others only <span style="white-space:nowrap">one&mdash;and</span> changes often. Tell us where you&rsquo;re dining and we&rsquo;ll confirm what&rsquo;s available.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════ PRIVATE AVIATION ═══════════════ -->
+<section class="dining aviation" id="aviation">
+  <div class="container">
+    <div class="reveal">
+      <div class="dining__rule"></div>
+      <h2 class="dining__title">Private Aviation</h2>
+      <p class="dining__body">For clients seeking a more personalized journey, Solace coordinates private charter requests through established aviation brokers. Share your itinerary to explore options and receive a tailored quote.</p>
+      <div class="dining__actions">
+        <a class="dining__btn dining__btn--ghost" href="/?pathway=travel&amp;experience=Private%20Aviation#inquire"><span>Share Your Itinerary</span><span aria-hidden="true">&rarr;</span></a>
       </div>
     </div>
   </div>
