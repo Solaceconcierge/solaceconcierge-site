@@ -2037,7 +2037,7 @@
   const store = { get() { try { return localStorage.getItem(KEY); } catch (e) { return null; } },
                   set() { try { localStorage.setItem(KEY, String(Date.now())); } catch (e) {} } };
   const seen = store.get();
-  const fresh = !seen || (Date.now() - Number(seen)) > DAYS * 864e5;
+  const fresh = true;   // show on every homepage visit (Oct 26: Brittany's request)
   const p = new URLSearchParams(location.search);
   // Never interrupt someone already headed somewhere specific.
   const arrivingWithIntent = p.has('pathway') || p.has('experience') || p.has('nowelcome') || (location.hash && location.hash !== '#top');
