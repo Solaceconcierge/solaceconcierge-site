@@ -45,6 +45,19 @@
   .p-home{--c:var(--home)}
   .p-care{--c:var(--care)}
   .p-partners{--c:var(--partners)}
+  .group{font-size:10px;font-weight:400;letter-spacing:.38em;text-transform:uppercase;color:var(--accent);text-align:center;margin:0 0 22px}
+  .group--partners{margin-top:52px}
+  .travel{margin:44px -32px 0;padding:44px 32px 40px;background:#E5D9BC;border-top:1px solid var(--rule);border-bottom:1px solid var(--rule);text-align:center}
+  .travel .group{margin-bottom:18px}
+  .travel .group b{font-weight:400;color:var(--ink)}
+  .travel .t-title{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:26px;line-height:1.25;margin:0 0 16px}
+  .travel p{font-size:15px;color:var(--muted);line-height:1.7;margin:0 auto;max-width:34ch}
+  .travel .advisor{font-size:9.5px;letter-spacing:.2em;text-transform:uppercase;color:var(--accent);margin-top:18px;line-height:1.7}
+  .travel .links{margin-top:26px;display:flex;flex-direction:column;gap:12px;align-items:center}
+  .travel .links a{font-family:'Inter',sans-serif;font-size:10.5px;font-weight:400;letter-spacing:.3em;text-transform:uppercase;padding:15px 22px;width:100%;max-width:300px;text-decoration:none}
+  .travel .links .solid{background:var(--black);color:var(--cream)}
+  .travel .links .line{border:1px solid var(--ink);color:var(--ink)}
+
 
   /* Detail image */
   .detail{margin:52px -32px 0;position:relative}
@@ -85,11 +98,12 @@
   </header>
 
   <main>
-    <p class="intro">A private coordination company of the Flathead Valley. Trusted local vendors, home readiness, guest details and household needs, handled before you have to ask.</p>
+    <p class="intro">Private concierge in Montana&rsquo;s Flathead Valley, with luxury travel, dining, and experiences arranged worldwide. Thoughtful coordination, wherever life takes you.</p>
 
     <div class="hair"></div>
 
-    <section>
+    <section aria-labelledby="g-local">
+      <p class="group" id="g-local">In the Flathead Valley</p>
       <div class="path p-luxury"><span class="bar"></span><div>
         <div class="label">Staying in the valley</div>
         <p>Arrival prep, reservations and the details that make a stay feel effortless.</p>
@@ -102,6 +116,20 @@
         <div class="label">Families <span class="division">Solace/Care</span></div>
         <p>Non-medical coordination for a loved one in a Flathead Valley care facility.</p>
       </div></div>
+    </section>
+
+    <section class="travel" aria-labelledby="g-travel">
+      <p class="group" id="g-travel">Worldwide &mdash; <b>Solace/Travel</b></p>
+      <p>Luxury hotels, cruises, villas, dining, and experiences&mdash;thoughtfully arranged around you. From a single stay to a personalized journey, one trusted point of contact.</p>
+      <div class="advisor">Brittany Alcott | Independent travel advisor of Fora Travel</div>
+      <div class="links">
+        <a class="line" href="https://solacemontana.com/travel/#planning-fees">Explore Travel &amp; Planning Fees</a>
+        <a class="solid" href="https://secure.foratravel.com/intake/Wu3ycMSOjh" target="_blank" rel="noopener noreferrer">Begin a Travel Inquiry</a>
+      </div>
+    </section>
+
+    <section aria-labelledby="g-partners">
+      <p class="group group--partners" id="g-partners">Partner with Solace</p>
       <div class="path p-partners"><span class="bar"></span><div>
         <div class="label">Property managers &amp; vendors <span class="division">Solace/Partners</span></div>
         <p>Solace/Partners is a select network of the valley's best local businesses. Partnership inquiries are welcome.</p>
@@ -113,7 +141,7 @@
       <figcaption>Arranged before you asked. There when you arrive.</figcaption>
     </figure>
 
-    <a class="pricing" href="https://solacemontana.com/#faq"><span>How pricing works</span><span class="arr">→</span></a>
+    <a class="pricing" href="https://solacemontana.com/#faq"><span>Local concierge pricing</span><span class="arr">→</span></a>
     <section class="share">
       <p class="q">Know someone who would appreciate this?</p>
       <button type="button" id="shareBtn">Share Solace</button>
@@ -136,8 +164,8 @@
 <script>
 (function(){
   var url='https://solacemontana.com/card/';
-  var title='Solace — Private Coordination, Flathead Valley';
-  var text='Thought of you. Solace quietly handles home readiness, guest details and trusted local vendors across the Flathead Valley.';
+  var title='Solace — Flathead Valley Concierge & Worldwide Travel';
+  var text='Thought of you. Solace handles concierge, home readiness and trusted local vendors across the Flathead Valley, and arranges luxury travel, dining and experiences worldwide.';
   var btn=document.getElementById('shareBtn');
   document.getElementById('mailShare').href='mailto:?subject='+encodeURIComponent('Thought you might like Solace')+'&body='+encodeURIComponent(text+'\n\n'+url);
   document.getElementById('textShare').href='sms:?&body='+encodeURIComponent(text+' '+url);
